@@ -3622,11 +3622,10 @@ body {
 .multicolumn-card.content-container.section-template--23024616472890__multicolumn_cTtqNY .multicolumn-card__image-wrapper .media img {
   width: 7rem;
   height: 7rem;
-  margin: 30px 75px;
 }
 
 .multicolumn-card.content-container.section-template--23024616472890__multicolumn_cTtqNY .multicolumn-card__image-wrapper .media {
-  padding-bottom: 50% !important;
+  padding-bottom: 30% !important;
 }
 
 .multicolumn-card.content-container.section-template--23024616472890__multicolumn_cTtqNY .multicolumn-card__info h3 {
@@ -3648,5 +3647,5 @@ body {
 }
 
 .section-template--23024616472890__multicolumn_cTtqNY .page-width .slider-mobile-gutter .multicolumn-list {
-  width: 100vw;
+  width: 95vw;
 }
