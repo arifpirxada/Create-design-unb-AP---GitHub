@@ -84,6 +84,7 @@
 
 body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
   max-width: 100%;
+  overflow-x: hidden;
 }
 
 .page-width.drawer-menu {
@@ -3600,4 +3601,12 @@ details-disclosure > details {
 
 .announcement-container {
   margin: 0px 40px;
+}
+
+/* ------------ */
+/* Multicolumn */
+/* ------------ */
+
+.section-template--23024616472890__multicolumn_cTtqNY {
+  background: transparent;
 }
