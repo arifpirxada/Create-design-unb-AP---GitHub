@@ -1272,5 +1272,15 @@ if (!customElements.get('bulk-add')) {
 const slide = () => {
   const scrollBar = document.querySelector("#scroll-bar");
 
-  
+  const announcementItems = Array.from(scrollBar.children)
+
+  announcementItems.forEach((announcement) => {
+    const newAnnouncement = announcement.cloneNode(true)
+
+    newAnnouncement.setAttribute("aria-hidden", true);
+
+    scrollBar.appendChild(newAnnouncement);
+  })
 }
+
+slide()
