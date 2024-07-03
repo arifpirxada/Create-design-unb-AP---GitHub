@@ -3612,7 +3612,7 @@ body {
 
 /* card */
 .multicolumn-card.content-container.section-template--23024616472890__multicolumn_cTtqNY {
-  background: transparent;
+  background-color: rgba(0, 0, 0, 0) !important;
 }
 
 /* image */
@@ -3624,4 +3624,12 @@ body {
 
 .multicolumn-card.content-container.section-template--23024616472890__multicolumn_cTtqNY .multicolumn-card__image-wrapper .media {
   padding-bottom: 50% !important;
+}
+
+.multicolumn-card.content-container.section-template--23024616472890__multicolumn_cTtqNY .multicolumn-card__info h3 {
+  text-align: center;
+}
+
+.multicolumn-card.content-container.section-template--23024616472890__multicolumn_cTtqNY .multicolumn-card__info .rte p {
+  text-align: center;
 } 
