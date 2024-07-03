@@ -53,10 +53,10 @@
       </div>
     {%- elsif section.blocks.size > 1 -%}
       
-      <marquee class="announcement-marquee" direction="left" loop="" scrollamount="20">
+      <marquee id="announcement-marquee" class="announcement-marquee" direction="left" loop="" scrollamount="20">
         <script>
         window.onload = function() {
-            var marquee = document.getElementById('myMarquee');
+            var marquee = document.getElementById('announcement-marquee');
             marquee.scrollLeft += 2000;
         }
         </script>
