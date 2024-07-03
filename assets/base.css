@@ -3576,15 +3576,17 @@ details-disclosure > details {
 /* ----------------- */
 
 #scroll-bar {
-  width: 150vw;
-  position: relative;
-  left: -210px;
+  /* position: relative; */
+  /* left: -210px; */
   animation: scroll 20s linear infinite;
 }
 
 @keyframes scroll {
-  to {
-    transform: translate(-50%);
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
   }
 }
 
