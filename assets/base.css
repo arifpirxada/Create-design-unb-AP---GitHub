@@ -3577,6 +3577,7 @@ details-disclosure > details {
 
 #scroll-bar {
   animation: scroll 10s linear infinite;
+  height: 6rem;
 }
 
 @keyframes scroll {
@@ -3642,6 +3643,7 @@ body {
   background-color: #DEF0FF;
 }
 
-.section-template--23024616472890__multicolumn_cTtqNY .page-width .slider-mobile-gutter {
-  background-color: #DEF0FF;
+.section-template--23024616472890__multicolumn_cTtqNY .page-width .slider-mobile-gutter .multicolumn-list {
+  width: 100vw;
+  left: -198px;
 }
