@@ -3619,4 +3619,9 @@ body {
 .multicolumn-card.content-container.section-template--23024616472890__multicolumn_cTtqNY .multicolumn-card__image-wrapper .media img {
   width: 7rem;
   height: 7rem;
+  argin: 30px 60px;
+}
+
+.multicolumn-card.content-container.section-template--23024616472890__multicolumn_cTtqNY .multicolumn-card__image-wrapper .media {
+  padding-bottom: 50% !important;
 } 
