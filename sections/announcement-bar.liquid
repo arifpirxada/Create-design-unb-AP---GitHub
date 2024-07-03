@@ -75,7 +75,7 @@
             >
               {%- if block.settings['announcement-img'] != blank -%}
                 <img height="40" src="{{ block.settings['announcement-img'] | image_url }}" alt="{{ block.settings.text | escape }}">
-              {%- elseif block.settings.text != blank -%}
+              {%- else block.settings.text != blank -%}
                 {%- if block.settings.link != blank -%}
                   <a
                     href="{{ block.settings.link }}"
