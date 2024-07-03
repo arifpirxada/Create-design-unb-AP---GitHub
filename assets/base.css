@@ -3576,9 +3576,7 @@ details-disclosure > details {
 /* ----------------- */
 
 #scroll-bar {
-  /* position: relative; */
-  /* left: -210px; */
-  animation: scroll 20s linear infinite;
+  animation: scroll 10s linear infinite;
 }
 
 @keyframes scroll {
