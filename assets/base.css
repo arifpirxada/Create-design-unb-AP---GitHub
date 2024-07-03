@@ -3611,7 +3611,9 @@ body {
 }
 
 /* card */
-
+.multicolumn-card.content-container.section-template--23024616472890__multicolumn_cTtqNY {
+  background: yellow;
+}
 
 /* image */
 .multicolumn-card.content-container.section-template--23024616472890__multicolumn_cTtqNY .multicolumn-card__image-wrapper .media img {
