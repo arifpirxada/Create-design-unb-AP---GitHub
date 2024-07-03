@@ -1266,3 +1266,11 @@ class BulkAdd extends HTMLElement {
 if (!customElements.get('bulk-add')) {
   customElements.define('bulk-add', BulkAdd);
 }
+
+// Function for infinite slider =>
+
+const slide = () => {
+  const scrollBar = document.querySelector("#scroll-bar");
+
+  
+}

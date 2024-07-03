@@ -53,15 +53,7 @@
       </div>
     {%- elsif section.blocks.size > 1 -%}
       
-      <marquee id="announcement-marquee" class="announcement-marquee" direction="left" loop="" scrollamount="20">
-        <script>
-        window.onload = function() {
-            var marquee = document.getElementById('announcement-marquee');
-            marquee.scrollLeft += 2000;
-        }
-        </script>
-
-      <div class="d-flex-justify-around">
+      <div id="scroll-bar" class="announcement-marquee d-flex-justify-around">
 
         {%- for block in section.blocks -%}
           <div
@@ -103,9 +95,8 @@
           </div>
         {%- endfor -%}
 
-      </div>
 
-      </marquee>
+      </div>
 
       {% comment %} <slideshow-component
         class="announcement-bar"

@@ -3575,10 +3575,17 @@ details-disclosure > details {
 /* Announcement Bar */
 /* ----------------- */
 
-.announcement-marquee {
+#scroll-bar {
   width: 150vw;
   position: relative;
   left: -210px;
+  animation: scroll 20s ease infinite direction fill-mode;
+}
+
+@keyframes scroll {
+  to {
+    transform: translate(-50%);
+  }
 }
 
 .announcement-bar__message span {
