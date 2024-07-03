@@ -3576,11 +3576,16 @@ details-disclosure > details {
 /* ----------------- */
 
 .announcement-marquee {
-  width: 100vw;
+  width: 120vw;
   position: relative;
   left: -210px;
 }
 
 .announcement-bar__message span {
   font-weight: 400;
+}
+
+.d-flex-justify-between {
+  display: flex;
+  justify-content: space-between
 }
