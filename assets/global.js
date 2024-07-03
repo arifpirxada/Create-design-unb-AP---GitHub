@@ -1270,7 +1270,6 @@ if (!customElements.get('bulk-add')) {
 // Function for infinite slider =>
 
 const slide = () => {
-  console.log("running!")
   const scrollBar = document.querySelector("#scroll-bar");
 
   const announcementItems = Array.from(scrollBar.children)
