@@ -2236,6 +2236,12 @@ input[type='checkbox'] {
   min-height: 3.8rem;
 }
 
+/* ------- My ------ */
+
+.announcement-bar__message span {
+  font-weight: 600;
+}
+
 .announcement-bar-slider--fade-in-next .announcement-bar__message,
 .announcement-bar-slider--fade-in-previous .announcement-bar__message,
 .announcement-bar-slider--fade-out-next .announcement-bar__message,
