@@ -3585,9 +3585,9 @@ details-disclosure > details {
   font-weight: 400;
 }
 
-.d-flex-justify-between {
+.d-flex-justify-around {
   display: flex;
-  justify-content: space-between
+  justify-content: space-around
 }
 
 .announcement-container {
