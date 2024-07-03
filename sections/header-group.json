@@ -21,11 +21,27 @@
             "link": ""
           }
         },
+        "announcement_yxk7mx": {
+          "type": "announcement",
+          "settings": {
+            "text": "Welcome to our store",
+            "link": "",
+            "announcement-img": "shopify:\/\/shop_images\/image_16.png"
+          }
+        },
         "announcement_X3UbMX": {
           "type": "announcement",
           "settings": {
             "text": "New! Try Our Zero-Calorie Sweetener – Sweeten Up Guilt-Free!",
             "link": ""
+          }
+        },
+        "announcement_QPUQ3T": {
+          "type": "announcement",
+          "settings": {
+            "text": "Welcome to our store",
+            "link": "",
+            "announcement-img": "shopify:\/\/shop_images\/image_5.png"
           }
         },
         "announcement_JVtkyB": {
@@ -35,20 +51,31 @@
             "link": ""
           }
         },
-        "announcement_yxk7mx": {
+        "announcement_fMxma4": {
           "type": "announcement",
           "settings": {
             "text": "Welcome to our store",
             "link": "",
             "announcement-img": "shopify:\/\/shop_images\/image_16.png"
           }
+        },
+        "announcement_464qA7": {
+          "type": "announcement",
+          "settings": {
+            "text": "Welcome to our store",
+            "link": "",
+            "announcement-img": "shopify:\/\/shop_images\/image_5.png"
+          }
         }
       },
       "block_order": [
         "announcement_gMJwjT",
+        "announcement_yxk7mx",
         "announcement_X3UbMX",
+        "announcement_QPUQ3T",
         "announcement_JVtkyB",
-        "announcement_yxk7mx"
+        "announcement_fMxma4",
+        "announcement_464qA7"
       ],
       "settings": {
         "color_scheme": "scheme-5",
