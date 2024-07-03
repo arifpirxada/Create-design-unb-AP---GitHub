@@ -54,6 +54,12 @@
     {%- elsif section.blocks.size > 1 -%}
       
       <marquee class="announcement-marquee" direction="left" loop="" scrollamount="20">
+        <script>
+        window.onload = function() {
+            var marquee = document.getElementById('myMarquee');
+            marquee.scrollLeft += 100;
+        }
+        </script>
 
       <div class="d-flex-justify-around">
 
