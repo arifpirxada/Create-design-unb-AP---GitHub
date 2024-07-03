@@ -3579,7 +3579,7 @@ details-disclosure > details {
   width: 150vw;
   position: relative;
   left: -210px;
-  animation: scroll 20s ease infinite direction fill-mode;
+  animation: scroll 20s ease infinite;
 }
 
 @keyframes scroll {
@@ -3590,6 +3590,7 @@ details-disclosure > details {
 
 .announcement-bar__message span {
   font-weight: 400;
+  white-space: nowrap;
 }
 
 .d-flex-justify-around {
