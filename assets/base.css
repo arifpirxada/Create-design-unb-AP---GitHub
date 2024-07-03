@@ -3579,7 +3579,7 @@ details-disclosure > details {
   width: 150vw;
   position: relative;
   left: -210px;
-  animation: scroll 20s ease infinite;
+  animation: scroll 20s linear infinite;
 }
 
 @keyframes scroll {
