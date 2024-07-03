@@ -3576,7 +3576,7 @@ details-disclosure > details {
 /* ----------------- */
 
 .announcement-marquee {
-  width: 120vw;
+  width: 150vw;
   position: relative;
   left: -210px;
 }
@@ -3588,4 +3588,8 @@ details-disclosure > details {
 .d-flex-justify-between {
   display: flex;
   justify-content: space-between
+}
+
+.announcement-container {
+  margin: 0px 40px;
 }
