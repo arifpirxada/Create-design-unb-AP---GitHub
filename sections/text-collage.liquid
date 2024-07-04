@@ -26,7 +26,7 @@
       <div style="background-color: yellow; width: 30px; height: 30px"></div>
       <div style="background-color: yellow; width: 30px; height: 30px"></div>
       <div style="background-color: yellow; width: 30px; height: 30px"></div>
-      {% if section.settings["left-image"] != blank %}
+      {% comment %} {% if section.settings["left-image"] != blank %}
         
       {% endif %}
       {% if section.settings["heading-text"] != blank %}
@@ -43,7 +43,7 @@
       {% endif %}
       {% if section.settings["fourth-text"] != blank %}
 
-      {% endif %}
+      {% endif %} {% endcomment %}
     </div>
   </div>
 </div>
@@ -142,10 +142,19 @@
           "type": "image"
         },
         {
-          "type": "product"
+          "type": "text"
         },
         {
-          "type": "collection"
+          "type": "text"
+        },
+        {
+          "type": "text"
+        },
+        {
+          "type": "text"
+        },
+        {
+          "type": "text"
         }
       ]
     }
