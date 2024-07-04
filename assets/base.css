@@ -3761,4 +3761,7 @@ body {
   .multicolumn-card.content-container.section-template--23024616472890__multicolumn_cTtqNY .multicolumn-card__image-wrapper .media img {
     margin-left: 100px;
   }
+  .multicolumn-card.content-container.section-template--23024616472890__multicolumn_cTtqNY .multicolumn-card__info h3 {
+    margin-left: -40px;
+  }
 }
