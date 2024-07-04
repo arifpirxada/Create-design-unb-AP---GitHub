@@ -1,0 +1,154 @@
+{{ 'collage.css' | asset_url | stylesheet_tag }}
+{{ 'component-card.css' | asset_url | stylesheet_tag }}
+{{ 'component-price.css' | asset_url | stylesheet_tag }}
+{{ 'component-modal-video.css' | asset_url | stylesheet_tag }}
+{{ 'component-deferred-media.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<div class="color-{{ section.settings.color_scheme }} gradient isolate">
+  <div class="page-width section-{{ section.id }}-padding">
+    <div class="collage{% if section.settings.mobile_layout == 'collage' %} collage--mobile{% endif %}">
+      <div style="background-color: yellow; width: 30px; height: 30px"></div>
+      <div style="background-color: yellow; width: 30px; height: 30px"></div>
+      <div style="background-color: yellow; width: 30px; height: 30px"></div>
+      <div style="background-color: yellow; width: 30px; height: 30px"></div>
+      <div style="background-color: yellow; width: 30px; height: 30px"></div>
+      {% if section.settings["left-image"] != blank %}
+        
+      {% endif %}
+      {% if section.settings["heading-text"] != blank %}
+
+      {% endif %}
+      {% if section.settings["first-text"] != blank %}
+
+      {% endif %}
+      {% if section.settings["second-text"] != blank %}
+
+      {% endif %}
+      {% if section.settings["third-text"] != blank %}
+
+      {% endif %}
+      {% if section.settings["fourth-text"] != blank %}
+
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Text Collage",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "info": "t:sections.all.colors.has_cards_info",
+      "default": "scheme-1"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "name": "Left Image",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "left-image",
+          "label": "Image"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "name": "Heading text",
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading-text",
+          "label": "Heading Text"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "name": "first text",
+      "settings": [
+        {
+          "type": "text",
+          "id": "first-text",
+          "label": "First Text"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "name": "second text",
+      "settings": [
+        {
+          "type": "text",
+          "id": "second-text",
+          "label": "Second Text"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "name": "third text",
+      "settings": [
+        {
+          "type": "text",
+          "id": "third-text",
+          "label": "Third Text"
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "name": "fourth text",
+      "settings": [
+        {
+          "type": "text",
+          "id": "fourth-text",
+          "label": "Fourth Text"
+        }
+      ]
+    }
+  ],
+  "max_blocks": 8,
+  "presets": [
+    {
+      "name": "Text Collage",
+      "blocks": [
+        {
+          "type": "image"
+        },
+        {
+          "type": "product"
+        },
+        {
+          "type": "collection"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
