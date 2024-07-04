@@ -30,7 +30,7 @@
     </div>
     <div class="text-collage-right-content">
       <div class="text-collage-heading">
-        {% if section.settings.heading-text %}
+        {% if section.settings.heading-text != blank %}
           <p id="heading-text">{{ section.settings.heading-text }}</p>
         {% else %}
           <p id="heading-text">Health Benefits</p>
@@ -38,25 +38,25 @@
       </div>
       <div class="texts">
         
-        {% if section.settings.first-text %}
+        {% if section.settings.first-text != blank %}
           <p id="first-text">{{ section.settings.first-text }}</p>
         {% else %}
           <p id="first-text">Calorie Control</p>
         {% endif %}
 
-        {% if section.settings.second-text %}
+        {% if section.settings.second-text != blank %}
           <p id="second-text">{{ section.settings.second-text }}</p>
         {% else %}
           <p id="second-text">Blood Sugar Management</p>
         {% endif %}
 
-        {% if section.settings.third-text %}
+        {% if section.settings.third-text != blank %}
           <p id="third-text">{{ section.settings.third-text }}</p>
         {% else %}
           <p id="third-text">Prevent Cavities</p>
         {% endif %}
 
-        {% if section.settings.fourth-text %}
+        {% if section.settings.fourth-text != blank %}
           <p id="fourth-text">{{ section.settings.fourth-text }}</p>
         {% else %}
           <p id="fourth-text">Suitable for Special Diets</p>
