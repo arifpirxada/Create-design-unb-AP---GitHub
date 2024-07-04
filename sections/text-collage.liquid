@@ -30,22 +30,41 @@
     </div>
     <div class="text-collage-right-content">
       <div class="text-collage-heading">
-        <p id="heading-text"></p>
+        {% if section.settings.heading-text %}
+          <p id="heading-text">{{ section.settings.heading-text }}</p>
+        {% else %}
+          <p id="heading-text">Health Benefits</p>
+        {% endif %}
       </div>
       <div class="texts">
-        <p id="first-text"></p>
-        <p id="second-text"></p>
-        <p id="third-text"></p>
-        <p id="fourth-text"></p>
+        
+        {% if section.settings.first-text %}
+          <p id="first-text">{{ section.settings.first-text }}</p>
+        {% else %}
+          <p id="first-text">Calorie Control</p>
+        {% endif %}
+
+        {% if section.settings.second-text %}
+          <p id="second-text">{{ section.settings.second-text }}</p>
+        {% else %}
+          <p id="second-text">Blood Sugar Management</p>
+        {% endif %}
+
+        {% if section.settings.third-text %}
+          <p id="third-text">{{ section.settings.third-text }}</p>
+        {% else %}
+          <p id="third-text">Prevent Cavities</p>
+        {% endif %}
+
+        {% if section.settings.fourth-text %}
+          <p id="fourth-text">{{ section.settings.fourth-text }}</p>
+        {% else %}
+          <p id="fourth-text">Suitable for Special Diets</p>
+        {% endif %}
+
       </div>
     </div>
   </div>
-
-  <div style="background-color: yellow; width: 30px; height: 30px"></div>
-  <div style="background-color: yellow; width: 30px; height: 30px"></div>
-  <div style="background-color: yellow; width: 30px; height: 30px"></div>
-  <div style="background-color: yellow; width: 30px; height: 30px"></div>
-  <div style="background-color: yellow; width: 30px; height: 30px"></div>
 {% comment %} {% if section.settings["left-image"] != blank %}
           
         {% endif %}

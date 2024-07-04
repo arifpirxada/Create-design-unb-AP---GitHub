@@ -3650,3 +3650,35 @@ body {
 .section-template--23024616472890__multicolumn_cTtqNY .page-width .slider-mobile-gutter .multicolumn-list {
   width: 95vw;
 }
+
+/* -------------  */
+/* Text collage */
+/* -------------  */
+
+.text-collage-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* padding: 2rem 13vw; */
+}
+
+.text-collage-left-image img {
+  width: 48vw;
+}
+
+.text-collage-right-content {
+  display: flex;
+}
+
+.text-collage-right-content .texts {
+  display: flex;
+}
+
+.text-collage-right-content .texts p {
+  background-color: #DEF0FF;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
