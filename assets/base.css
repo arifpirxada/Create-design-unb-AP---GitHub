@@ -3663,11 +3663,11 @@ body {
 }
 
 .text-collage-left-image img {
-  width: 48vw;
+  width: 42vw;
 }
 
 .text-collage-heading {
-  margin: 0.7rem;
+  margin: 1.3rem;
 }
 
 .text-collage-heading #heading-text {
@@ -3675,7 +3675,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 7rem;
-  margin: 1rem;
+  margin: 0 1rem;
   border-radius: 10px;
   background-color: #FBE9A1;
   font-weight: 600;
@@ -3683,9 +3683,9 @@ body {
 }
 
 .text-collage-right-content {
-  margin: 2rem;
-  min-width: 35vw;
-  max-width: 35vw;
+  margin: 0 2rem;
+  min-width: 42vw;
+  max-width: 42vw;
 }
 
 .text-collage-right-content .texts {
@@ -3702,7 +3702,8 @@ body {
   align-items: center;
   padding: 5px;
   flex: 0 0 45%;
-  height: 7rem;
+  height: 10rem;
   margin: 1rem;
   border-radius: 10px;
+  font-size: 18px;
 }
