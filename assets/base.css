@@ -3666,10 +3666,20 @@ body {
   width: 48vw;
 }
 
-.text-collage-right-content {
+.text-collage-heading #heading-text {
   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.text-collage-heading #heading-text {
+  background-color: #FBE9A1;
+  font-weight: 600;
 }
 
+.text-collage-right-content {
+  margin: 1rem;
+  min-width: 30vw;
+}
 .text-collage-right-content .texts {
   display: flex;
 }
