@@ -3659,7 +3659,7 @@ body {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  /* padding: 2rem 13vw; */
+  margin: 3rem 0;
 }
 
 .text-collage-left-image img {
@@ -3675,11 +3675,11 @@ body {
   justify-content: center;
   align-items: center;
   height: 7rem;
-  margin: 0 1rem;
+  margin: -1rem 1rem;
   border-radius: 10px;
   background-color: #FBE9A1;
   font-weight: 600;
-  font-size: 24px;
+  font-size: 26px;
 }
 
 .text-collage-right-content {
@@ -3701,9 +3701,9 @@ body {
   justify-content: center;
   align-items: center;
   padding: 5px;
-  flex: 0 0 45%;
-  height: 10rem;
+  flex: 0 0 43%;
+  height: 11rem;
   margin: 1rem;
   border-radius: 10px;
-  font-size: 18px;
+  font-size: 20px;
 }
