@@ -244,38 +244,6 @@
         "padding_bottom": 36
       }
     },
-    "collage_6DkKbn": {
-      "type": "collage",
-      "blocks": {
-        "image_LBMpj9": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Frame_33.png"
-          }
-        },
-        "product_cRHjb6": {
-          "type": "product",
-          "settings": {
-            "product": "",
-            "second_image": false
-          }
-        }
-      },
-      "block_order": [
-        "image_LBMpj9",
-        "product_cRHjb6"
-      ],
-      "settings": {
-        "heading": "<strong>Make the Switch to Sweeteners<\/strong>",
-        "heading_size": "h1",
-        "desktop_layout": "left",
-        "mobile_layout": "column",
-        "card_styles": "product-card-wrapper",
-        "color_scheme": "",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "text_collage_c6Vnx9": {
       "type": "text-collage",
       "settings": {
@@ -312,7 +280,6 @@
     "multicolumn_X9qbrh",
     "multicolumn_cTtqNY",
     "image_with_text_bVfraq",
-    "collage_6DkKbn",
     "text_collage_c6Vnx9",
     "image_banner_6NTGMC"
   ]
