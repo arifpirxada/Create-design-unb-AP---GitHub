@@ -50,6 +50,10 @@
   --text-alignment: var(--blog-card-text-alignment);
 }
 
+html {
+  overflow-x: hidden;
+}
+
 .contains-content-container,
 .content-container {
   --border-radius: var(--text-boxes-radius);
@@ -3706,4 +3710,18 @@ body {
   margin: 1.5rem;
   border-radius: 10px;
   font-size: 20px;
+  min-width: 29rem;
+}
+
+@media screen and (max-width: 800px) {
+  .text-collage-container {
+    flex-direction: column;
+  }
+  .text-collage-right-content {
+    flex-direction: 90vw;
+  }
+  .text-collage-left-image img {
+    width: 98vw;
+    margin-left: 1vw;
+  }
 }
