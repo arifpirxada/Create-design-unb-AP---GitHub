@@ -19,6 +19,28 @@
 {%- endstyle -%}
 
 <div class="color-{{ section.settings.color_scheme }} gradient isolate">
+
+  <div class="text-collage-container">
+    <div class="text-collage-left-image">
+      {% if section.settings.left-image %}
+        <img src="{{ section.settings.left-image | image_url }}" width="100" height="auto" alt="">
+      {% else %}
+        <img src="{{ "text-collage.png" | asset_img_url }}" width="100" height="auto" alt="">
+      {% endif %}
+    </div>
+    <div class="text-collage-right-content">
+      <div class="text-collage-heading">
+        <p id="heading-text"></p>
+      </div>
+      <div class="texts">
+        <p id="first-text"></p>
+        <p id="second-text"></p>
+        <p id="third-text"></p>
+        <p id="fourth-text"></p>
+      </div>
+    </div>
+  </div>
+
   <div style="background-color: yellow; width: 30px; height: 30px"></div>
   <div style="background-color: yellow; width: 30px; height: 30px"></div>
   <div style="background-color: yellow; width: 30px; height: 30px"></div>
