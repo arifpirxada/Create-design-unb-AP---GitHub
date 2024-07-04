@@ -3672,6 +3672,7 @@ body {
 
 .text-collage-heading {
   margin: 1.3rem;
+  min-width: 29rem;
 }
 
 .text-collage-heading #heading-text {
@@ -3715,10 +3716,11 @@ body {
 
 @media screen and (max-width: 800px) {
   .text-collage-container {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
   .text-collage-right-content {
-    flex-direction: 90vw;
+    min-width: 90vw;
+    max-width: 90vw;
   }
   .text-collage-left-image img {
     width: 98vw;
