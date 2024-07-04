@@ -3671,6 +3671,7 @@ body {
   justify-content: center;
   align-items: center;
 }
+
 .text-collage-heading #heading-text {
   background-color: #FBE9A1;
   font-weight: 600;
@@ -3680,8 +3681,10 @@ body {
   margin: 1rem;
   min-width: 23vw;
 }
+
 .text-collage-right-content .texts {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .text-collage-right-content .texts p {
@@ -3691,4 +3694,5 @@ body {
   justify-content: center;
   align-items: center;
   padding: 5px;
+  flex: 0 0 50%;
 }
