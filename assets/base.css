@@ -3667,7 +3667,7 @@ body {
 }
 
 .text-collage-heading {
-  margin: 2.7rem;
+  margin: 0.7rem;
 }
 
 .text-collage-heading #heading-text {
@@ -3683,9 +3683,9 @@ body {
 }
 
 .text-collage-right-content {
-  margin: 1rem;
-  min-width: 23vw;
-  max-width: 23vw;
+  margin: 2rem;
+  min-width: 35vw;
+  max-width: 35vw;
 }
 
 .text-collage-right-content .texts {
