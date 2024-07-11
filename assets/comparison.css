@@ -232,7 +232,7 @@
     }
 
     .vertical-line {
-        display: none;
+        width: 80vw;
     }
 
     .vertical-line-small {
