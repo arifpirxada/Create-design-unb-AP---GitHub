@@ -9,9 +9,9 @@
         <p class="point-heading">{{ block.settings.title }}</p>
         <p class="point-desc">{{ block.settings.description }}</p>
 
-        {% comment %} {% unless forloop.last %} {% endcomment %}
+        {% unless forloop.last %}
           <span class="vertical-line"></span>
-        {% comment %} {% endunless %} {% endcomment %}
+        {% endunless %}
       </div>
 
     {% endfor %}
