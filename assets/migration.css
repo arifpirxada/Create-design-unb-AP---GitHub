@@ -17,6 +17,10 @@
     margin-top: 2rem;
 }
 
+.points > .d-flex {
+    margin-bottom: 1rem;
+}
+
 .point-heading {
     padding: 0.3rem 2.5rem;
     font-size: xx-large;
