@@ -5,7 +5,12 @@
 
   {% assign logo_image = section.settings.logo %}
   {% if logo_image != blank %}
-    <img src="{{ logo_image | img_url: 'medium' }}" alt="Logo">
+    <img
+      width="200"
+      height="auto"
+      class="info-logo"
+      src="{{ "shopify-logo.png" | asset_url }}"
+      alt="shopify logo">
   {% else %}
     <img
       width="200"
