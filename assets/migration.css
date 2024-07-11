@@ -27,6 +27,10 @@
     padding: 0 0.5rem;
 }
 
+.point-content {
+    max-width: 33%;
+}
+
 .d-flex {
     display: flex;
 }
