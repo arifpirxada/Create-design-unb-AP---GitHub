@@ -16,9 +16,52 @@
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "info_in_points_8YWEj7": {
+      "type": "info-in-points",
+      "blocks": {
+        "text_aQHLpc": {
+          "type": "text",
+          "settings": {
+            "title": "Security and Reliability",
+            "description": ""
+          }
+        },
+        "text_gkqt9m": {
+          "type": "text",
+          "settings": {
+            "title": "Commerce Capabilities",
+            "description": ""
+          }
+        },
+        "text_zpt7pL": {
+          "type": "text",
+          "settings": {
+            "title": "Reduced TCO, Improved ROI",
+            "description": ""
+          }
+        },
+        "text_eNjCEg": {
+          "type": "text",
+          "settings": {
+            "title": "Usability",
+            "description": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_aQHLpc",
+        "text_gkqt9m",
+        "text_zpt7pL",
+        "text_eNjCEg"
+      ],
+      "settings": {
+        "heading": "There are four primary reasons why brands migrate to Shopify"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "info_in_points_8YWEj7"
   ]
 }
