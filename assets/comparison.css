@@ -100,6 +100,13 @@
     font-size: 4rem;
 }
 
+@media screen and (max-width: 650px) {
+    .topics p {
+        text-align: left;
+        font-size: 2.5rem;
+    }
+}
+
 .topics {
     display: flex;
     justify-content: center;
