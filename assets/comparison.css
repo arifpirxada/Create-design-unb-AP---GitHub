@@ -173,6 +173,12 @@
     right: 38%;
 }
 
+.percentage-container {
+    background: #8aff8ae0;
+    padding: 1rem;
+    border-radius: 20px;
+}
+
 .percentage-container > .percentage {
     margin: 0;
     font-size: 7.5rem;
