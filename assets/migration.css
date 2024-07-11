@@ -1,20 +1,93 @@
 .info-points-container {
+    padding-top: 0;
     padding: 3rem 5rem;
     margin: 3rem 0;
+}
+
+.info-heading {
+    font-weight: 800;
+    color: #128e12;
+    font-size: 9rem;
+    margin-top: 1rem;
 }
 
 .points {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.points > .point {
+    margin-bottom: 1rem;
+    max-width: 25%;
+}
+
+.point-heading {
+    padding: 0.3rem 2.5rem;
+    font-size: xx-large;
+    margin: 0;
+}
+
+.point-desc {
+    font-size: 1.7rem;
+    margin: 0 1.5rem;
+}
+
+.point-content {
+    max-width: 100%;
+}
+
+.d-flex {
+    display: flex;
+}
+
+@media screen and (max-width: 1100px) {
+    .points > .point {
+        max-width: 50% !important;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .points > .point { 
+        max-width: 90% !important;
+    }
+}
+
+@media screen and (max-width: 1290px) {
+    .points {
+        justify-content: start;
+    }
+    .info-heading {
+        margin: 0;
+        font-size: 7rem;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .points > div {
+        flex-direction: column;
+    }
+    .info-heading {
+        font-size: 5rem;
+    }
 }
 
 .vertical-line {
-    width: 1.7px;
+    /* width: 1.7px;
     height: 70%;
     position: absolute;
     background: linear-gradient(45deg, #79dd38, #3a6e06);
     right: 40%;
-    right: 40%;
+    right: 40%; */
+
+    position: relative;
+    background: linear-gradient(45deg, #79dd38, #3a6e06);
+    display: block;
+    min-width: 1.7px;
+    height: 100%;
+    position: relative;
+    background: linear-gradient(45deg, #79dd38, #3a6e06);
 }
 
 @media screen and (max-width: 900px) {
