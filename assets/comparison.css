@@ -60,7 +60,7 @@
 
 @media screen and (max-width: 550px) {
     .info-desc {
-        max-width: 92;
+        max-width: 92vw !important;
     }
     .info-banner-container {
         padding: 4rem 1.5rem;
