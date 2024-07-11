@@ -113,6 +113,8 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    position: relative;
+    gap: 40px;
 }
 
 .topics p {
@@ -132,6 +134,28 @@
     .topics p {
         text-align: left;
         font-size: 2.5rem;
+    }
+}
+
+.topics-vertical-line {
+    height: 100% !important;
+    left: 50%;
+}
+
+@media screen and (max-width: 1000px) {
+
+    .topics-vertical-line {
+        position: relative !important;
+        margin-top: 1rem;
+        margin-bottom: 4rem;
+        width: 80vw !important;
+        height: 1.7px !important;
+        left: 0;
+        margin: 0;
+    }
+
+    .topics {
+        gap: 2px;
     }
 }
 
