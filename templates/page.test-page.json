@@ -65,6 +65,18 @@
     },
     "topic_item_HWjccL": {
       "type": "topic-item",
+      "blocks": {
+        "text_eFDbrn": {
+          "type": "text",
+          "settings": {
+            "percentage": "30%",
+            "content": "more expensive than Shopify."
+          }
+        }
+      },
+      "block_order": [
+        "text_eFDbrn"
+      ],
       "settings": {
         "left-heading": "Platform and Ecommerce",
         "left-content": "Shopify respondents reported the lowest platform costs on average, likely due to competitive\nplatform fees and fewer third-party application needs. In contrast, platforms like WooCommerce\nrequire more support for managing and maintaining due to necessary version upgrades and\nsecurity patches, which is supported as other platforms are 30% more expensive than Shopify.",
