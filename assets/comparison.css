@@ -179,13 +179,13 @@
     border-radius: 20px;
 }
 
-.percentage-container > .percentage {
+.percentage-container>.percentage {
     margin: 0;
     font-size: 7.5rem;
     line-height: 0.8;
 }
 
-.percentage-container > .percentage-content {
+.percentage-container>.percentage-content {
     margin: 1rem 0.5rem;
     font-size: 2rem;
 }
@@ -219,11 +219,15 @@
         gap: 4rem;
     }
 
-    .left-section, .right-section {
+    .left-section,
+    .right-section {
         width: 90%;
     }
 
     .vertical-line {
         transform: rotate(90deg);
+        position: relative;
+        height: 80vw;
+        left: 0;
     }
 }
