@@ -238,6 +238,6 @@
     }
 
     .vertical-line-small {
-        display: none;
+        display: block;
     }
 }
