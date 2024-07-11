@@ -19,6 +19,7 @@
 }
 
 .info-banner-container img {
+    align-self: start;
     margin-top: 2rem;
 }
 
