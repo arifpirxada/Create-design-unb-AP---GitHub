@@ -15,6 +15,10 @@
     position: relative;
 }
 
+.info-banner-container img {
+    margin-top: 2rem;
+}
+
 .info-heading {
     font-size: 10.5rem;
     margin-top: 2rem;
