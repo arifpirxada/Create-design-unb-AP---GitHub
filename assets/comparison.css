@@ -213,6 +213,8 @@
     left: 10%;
 }
 
-@media screen and (max-width: ) {
-    
+@media screen and (max-width: 900px) {
+    .topic-item-container {
+        flex-direction: column;
+    }
 }
