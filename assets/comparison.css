@@ -136,14 +136,14 @@
 /* Styling for Topic Item => */
 
 .topic-item-container {
-    padding: 1rem;
+    padding: 1rem 3rem;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .left-section {
-    width: 65%;
+    width: 60%;
 }
 
 .right-section {
