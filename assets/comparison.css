@@ -140,6 +140,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 16px;
 }
 
 .left-section {
@@ -148,4 +149,8 @@
 
 .right-section {
     width: 30%;
+}
+
+.vertical-line {
+    transform: rotate(90deg);
 }
