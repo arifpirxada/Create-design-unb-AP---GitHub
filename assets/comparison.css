@@ -40,7 +40,7 @@
         font-size: 6rem;
     }
     .info-desc {
-        margin-top: 1rem;
+        margin-top: 2rem !important;
     }
 }
 
