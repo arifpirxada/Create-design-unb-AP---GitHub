@@ -273,7 +273,7 @@
     }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 500px) {
     .left-section,
     .right-section {
         width: 100%;
