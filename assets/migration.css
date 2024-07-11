@@ -33,7 +33,7 @@
 
 @media screen and (max-width: 900px) {
     .points > div {
-        justify-content: start;
+        flex-direction: column;
     }
 }
 
