@@ -33,11 +33,19 @@
             "title": "Commerce Capabilities",
             "description": ""
           }
+        },
+        "text_zpt7pL": {
+          "type": "text",
+          "settings": {
+            "title": "Reduced TCO, Improved ROI",
+            "description": ""
+          }
         }
       },
       "block_order": [
         "text_aQHLpc",
-        "text_gkqt9m"
+        "text_gkqt9m",
+        "text_zpt7pL"
       ],
       "settings": {
         "heading": "There are four primary reasons why brands migrate to Shopify"
