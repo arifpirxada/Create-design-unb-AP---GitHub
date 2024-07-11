@@ -39,6 +39,9 @@
     .info-heading {
         font-size: 6rem;
     }
+    .info-desc {
+        margin-top: ;
+    }
 }
 
 @media screen and (max-width: 720px) {
