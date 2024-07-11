@@ -145,7 +145,7 @@
 @media screen and (max-width: 1000px) {
 
     .topics-vertical-line {
-        position: relative;
+        position: relative !important;
         margin-top: 1rem;
         margin-bottom: 4rem;
         width: 80vw;
