@@ -5,6 +5,7 @@
 
 .points {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .vertical-line {
