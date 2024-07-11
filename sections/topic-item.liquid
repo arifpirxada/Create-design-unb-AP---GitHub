@@ -1,0 +1,62 @@
+{{ 'comparison.css' | asset_url | stylesheet_tag }}
+
+<div class="topic-item-container">
+
+  <div class="left-section">
+    <h3>{{ section.settings.left-heading }}</h3>
+    <p>{{ section.settings.left-content }}</p>
+  </div>
+
+  <div class="right-section">
+    <h3>{{ section.settings.right-heading }}</h3>
+    <p>{{ section.settings.right-content }}</p>
+    {% if section.settings.button-text != blank %}
+      <a href="{{ section.settings.button-link }}">{{ section.settings.button-text }}</a>
+    {% endif %}
+  </div>
+
+</div>
+
+{% schema %}
+  {
+    "name": "Topic Item",
+    "tag": "section",
+    "class": "section",
+    "settings": [
+      {
+        "type": "text",
+        "id": "left-heading",
+        "label": "Left heading"
+      },
+      {
+        "type": "textarea",
+        "id": "left-content",
+        "label": "Left content"
+      },
+      {
+        "type": "text",
+        "id": "right-heading",
+        "label": "Right heading"
+      },
+      {
+        "type": "textarea",
+        "id": "right-content",
+        "label": "Right content"
+      }, {
+        "type": "text",
+        "id": "button-text",
+        "label": "Button Text",
+        "default": "Read More"
+      }, {
+        "type": "url",
+        "id": "button-link",
+        "label": "Button Link"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Topic Item"
+      }
+    ]
+  }
+{% endschema %}
