@@ -173,7 +173,7 @@
     right: 40%;
 }
 
-.vertical-line-mobile {
+.vertical-line-small {
     display: none;
     width: 1.7px;
     height: 70%;
@@ -234,6 +234,10 @@
     }
 
     .vertical-line {
+        display: none;
+    }
+
+    .vertical-line-small {
         display: none;
     }
 }
