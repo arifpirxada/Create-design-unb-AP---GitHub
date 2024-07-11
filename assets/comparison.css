@@ -216,7 +216,7 @@
 @media screen and (max-width: 900px) {
     .topic-item-container {
         flex-direction: column;
-        gap: 4rem;
+        gap: 0rem;
     }
 
     .left-section,
