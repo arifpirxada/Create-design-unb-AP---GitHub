@@ -147,6 +147,12 @@
     margin: 2rem 0;
 }
 
+@media screen and (max-width: 900px) {
+    .topic-item-container {
+        flex-direction: column;
+    }
+}
+
 .left-section {
     width: 50%;
 }
@@ -213,8 +219,3 @@
     left: 10%;
 }
 
-@media screen and (max-width: 900px) {
-    .topic-item-container {
-        flex-direction: column;
-    }
-}
