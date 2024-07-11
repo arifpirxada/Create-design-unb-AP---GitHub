@@ -5,11 +5,15 @@
 
   <div class="points">
     {% for block in section.blocks %}
-      <p class="point-heading">{{ block.settings.title }}</p>
-      <p class="point-desc">{{ block.settings.description }}</p>
-      
-      
-      
+      <div>
+        <p class="point-heading">{{ block.settings.title }}</p>
+        <p class="point-desc">{{ block.settings.description }}</p>
+
+        {% unless forloop.last %}
+          <span class="vertical-line"></span>
+        {% endunless %}
+      </div>
+
     {% endfor %}
   </div>
 
@@ -36,8 +40,7 @@
             "type": "text",
             "id": "title",
             "label": "Title"
-          },
-          {
+          }, {
             "type": "richtext",
             "id": "description",
             "label": "Description"
