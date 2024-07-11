@@ -114,5 +114,7 @@
 }
 
 @media screen and (max-width: 1000px) {
-    
+    .topics p {
+        width: 90%;
+    }
 }
