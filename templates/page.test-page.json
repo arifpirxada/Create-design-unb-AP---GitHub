@@ -62,11 +62,23 @@
       "settings": {
         "title": "We'll cover four TCO drivers in this comparison:"
       }
+    },
+    "topic_item_HWjccL": {
+      "type": "topic-item",
+      "settings": {
+        "left-heading": "Platform and Ecommerce",
+        "left-content": "Shopify respondents reported the lowest platform costs on average, likely due to competitive\nplatform fees and fewer third-party application needs. In contrast, platforms like WooCommerce\nrequire more support for managing and maintaining due to necessary version upgrades and\nsecurity patches, which is supported as other platforms are 30% more expensive than Shopify.",
+        "right-heading": "",
+        "right-content": "",
+        "button-text": "Read More",
+        "button-link": ""
+      }
     }
   },
   "order": [
     "main",
     "info_banner_qtMVkn",
-    "topics_LmRe7J"
+    "topics_LmRe7J",
+    "topic_item_HWjccL"
   ]
 }
