@@ -1,0 +1,35 @@
+{% layout none %}
+{{ 'comparison.css' | asset_url | stylesheet_tag }}
+
+<div class="info-banner-container">
+  <img
+    width="70"
+    height="auto"
+    class="info-logo"
+    src="{{ "shopify-logo" | image_url }}"
+    alt="shopify logo">
+  <h1 class="info-heading">Shopify vs. Adobe Commerce TCO comparison*</h1>
+  <p class="info-desc">New research from a leading independent consulting firm found that costs are 41% higher on Adobe Commerce (Magento) than on Shopify, on average. This, combined with the fact that Shopify’s checkout converts 5% better than Adobe, paints a clear picture—it not only pays to be on Shopify, it costs you if you’re not.</p>
+  <p class="info-bottom-text">*According to research commissioned by Shopify from a leading independent consulting firm to study TCO across major platforms in North Americaunderstand Shopify’s relative positioning based on objective research methods.</p>
+</div>
+
+{% schema %}
+  {
+    "name": "Info Banner",
+    "tag": "section",
+    "class": "section",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "show_text_below",
+        "default": true,
+        "label": "t:sections.email-signup-banner.settings.show_text_below.label"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Info Banner"
+      }
+    ]
+  }
+{% endschema %}
