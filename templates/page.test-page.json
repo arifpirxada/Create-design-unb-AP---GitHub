@@ -131,6 +131,17 @@
         "button-text": "Read More",
         "button-link": ""
       }
+    },
+    "topic_item_UiEnQi": {
+      "type": "topic-item",
+      "settings": {
+        "left-heading": "Conversion Rates",
+        "left-content": "In some TCO calculations, the difference in conversion rates is treated as 'additional costs'\nbecause it represents value that businesses would capture if they were on Shopify instead. Assuming a 10% margin on goods sold, Shopify's average 17% higher conversion rate than\nWooCommerce's translated to a roughly 1.7& TCO offset when expressed as a percentage of the\nTCO.",
+        "right-heading": "",
+        "right-content": "",
+        "button-text": "Read More",
+        "button-link": ""
+      }
     }
   },
   "order": [
@@ -139,6 +150,7 @@
     "topics_LmRe7J",
     "topic_item_HWjccL",
     "topic_item_dWLdKx",
-    "topic_item_WnpR9E"
+    "topic_item_WnpR9E",
+    "topic_item_UiEnQi"
   ]
 }
