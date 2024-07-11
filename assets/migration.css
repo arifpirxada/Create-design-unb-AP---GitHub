@@ -48,6 +48,12 @@
     }
 }
 
+@media screen and (max-width: 900px) {
+    .points > .point { 
+        max-width: 90% !important;
+    }
+}
+
 @media screen and (max-width: 1290px) {
     .points {
         justify-content: start;
