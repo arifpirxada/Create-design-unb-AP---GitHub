@@ -225,10 +225,19 @@
     }
 
     .vertical-line {
+<<<<<<< HEAD
+        position: relative;
+        margin-top: 1rem;
+        margin-bottom: 4rem;
+        width: 80vw;
+        height: 1.7px;
+        right: 0;
+=======
         width: 80vw;
     }
 
     .vertical-line-small {
         display: block;
+>>>>>>> 44c0eb474eda69913248e049b5c956a5a74619ce
     }
 }
