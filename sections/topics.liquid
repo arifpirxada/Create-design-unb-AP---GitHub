@@ -1,8 +1,10 @@
 {{ 'comparison.css' | asset_url | stylesheet_tag }}
 
 <div class="topics-container">
-    if 
-    <h2 class="content-heading">{{ section.settings.title }}</h2>
+    {% if section.settings.title != blank %}
+        <h2 class="content-heading">{{ section.settings.title }}</h2>
+    {% else %}
+    {% endif %}
 </div>
 
 {% schema %}
