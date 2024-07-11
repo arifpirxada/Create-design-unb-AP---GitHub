@@ -4,9 +4,8 @@
   <h2 class="content-heading">{{ section.settings.title }}</h2>
 
   <div class="topics">
-    {%  assign i = 1 %}
     {% for block in section.blocks %}
-      <p>{{ i }}. {{ block.settings.content }}</p>
+      <p>{{ forloop.index }}. {{ block.settings.content }}</p>
     {% endfor %}
   </div>
 
