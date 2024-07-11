@@ -10,8 +10,8 @@
   <div class="right-section">
     <div>
       {% for block in section.blocks %}
-        <p class="percentage">{{ block.percentage }}</p>
-        <p>{{ block.content }}</p>
+        <p class="percentage">{{ block.settings.percentage }}</p>
+        <p>{{ block.settiongs.content }}</p>
       {% endfor %}
     </div>
     <div>
