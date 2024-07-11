@@ -200,44 +200,4 @@
     color: #000000;
     font-weight: 600;
     width: fit-content;
-    position: relative;
-    padding-left: 5.5rem;
-}
-
-.btn-arrow {
-    font-size: 30px;
-    line-height: 0.1;
-    margin-right: 10px;
-    position: absolute;
-    top: 45%;
-    left: 10%;
-}
-
-@media screen and (max-width: 900px) {
-    .topic-item-container {
-        flex-direction: column;
-        gap: 0rem;
-    }
-
-    .left-section,
-    .right-section {
-        width: 90%;
-    }
-
-    .vertical-line {
-<<<<<<< HEAD
-        position: relative;
-        margin-top: 1rem;
-        margin-bottom: 4rem;
-        width: 80vw;
-        height: 1.7px;
-        right: 0;
-=======
-        width: 80vw;
-    }
-
-    .vertical-line-small {
-        display: block;
->>>>>>> 44c0eb474eda69913248e049b5c956a5a74619ce
-    }
 }
