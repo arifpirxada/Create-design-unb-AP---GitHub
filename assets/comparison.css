@@ -181,7 +181,7 @@
 }
 
 
-.percentage-container>.percentage {
+.percentage-container > .percentage {
     margin: 0;
     font-size: 7.5rem;
     line-height: 0.8;
