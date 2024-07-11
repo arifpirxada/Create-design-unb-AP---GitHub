@@ -1,7 +1,9 @@
 {{ 'comparison.css' | asset_url | stylesheet_tag }}
 
 {%- style -%}
-    .rich-text_wrapper > 
+    .rich-text_wrapper > h3 {
+        font-si
+    }
 {%- endstyle -%}
 
 <div class="isolate{% unless section.settings.full_width %} page-width{% endunless %}">
