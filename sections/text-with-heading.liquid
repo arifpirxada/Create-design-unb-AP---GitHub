@@ -1,14 +1,23 @@
 {{ 'comparison.css' | asset_url | stylesheet_tag }}
 
-<div class="isolate{% unless section.settings.full_width %} page-width{% endunless %}">
-  <div class="rich-text content-container rich-text--full-width content-container--full-width section-{{ section.id }}-padding">
-    <div class="rich-text__wrapper">
-      <div class="rich-text__blocks">
-        <h3>{{ section.settings.heading }}</h3>
-        <h3>{{ section.settings.content }}</h3>
-      </div>
-    </div>
-  </div>
+<style>
+
+  .section-container > h3 {
+    font-size: 4rem;
+    margin: 1.5rem 0;
+  }
+  .section-container > p {
+    font-size: 2.2rem;
+  }
+  .section-container {
+    padding: 0;
+    margin: 3rem 14rem;
+  }
+</style>
+
+<div class="section-container isolate{% unless section.settings.full_width %} page-width{% endunless %}">
+  <h3>{{ section.settings.heading }}</h3>
+  <p>{{ section.settings.content }}</p>
 </div>
 
 {% schema %}
