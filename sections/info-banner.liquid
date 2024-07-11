@@ -2,7 +2,7 @@
 {{ 'comparison.css' | asset_url | stylesheet_tag }}
 
 <div class="info-banner-container">
-    
+
   {% assign logo_image = section.settings.logo %}
   {% if logo_image != blank %}
     <img src="{{ logo_image | img_url: 'medium' }}" alt="Logo">
