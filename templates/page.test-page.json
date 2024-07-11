@@ -27,6 +27,24 @@
     },
     "topics_LmRe7J": {
       "type": "topics",
+      "blocks": {
+        "text_AVLK39": {
+          "type": "text",
+          "settings": {
+            "content": "Platform Fees and Ecommerce Stack Costs"
+          }
+        },
+        "text_9eixUD": {
+          "type": "text",
+          "settings": {
+            "content": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_AVLK39",
+        "text_9eixUD"
+      ],
       "settings": {
         "title": "We'll cover four TCO drivers in this comparison:"
       }
