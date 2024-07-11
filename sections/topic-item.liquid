@@ -8,8 +8,16 @@
   </div>
 
   <div class="right-section">
-    <h3>{{ section.settings.right-heading }}</h3>
-    <p>{{ section.settings.right-content }}</p>
+    <div>
+      {% for block in section.blocks %}
+        <p class="percentage">{{ block.percentage }}</p>
+        <p>{{ block.content }}</p>
+      {% endfor %}
+    </div>
+    <div>
+      <h3>{{ section.settings.right-heading }}</h3>
+      <p>{{ section.settings.right-content }}</p>
+    </div>
     {% if section.settings.button-text != blank %}
       <a href="{{ section.settings.button-link }}">{{ section.settings.button-text }}</a>
     {% endif %}
@@ -51,6 +59,23 @@
         "type": "url",
         "id": "button-link",
         "label": "Button Link"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "text",
+        "name": "Percentage Block",
+        "settings": [
+          {
+            "type": "text",
+            "id": "percentage",
+            "label": "Percentage"
+          }, {
+            "type": "text",
+            "id": "content",
+            "label": "Content"
+          }
+        ]
       }
     ],
     "presets": [
