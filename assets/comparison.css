@@ -201,3 +201,12 @@
     font-weight: 600;
     width: fit-content;
 }
+
+.btn-arrow {
+    font-size: 30px;
+    line-height: 0.1;
+    margin-right: 10px;
+    position: absolute;
+    top: 45%;
+    left: 10%;
+}
