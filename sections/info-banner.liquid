@@ -2,6 +2,14 @@
 {{ 'comparison.css' | asset_url | stylesheet_tag }}
 
 <div class="info-banner-container">
+    
+  {% assign logo_image = section.settings.logo %}
+  {% if logo_image != blank %}
+    <img src="{{ logo_image | img_url: 'medium' }}" alt="Logo">
+  {% else %}
+    <img src="/path/to/default-image.jpg" alt="Default Logo">
+  {% endif %}
+
   <img
     width="200"
     height="auto"
@@ -20,12 +28,15 @@
     "class": "section",
     "settings": [
       {
+        "type": "image_picker",
+        "id": "logo",
+        "label": "Logo"
+      }, {
         "type": "text",
         "id": "heading",
         "default": "Shopify vs Woocommerce Cost",
         "label": "Heading"
-      },
-      {
+      }, {
         "type": "text",
         "id": "description",
         "default": "Total Cost of Ownership (TCO) is used by enterprises to assess the direct and indirect costs incurred with a given purchase or platform. Comparing WooCommerce and Shopify for your ecommerce needs, we have found that costs are 57% higher on WooCommerce than on Shopify.",
