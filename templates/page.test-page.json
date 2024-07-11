@@ -164,6 +164,9 @@
         "heading_j8qfHp",
         "text_bCAR3C"
       ],
+      "custom_css": [
+        ".rich-text__text h2 {text-align: left;}"
+      ],
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
