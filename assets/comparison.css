@@ -15,7 +15,7 @@
     position: relative;
 }
 
-.info-banner-container img {
+.info-banner-container > img {
     width: 12rem;
 }
 
