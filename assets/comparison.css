@@ -167,10 +167,10 @@
 
 .vertical-line {
     width: 1.7px;
-    height: 90%;
+    height: 80%;
     position: absolute;
     background: linear-gradient(45deg, #79dd38, #3a6e06);
-    right: 38%;
+    right: 40%;
 }
 
 .percentage-container {
