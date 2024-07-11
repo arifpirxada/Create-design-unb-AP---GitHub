@@ -153,5 +153,5 @@
 
 .vertical-line {
     transform: rotate(90deg);
-    width: 5px;
+    width: 100%;
 }
