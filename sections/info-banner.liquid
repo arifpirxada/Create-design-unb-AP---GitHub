@@ -12,12 +12,12 @@
       src="{{ logo_image | image_url }}"
       alt="shopify logo">
   {% else %}
-    <img
+    {% comment %} <img
       width="200"
       height="auto"
       class="info-logo"
       src="{{ "shopify-logo.png" | asset_url }}"
-      alt="shopify logo">
+      alt="shopify logo"> {% endcomment %}
   {% endif %}
 
   <h1 class="info-heading">Shopify vs. Adobe Commerce TCO comparison*</h1>
