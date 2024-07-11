@@ -10,7 +10,9 @@
   <div class="right-section">
     <h3>{{ section.settings.right-heading }}</h3>
     <p>{{ section.settings.right-content }}</p>
-    
+    {% if section.settings.button-text != blank %}
+      <button type="button"></button>
+    {% endif %}
   </div>
 
 </div>
@@ -42,7 +44,7 @@
         "label": "Right content"
       }, {
         "type": "text",
-        "id": "button_text",
+        "id": "button-text",
         "label": "Button Text",
         "default": "Read More"
       }, {
