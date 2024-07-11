@@ -77,7 +77,6 @@
         "announcement_fMxma4",
         "announcement_464qA7"
       ],
-      "disabled": true,
       "settings": {
         "color_scheme": "scheme-5",
         "show_line_separator": true,
@@ -90,7 +89,6 @@
     },
     "header": {
       "type": "header",
-      "disabled": true,
       "settings": {
         "logo_position": "middle-left",
         "menu": "main-menu",
