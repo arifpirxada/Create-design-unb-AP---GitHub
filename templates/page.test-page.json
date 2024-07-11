@@ -39,11 +39,18 @@
           "settings": {
             "content": "Operational and Support Costs"
           }
+        },
+        "text_LGDBgw": {
+          "type": "text",
+          "settings": {
+            "content": "Implementation and Setup Costs"
+          }
         }
       },
       "block_order": [
         "text_AVLK39",
-        "text_9eixUD"
+        "text_9eixUD",
+        "text_LGDBgw"
       ],
       "settings": {
         "title": "We'll cover four TCO drivers in this comparison:"
