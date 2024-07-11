@@ -20,6 +20,17 @@
       alt="shopify logo">
   {% endif %}
 
+  {% assign heading_text = section.settings.heading %}
+  {% assign description_text = section.settings.description %}
+
+  <h1>{{ heading_text | default: 'Shopify vs Woocommerce Cost' }}</h1>
+
+  {% if description_text != blank %}
+    <p>{{ description_text }}</p>
+  {% else %}
+    <p>Total Cost of Ownership (TCO) is used by enterprises to assess the direct and indirect costs incurred with a given purchase or platform. Comparing WooCommerce and Shopify for your ecommerce needs, we have found that costs are 57% higher on WooCommerce than on Shopify.</p>
+  {% endif %}
+  
   <h1 class="info-heading">Shopify vs. Adobe Commerce TCO comparison*</h1>
   <p class="info-desc">New research from a leading independent consulting firm found that costs are 41% higher on Adobe Commerce (Magento) than on Shopify, on average. This, combined with the fact that Shopify’s checkout converts 5% better than Adobe, paints a clear picture—it not only pays to be on Shopify, it costs you if you’re not.</p>
   <p class="info-bottom-text">*According to research commissioned by Shopify from a leading independent consulting firm to study TCO across major platforms in North Americaunderstand Shopify’s relative positioning based on objective research methods.</p>
@@ -35,8 +46,7 @@
         "type": "image_picker",
         "id": "logo",
         "label": "Logo"
-      },
-      {
+      }, {
         "type": "text",
         "id": "heading",
         "default": "Shopify vs Woocommerce Cost",
