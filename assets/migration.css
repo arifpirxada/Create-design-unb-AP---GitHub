@@ -3,6 +3,12 @@
     margin: 3rem 0;
 }
 
+.info-heading {
+    font-weight: 800;
+    color: #128e12;
+    font-size: 9rem;
+}
+
 .points {
     display: flex;
     flex-wrap: wrap;
