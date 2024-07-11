@@ -11,7 +11,7 @@
     <h3>{{ section.settings.right-heading }}</h3>
     <p>{{ section.settings.right-content }}</p>
     {% if section.settings.button-text != blank %}
-      <a href="">{{ section.settings.button-text }}</a>
+      <a href="{{ section.settings.button-link }}">{{ section.settings.button-text }}</a>
     {% endif %}
   </div>
 
@@ -49,7 +49,7 @@
         "default": "Read More"
       }, {
         "type": "url",
-        "id": "button_link",
+        "id": "button-link",
         "label": "Button Link"
       }
     ],
