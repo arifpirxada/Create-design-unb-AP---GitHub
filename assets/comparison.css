@@ -221,4 +221,8 @@
     .left-section, .right-section {
         width: 90%;
     }
+
+    .vertical-line {
+        transform: rotate(90deg);
+    }
 }
