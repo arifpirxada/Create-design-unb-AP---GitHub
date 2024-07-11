@@ -1,11 +1,7 @@
 {{ 'comparison.css' | asset_url | stylesheet_tag }}
 
 <div class="topics-container">
-    {% if section.settings.title != blank %}
-        <h2 class="content-heading">{{ section.settings.title }}</h2>
-    {% else %}    
-        <h2 class="content-heading">We'll cover four TCO drivers in this comparison:</h2>
-    {% endif %}
+  <h2 class="content-heading">{{ section.settings.title }}</h2>
 </div>
 
 {% schema %}
