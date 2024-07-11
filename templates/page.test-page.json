@@ -108,6 +108,29 @@
         "button-text": "Read More",
         "button-link": ""
       }
+    },
+    "topic_item_WnpR9E": {
+      "type": "topic-item",
+      "blocks": {
+        "text_Fpm46h": {
+          "type": "text",
+          "settings": {
+            "percentage": "49%",
+            "content": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_Fpm46h"
+      ],
+      "settings": {
+        "left-heading": "Implementation and Set up Costs",
+        "left-content": "Shopify respondents reported the lowest implementation costs due to its straightforward\noperation and reduced need for developer support. Open-source platforms like WooCommerce\nrequire additional infrastructure investments, such as hosting, as they need scalable computing\nand security setups to manage large web traffic and transactions.",
+        "right-heading": "",
+        "right-content": "WooCommerce has 49%\nhigher implementation costs and is 41% slower to set up and launch a storefront compared to\nShopify.",
+        "button-text": "Read More",
+        "button-link": ""
+      }
     }
   },
   "order": [
@@ -115,6 +138,7 @@
     "info_banner_qtMVkn",
     "topics_LmRe7J",
     "topic_item_HWjccL",
-    "topic_item_dWLdKx"
+    "topic_item_dWLdKx",
+    "topic_item_WnpR9E"
   ]
 }
