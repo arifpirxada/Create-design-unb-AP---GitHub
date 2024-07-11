@@ -153,6 +153,10 @@
         left: 0;
         margin: 0;
     }
+
+    .topics {
+        gap: 16px;
+    }
 }
 
 /* Styling for Topic Item => */
