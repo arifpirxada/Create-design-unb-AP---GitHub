@@ -22,6 +22,10 @@
     font-size: xx-large;
 }
 
+.point-desc {
+    
+}
+
 .d-flex {
     display: flex;
 }
@@ -41,7 +45,7 @@
         flex-direction: column;
     }
     .info-heading {
-        font-size: 7rem;
+        font-size: 5rem;
     }
 }
 
