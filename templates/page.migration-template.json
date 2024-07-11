@@ -16,9 +16,16 @@
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "info_in_points_8YWEj7": {
+      "type": "info-in-points",
+      "settings": {
+        "heading": "There are four primary reasons why brands migrate to Shopify"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "info_in_points_8YWEj7"
   ]
 }
