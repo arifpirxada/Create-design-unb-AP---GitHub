@@ -43,6 +43,10 @@
     display: flex;
 }
 
+@media screen and (max-width: ) {
+    
+}
+
 @media screen and (max-width: 1290px) {
     .points {
         justify-content: start;
