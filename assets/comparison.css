@@ -176,7 +176,7 @@
 .vertical-line-small {
     display: none;
     width: 1.7px;
-    height: 80%;
+    height: 80vw;
     background: linear-gradient(45deg, #79dd38, #3a6e06);
 }
 
