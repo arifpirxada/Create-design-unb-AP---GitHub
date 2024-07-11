@@ -2,6 +2,16 @@
 
 <div class="topics-container">
   <h2 class="content-heading">{{ section.settings.title }}</h2>
+
+  {% for block in section.blocks %}
+    {% case block.type %}
+      {% when 'text' %}
+        <p>{{ block.settings.content }}</p>
+      {% else %}
+        {# Handle other block types if necessary #}
+    {% endcase %}
+  {% endfor %}
+  
 </div>
 
 {% schema %}
