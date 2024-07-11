@@ -142,13 +142,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 4rem;
+    gap: 8rem;
     position: relative;
     margin: 2rem 0;
 }
 
 .left-section {
-    width: 55%;
+    width: 50%;
 }
 
 .left-section h3 {
