@@ -153,9 +153,9 @@
 }
 
 .vertical-line {
-    width: 3px;
+    width: 2px;
     height: 100%;
-    border-radius: 20px;
     position: absolute;
-    background: black;
+    background: linear-gradient(45deg, #79dd38, #3a6e06);
+    right: inherit;
 }
