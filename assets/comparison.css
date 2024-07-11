@@ -173,15 +173,13 @@
     right: 40%;
 }
 
-.vertical-line-small {
-    display: none;
-    width: 1.7px;
-    height: 80vw;
-    background: linear-gradient(45deg, #79dd38, #3a6e06);
+.percentage-container {
+    background: #c6fb5c66;
+    padding: 1.3rem;
+    border-radius: 20px;
 }
 
-
-.percentage-container > .percentage {
+.percentage-container>.percentage {
     margin: 0;
     font-size: 7.5rem;
     line-height: 0.8;
@@ -227,11 +225,10 @@
     }
 
     .vertical-line {
-        position: relative;
-        margin-top: 1rem;
-        margin-bottom: 4rem;
         width: 80vw;
-        height: 1.7px;
-        right: 0;
+    }
+
+    .vertical-line-small {
+        display: block;
     }
 }
