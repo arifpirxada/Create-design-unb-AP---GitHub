@@ -3,6 +3,10 @@
     margin: 3rem 0;
 }
 
+.points {
+    display: flex;
+}
+
 .vertical-line {
     width: 1.7px;
     height: 70%;
