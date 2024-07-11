@@ -6,7 +6,7 @@
   <div class="topics">
     {%  assign i = 1 %} %}
     {% for block in section.blocks %}
-      <p>{{ block.settings.content }}</p>
+      <p>{{ i }}. {{ block.settings.content }}</p>
     {% endfor %}
   </div>
 
