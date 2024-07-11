@@ -89,3 +89,9 @@
 
 
 /* Styling for topics section => */
+
+.content-heading {
+    padding: 1rem;
+    text-align: center;
+    font-size: 4rem;
+}
