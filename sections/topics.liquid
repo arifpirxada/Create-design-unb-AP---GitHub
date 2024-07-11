@@ -4,11 +4,10 @@
   <h2 class="content-heading">{{ section.settings.title }}</h2>
 
   <div class="topics">
-
-      {% for block in section.blocks %}
-        <p>{{ block.settings.content }}</p>
+    {% for block in section.blocks %}
+      <p>{{ block.settings.content }}</p>
     {% endfor %}
-</div>
+  </div>
 
 </div>
 
