@@ -3,29 +3,19 @@
 <div class="info-banner-container">
 
   {% assign logo_image = section.settings.logo %}
-  {% if logo_image != blank %}
-    <img
-      width="200"
-      height="auto"
-      class="info-logo"
-      src="{{ logo_image | image_url }}"
-      alt="shopify logo">
-  {% else %}
-    <img
-      width="200"
-      height="auto"
-      class="info-logo"
-      src="{{ "shopify-logo.png" | asset_url }}"
-      alt="shopify logo">
-  {% endif %}
+  <img
+    width="200"
+    height="auto"
+    class="info-logo"
+    src="{{ logo_image | image_url }}"
+    alt="shopify logo">
 
   {% assign heading_text = section.settings.heading %}
   {% assign description_text = section.settings.description %}
 
   <h1 class="info-heading">{{ heading_text | default: 'Shopify vs Woocommerce Cost' }}</h1>
 
-    <p class="info-desc">{{ description_text }}</p>
-    <p class="info-desc"</p>
+  <p class="info-desc">{{ description_text }}</p>
 
 </div>
 
