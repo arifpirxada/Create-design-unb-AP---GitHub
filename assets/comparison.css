@@ -156,6 +156,11 @@
     margin: 0;
 }
 
+.left-section p {
+    font-size: 1.8rem;
+    color: black;
+}
+
 .right-section {
     width: 30%;
 }
