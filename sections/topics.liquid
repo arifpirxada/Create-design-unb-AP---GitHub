@@ -1,7 +1,7 @@
 {{ 'comparison.css' | asset_url | stylesheet_tag }}
 
 <div class="topics-container">
-    <h1 class="content-heading"></h1>
+  <h1 class="content-heading"></h1>
 </div>
 
 {% schema %}
@@ -17,7 +17,17 @@
       }
     ],
     "blocks": [
-        
+      {
+        "type": "text",
+        "name": "Content Block",
+        "settings": [
+          {
+            "type": "textarea",
+            "id": "content",
+            "label": "Content"
+          }
+        ]
+      }
     ],
     "presets": [
       {
