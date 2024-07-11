@@ -16,9 +16,16 @@
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "info_banner_qtMVkn": {
+      "type": "info-banner",
+      "settings": {
+        "show_text_below": true
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "info_banner_qtMVkn"
   ]
 }
