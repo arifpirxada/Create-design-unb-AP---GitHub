@@ -1,6 +1,7 @@
 {{ 'comparison.css' | asset_url | stylesheet_tag }}
 
-{%- style -%}
+<style>
+
   .rich-text_blocks > h3 {
     font-size: 4rem;
     margin: 1.5rem 0;
@@ -12,7 +13,7 @@
     padding: 0;
     margin: 3rem 14rem;
   }
-{%- endstyle -%}
+</style>
 
 <div class="isolate{% unless section.settings.full_width %} page-width{% endunless %}">
   <h3>{{ section.settings.heading }}</h3>
