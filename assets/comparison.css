@@ -144,7 +144,7 @@
     align-items: center;
     gap: 4rem;
     position: relative;
-    margin: 1rem 0;
+    margin: 2rem 0;
 }
 
 .left-section {
@@ -153,6 +153,7 @@
 
 .left-section h3 {
     font-size: 4rem;
+    margin: 0;
 }
 
 .right-section {
