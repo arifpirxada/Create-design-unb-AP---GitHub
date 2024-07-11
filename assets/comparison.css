@@ -157,7 +157,7 @@
 }
 
 .left-section p {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     color: black;
 }
 
@@ -211,4 +211,8 @@
     position: absolute;
     top: 45%;
     left: 10%;
+}
+
+@media screen and (max-width: ) {
+    
 }
