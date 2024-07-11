@@ -8,8 +8,10 @@
   </div>
 
   <div class="right-section">
-    <h3>{{ section.settings.right-heading }}</h3>
-    <p>{{ section.settings.right-content }}</p>
+    <div>
+      <h3>{{ section.settings.right-heading }}</h3>
+      <p>{{ section.settings.right-content }}</p>
+    </div>
     {% if section.settings.button-text != blank %}
       <a href="{{ section.settings.button-link }}">{{ section.settings.button-text }}</a>
     {% endif %}
