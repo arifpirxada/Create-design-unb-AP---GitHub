@@ -1,0 +1,42 @@
+{{ 'comparison.css' | asset_url | stylesheet_tag }}
+
+<div class="isolate{% unless section.settings.full_width %} page-width{% endunless %}">
+  <div class="rich-text content-container rich-text--full-width content-container--full-width section-{{ section.id }}-padding">
+    <div class="rich-text__wrapper">
+      <div class="rich-text__blocks">
+        <h3>{{ section.settings.heading }}</h3>
+        <h3>{{ section.settings.content }}</h3>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Text with Heading",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+        "type": "inline_richtext",
+        "id": "heading",
+        "default": "Heading",
+        "label": "Heading"
+    },
+    {
+        "type": "textarea",
+        "id": "content",
+        "default": "Content",
+        "label": "Text"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Text with Heading"
+    }
+  ]
+}
+{% endschema %}
