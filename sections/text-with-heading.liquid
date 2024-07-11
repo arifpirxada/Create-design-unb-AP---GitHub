@@ -1,8 +1,8 @@
 {{ 'comparison.css' | asset_url | stylesheet_tag }}
 
 {%- style -%}
-    .
-  {%- endstyle -%}
+    .rich-text_wrapper > 
+{%- endstyle -%}
 
 <div class="isolate{% unless section.settings.full_width %} page-width{% endunless %}">
   <div class="rich-text content-container rich-text--full-width content-container--full-width section-{{ section.id }}-padding">
@@ -16,31 +16,30 @@
 </div>
 
 {% schema %}
-{
-  "name": "Text with Heading",
-  "tag": "section",
-  "class": "section",
-  "disabled_on": {
-    "groups": ["header", "footer"]
-  },
-  "settings": [
-    {
+  {
+    "name": "Text with Heading",
+    "tag": "section",
+    "class": "section",
+    "disabled_on": {
+      "groups": ["header", "footer"]
+    },
+    "settings": [
+      {
         "type": "inline_richtext",
         "id": "heading",
         "default": "Heading",
         "label": "Heading"
-    },
-    {
+      }, {
         "type": "textarea",
         "id": "content",
         "default": "Content",
         "label": "Text"
-    }
-  ],
-  "presets": [
-    {
-      "name": "Text with Heading"
-    }
-  ]
-}
+      }
+    ],
+    "presets": [
+      {
+        "name": "Text with Heading"
+      }
+    ]
+  }
 {% endschema %}
