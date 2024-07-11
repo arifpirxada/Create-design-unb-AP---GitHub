@@ -6,8 +6,10 @@
   <div class="points">
     {% for block in section.blocks %}
       <div class="d-flex">
-        <p class="point-heading">{{ block.settings.title }}</p>
-        <p class="point-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi facere eum unde dolorum eveniet? Fuga eligendi nihil pariatur quae, amet laudantium qui nostrum?</p>
+        <div>
+          <p class="point-heading">{{ block.settings.title }}</p>
+          <p class="point-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi facere eum unde dolorum eveniet? Fuga eligendi nihil pariatur quae, amet laudantium qui nostrum?</p>
+        </div>
 
         {% unless forloop.last %}
           <span class="vertical-line"></span>
