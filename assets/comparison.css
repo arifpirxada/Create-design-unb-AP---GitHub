@@ -50,9 +50,9 @@
     }
 
     .info-desc {
-        font-size: 2.3rem;
+        font-size: 2.3rem !important;
     }
-    
+
     .info-banner-container {
         padding: 4rem 3rem;
     }
