@@ -227,6 +227,8 @@
     }
 
     .vertical-line {
+        position: relative;
         width: 80vw;
+        height: 1.7px;
     }
 }
