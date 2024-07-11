@@ -172,3 +172,8 @@
     background: linear-gradient(45deg, #79dd38, #3a6e06);
     right: 38%;
 }
+
+.percentage-container > .percentage {
+    margin: 0;
+    font-size: 7.5rem;
+}
