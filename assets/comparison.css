@@ -217,4 +217,8 @@
     .topic-item-container {
         flex-direction: column;
     }
+
+    .left-section, .right-section {
+        width: 90%;
+    }
 }
