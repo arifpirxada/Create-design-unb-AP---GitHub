@@ -25,6 +25,10 @@
     display: flex;
 }
 
+@media screen and (d-flex-center) {
+    
+}
+
 .vertical-line {
     /* width: 1.7px;
     height: 70%;
