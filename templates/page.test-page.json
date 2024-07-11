@@ -16,16 +16,9 @@
         "padding_top": 28,
         "padding_bottom": 28
       }
-    },
-    "info_banner_CzTiEF": {
-      "type": "info-banner",
-      "settings": {
-        "show_text_below": true
-      }
     }
   },
   "order": [
-    "main",
-    "info_banner_CzTiEF"
+    "main"
   ]
 }
