@@ -19,6 +19,26 @@
     },
     "info_in_points_8YWEj7": {
       "type": "info-in-points",
+      "blocks": {
+        "text_aQHLpc": {
+          "type": "text",
+          "settings": {
+            "title": "Security and Reliability",
+            "description": ""
+          }
+        },
+        "text_gkqt9m": {
+          "type": "text",
+          "settings": {
+            "title": "Commerce Capabilities",
+            "description": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_aQHLpc",
+        "text_gkqt9m"
+      ],
       "settings": {
         "heading": "There are four primary reasons why brands migrate to Shopify"
       }
