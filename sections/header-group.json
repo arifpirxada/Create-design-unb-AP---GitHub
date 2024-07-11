@@ -11,84 +11,9 @@
   "name": "t:sections.header.name",
   "type": "header",
   "sections": {
-    "announcement-bar": {
-      "type": "announcement-bar",
-      "blocks": {
-        "announcement_gMJwjT": {
-          "type": "announcement",
-          "settings": {
-            "text": "Free Shipping on Orders Over $50! Shop Now!",
-            "link": ""
-          }
-        },
-        "announcement_yxk7mx": {
-          "type": "announcement",
-          "settings": {
-            "text": "Welcome to our store",
-            "link": "",
-            "announcement-img": "shopify:\/\/shop_images\/image_16.png"
-          }
-        },
-        "announcement_X3UbMX": {
-          "type": "announcement",
-          "settings": {
-            "text": "New! Try Our Zero-Calorie Sweetener – Sweeten Up Guilt-Free!",
-            "link": ""
-          }
-        },
-        "announcement_QPUQ3T": {
-          "type": "announcement",
-          "settings": {
-            "text": "Welcome to our store",
-            "link": "",
-            "announcement-img": "shopify:\/\/shop_images\/image_5.png"
-          }
-        },
-        "announcement_JVtkyB": {
-          "type": "announcement",
-          "settings": {
-            "text": "Summer Special: Buy One, Get One 50% Off on All Sweeteners!",
-            "link": ""
-          }
-        },
-        "announcement_fMxma4": {
-          "type": "announcement",
-          "settings": {
-            "text": "Welcome to our store",
-            "link": "",
-            "announcement-img": "shopify:\/\/shop_images\/image_16.png"
-          }
-        },
-        "announcement_464qA7": {
-          "type": "announcement",
-          "settings": {
-            "text": "Welcome to our store",
-            "link": "",
-            "announcement-img": "shopify:\/\/shop_images\/image_5.png"
-          }
-        }
-      },
-      "block_order": [
-        "announcement_gMJwjT",
-        "announcement_yxk7mx",
-        "announcement_X3UbMX",
-        "announcement_QPUQ3T",
-        "announcement_JVtkyB",
-        "announcement_fMxma4",
-        "announcement_464qA7"
-      ],
-      "settings": {
-        "color_scheme": "scheme-5",
-        "show_line_separator": true,
-        "show_social": false,
-        "auto_rotate": true,
-        "change_slides_speed": 5,
-        "enable_country_selector": false,
-        "enable_language_selector": false
-      }
-    },
     "header": {
       "type": "header",
+      "disabled": true,
       "settings": {
         "logo_position": "middle-left",
         "menu": "main-menu",
@@ -108,7 +33,6 @@
     }
   },
   "order": [
-    "announcement-bar",
     "header"
   ]
 }
