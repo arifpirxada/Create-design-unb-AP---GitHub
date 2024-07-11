@@ -153,7 +153,7 @@
 }
 
 .vertical-line {
-    width: 1px;
+    width: 1.5px;
     height: 80%;
     position: absolute;
     background: linear-gradient(45deg, #79dd38, #3a6e06);
