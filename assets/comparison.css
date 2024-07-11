@@ -153,9 +153,8 @@
 }
 
 .vertical-line {
-    transform: rotate(90deg);
-    width: 10px;
-    height: 5px;
+    width: 3px;
+    height: px;
     border-radius: 20px;
     position: absolute;
 }
