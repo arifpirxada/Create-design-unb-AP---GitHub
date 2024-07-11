@@ -10,12 +10,16 @@
     margin: 0;
     padding: 4rem 8rem;
     background: linear-gradient(317deg, #035d24, #023b17b8, #035d24);
-    min-height: 90rem;
     max-width: 100vw;
+    padding-bottom: 10rem;
     position: relative;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .info-banner-container img {
+    align-self: start;
     margin-top: 2rem;
 }
 
@@ -25,15 +29,28 @@
 }
 
 /* For heading font-size */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
     .info-heading {
-        font-size: 4rem;
+        font-size: 8rem;
     }
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 800px) {
     .info-heading {
-        font-size: 2.3rem;
+        font-size: 6rem;
+    }
+    .info-desc {
+        margin-top: 2rem !important;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .info-heading {
+        font-size: 4rem;
+    }
+
+    .info-desc {
+        font-size: 2.3rem !important;
     }
 
     .info-banner-container {
@@ -42,6 +59,9 @@
 }
 
 @media screen and (max-width: 550px) {
+    .info-desc {
+        max-width: 92vw !important;
+    }
     .info-banner-container {
         padding: 4rem 1.5rem;
     }
@@ -50,7 +70,7 @@
 .info-desc {
     color: #fdecec;
     font-size: 3.3rem;
-    max-width: 50rem;
+    max-width: 75vw;
     margin-top: 4rem;
 }
 
