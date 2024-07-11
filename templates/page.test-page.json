@@ -82,7 +82,7 @@
         "left-content": "Shopify respondents reported the lowest platform costs on average, likely due to competitive\nplatform fees and fewer third-party application needs. In contrast, platforms like WooCommerce\nrequire more support for managing and maintaining due to necessary version upgrades and\nsecurity patches, which is supported as other platforms are 30% more expensive than Shopify.",
         "right-heading": "",
         "right-content": "",
-        "button-text": "Read More",
+        "button-text": "",
         "button-link": ""
       }
     },
@@ -105,7 +105,7 @@
         "left-content": "Shopify respondents indicated the lowest operating costs due to its operational simplicity and\nreduced need for developer support. Open-source platforms like WooCommerce incur\nadditional infrastructure costs, such as hosting, because they require scalable computing and\nsecurity infrastructure to handle large amounts of web traffic and transactions.",
         "right-heading": "",
         "right-content": "",
-        "button-text": "Read More",
+        "button-text": "",
         "button-link": ""
       }
     },
@@ -128,18 +128,30 @@
         "left-content": "Shopify respondents reported the lowest implementation costs due to its straightforward\noperation and reduced need for developer support. Open-source platforms like WooCommerce\nrequire additional infrastructure investments, such as hosting, as they need scalable computing\nand security setups to manage large web traffic and transactions.",
         "right-heading": "",
         "right-content": "WooCommerce has 49%\nhigher implementation costs and is 41% slower to set up and launch a storefront compared to\nShopify.",
-        "button-text": "Read More",
+        "button-text": "",
         "button-link": ""
       }
     },
     "topic_item_UiEnQi": {
       "type": "topic-item",
+      "blocks": {
+        "text_AfjhTA": {
+          "type": "text",
+          "settings": {
+            "percentage": "17%",
+            "content": "higher conversion rate"
+          }
+        }
+      },
+      "block_order": [
+        "text_AfjhTA"
+      ],
       "settings": {
         "left-heading": "Conversion Rates",
         "left-content": "In some TCO calculations, the difference in conversion rates is treated as 'additional costs'\nbecause it represents value that businesses would capture if they were on Shopify instead. Assuming a 10% margin on goods sold, Shopify's average 17% higher conversion rate than\nWooCommerce's translated to a roughly 1.7& TCO offset when expressed as a percentage of the\nTCO.",
         "right-heading": "",
         "right-content": "",
-        "button-text": "Read More",
+        "button-text": "",
         "button-link": ""
       }
     },
