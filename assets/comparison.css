@@ -39,6 +39,7 @@
     .info-heading {
         font-size: 6rem;
     }
+
     .info-desc {
         margin-top: 2rem !important;
     }
@@ -62,6 +63,7 @@
     .info-desc {
         max-width: 92vw !important;
     }
+
     .info-banner-container {
         padding: 4rem 1.5rem;
     }
@@ -131,4 +133,71 @@
         text-align: left;
         font-size: 2.5rem;
     }
+}
+
+/* Styling for Topic Item => */
+
+.topic-item-container {
+    padding: 1rem 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    position: relative;
+    margin: 2rem 0;
+}
+
+.left-section {
+    width: 55%;
+}
+
+.left-section h3 {
+    font-size: 4rem;
+    margin: 0;
+}
+
+.left-section p {
+    font-size: 1.8rem;
+    color: black;
+}
+
+.right-section {
+    width: 30%;
+}
+
+.vertical-line {
+    width: 1.7px;
+    height: 70%;
+    position: absolute;
+    background: linear-gradient(45deg, #79dd38, #3a6e06);
+    right: 38%;
+}
+
+.percentage-container {
+    background: #c6fb5c66;
+    padding: 1.3rem;
+    border-radius: 20px;
+}
+
+.percentage-container > .percentage {
+    margin: 0;
+    font-size: 7.5rem;
+    line-height: 0.8;
+}
+
+.percentage-container > .percentage-content {
+    margin: 1rem 0.5rem;
+    font-size: 2rem;
+}
+
+.right-btn {
+    margin: 1rem;
+    display: block;
+    border-radius: 30px;
+    border: 1.7px solid #1d1c1c;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    color: #000000;
+    font-weight: 600;
+    width: fit-content;
 }

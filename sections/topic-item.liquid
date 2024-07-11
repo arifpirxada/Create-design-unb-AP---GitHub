@@ -6,12 +6,12 @@
     <h3>{{ section.settings.left-heading }}</h3>
     <p>{{ section.settings.left-content }}</p>
   </div>
-
+  <span class="vertical-line"></span>
   <div class="right-section">
-    <div>
+    <div class="percentage-container">
       {% for block in section.blocks %}
-        <p class="percentage">{{ block.percentage }}</p>
-        <p>{{ block.content }}</p>
+        <p class="percentage">{{ block.settings.percentage }}</p>
+        <p class="percentage-content">{{ block.settings.content }}</p>
       {% endfor %}
     </div>
     <div>
@@ -19,7 +19,7 @@
       <p>{{ section.settings.right-content }}</p>
     </div>
     {% if section.settings.button-text != blank %}
-      <a href="{{ section.settings.button-link }}">{{ section.settings.button-text }}</a>
+      <a class="right-btn" href="{{ section.settings.button-link }}"><span style='font-size:30px;line-height: 0.5;'>&#8594;</span>{{ section.settings.button-text }}</a>
     {% endif %}
   </div>
 
