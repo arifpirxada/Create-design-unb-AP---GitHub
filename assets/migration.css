@@ -29,7 +29,11 @@
     right: 40%;
     right: 40%; */
 
+    position: relative;
+    background: linear-gradient(45deg, #79dd38, #3a6e06);
+    display: block;
     width: 1.7px;
+    height: 100%;
     position: relative;
     background: linear-gradient(45deg, #79dd38, #3a6e06);
 }
