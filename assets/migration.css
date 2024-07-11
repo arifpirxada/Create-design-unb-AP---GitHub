@@ -32,7 +32,7 @@
 }
 
 @media screen and (max-width: 900px) {
-    .points {
+    .points > div {
         justify-content: start;
     }
 }
