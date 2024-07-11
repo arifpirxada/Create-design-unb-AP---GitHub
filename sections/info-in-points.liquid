@@ -4,8 +4,7 @@
 <div class="info-points-container">
   <h2 class="info-heading">{{ section.settings.title }}</h2>
 
-  <div class="topics">
-    <span class="vertical-line topics-vertical-line">{{  }}</span>
+  <div class="points">
     {% for block in section.blocks %}
       <p>{{ forloop.index }}. {{ block.settings.content }}</p>
       <span class="vertical-line"></span>
