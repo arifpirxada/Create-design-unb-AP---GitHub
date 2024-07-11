@@ -24,10 +24,49 @@
         "heading": "Shopify vs Woocommerce Cost",
         "description": "Total Cost of Ownership (TCO) is used by enterprises to assess the direct and indirect costs incurred with a given purchase or platform. Comparing WooCommerce and Shopify for your ecommerce needs, we have found that costs are 57% higher on WooCommerce than on Shopify."
       }
+    },
+    "topics_LmRe7J": {
+      "type": "topics",
+      "blocks": {
+        "text_AVLK39": {
+          "type": "text",
+          "settings": {
+            "content": "Platform Fees and Ecommerce Stack Costs"
+          }
+        },
+        "text_9eixUD": {
+          "type": "text",
+          "settings": {
+            "content": "Operational and Support Costs"
+          }
+        },
+        "text_LGDBgw": {
+          "type": "text",
+          "settings": {
+            "content": "Implementation and Setup Costs"
+          }
+        },
+        "text_BhNwxb": {
+          "type": "text",
+          "settings": {
+            "content": "Conversion Rates on Both Platforms"
+          }
+        }
+      },
+      "block_order": [
+        "text_AVLK39",
+        "text_9eixUD",
+        "text_LGDBgw",
+        "text_BhNwxb"
+      ],
+      "settings": {
+        "title": "We'll cover four TCO drivers in this comparison:"
+      }
     }
   },
   "order": [
     "main",
-    "info_banner_qtMVkn"
+    "info_banner_qtMVkn",
+    "topics_LmRe7J"
   ]
 }
