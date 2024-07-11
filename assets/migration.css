@@ -13,6 +13,7 @@
 .points {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .point-heading {
