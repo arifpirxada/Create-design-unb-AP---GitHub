@@ -193,9 +193,9 @@
 .right-btn {
     margin: 1rem;
     display: block;
-    border-radius: 20px;
-    border: 2px solid #1d1c1c;
-    padding: 1rem;
+    border-radius: 30px;
+    border: 1px solid #1d1c1c;
+    padding: 1rem 2rem;
     text-decoration: none;
     color: #000000;
     font-weight: 600;
