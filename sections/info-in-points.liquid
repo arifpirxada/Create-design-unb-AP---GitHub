@@ -2,7 +2,7 @@
 {{ 'comparison.css' | asset_url | stylesheet_tag }}
 
 <div class="info-points-container">
-  <h2 class="info-heading">{{ section.settings.title }}</h2>
+  <h2 class="info-heading">{{ section.settings.heading }}</h2>
 
   <div class="points">
     {% for block in section.blocks %}
