@@ -148,8 +148,8 @@
         position: relative !important;
         margin-top: 1rem;
         margin-bottom: 4rem;
-        width: 80vw;
-        height: 1.7px;
+        width: 80vw !important;
+        height: 1.7px !important;
         right: 0;
     }
 }
