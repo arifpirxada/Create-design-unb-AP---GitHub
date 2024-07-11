@@ -30,15 +30,33 @@
     },
     "settings": [
       {
+  {
+    "name": "Text with Heading",
+    "tag": "section",
+    "class": "section",
+    "disabled_on": {
+      "groups": ["header", "footer"]
+    },
+    "settings": [
+      {
         "type": "inline_richtext",
         "id": "heading",
         "default": "Heading",
         "label": "Heading"
       }, {
+      }, {
         "type": "textarea",
         "id": "content",
         "default": "Content",
         "label": "Text"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Text with Heading"
+      }
+    ]
+  }
       }
     ],
     "presets": [

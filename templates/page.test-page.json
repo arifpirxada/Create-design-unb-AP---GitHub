@@ -143,37 +143,11 @@
         "button-link": ""
       }
     },
-    "rich_text_7pmQmq": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_j8qfHp": {
-          "type": "heading",
-          "settings": {
-            "heading": "Conclusion",
-            "heading_size": "h1"
-          }
-        },
-        "text_bCAR3C": {
-          "type": "text",
-          "settings": {
-            "text": "<h2>When evaluating the Total Cost of Ownership between Shopify and WooCommerce, Shopify consistently emerges as the more cost-effective option. With lower platform fees, reduced operational and support costs, and faster implementation and setup, Shopify minimizes<br\/>expenses across the board. Furthermore, Shopify's higher conversion rates provide an additional financial advantage, translating into increased revenue for businesses.<\/h2><h2><br\/>By choosing Shopify, businesses can benefit from a streamlined, efficient, and scalable ecommerce solution that not only reduces costs but also enhances overall performance and profitability. For those seeking a robust, cost-effective platform, Shopify proves to be a superior<br\/>choice compared to WooCommerce.<br\/><\/h2>"
-          }
-        }
-      },
-      "block_order": [
-        "heading_j8qfHp",
-        "text_bCAR3C"
-      ],
-      "custom_css": [
-        ".rich-text__text h2 {text-align: left;}"
-      ],
+    "text_with_heading_TKrzn6": {
+      "type": "text-with-heading",
       "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
+        "heading": "Conclusion",
+        "content": "When evaluating the Total Cost of Ownership between Shopify and WooCommerce, Shopify consistently emerges as the more cost-effective option. With lower platform fees, reduced operational and support costs, and faster implementation and setup, Shopify minimizes\nexpenses across the board. Furthermore, Shopify's higher conversion rates provide an additional financial advantage, translating into increased revenue for businesses.\n\nBy choosing Shopify, businesses can benefit from a streamlined, efficient, and scalable ecommerce solution that not only reduces costs but also enhances overall performance and profitability. For those seeking a robust, cost-effective platform, Shopify proves to be a superior\nchoice compared to WooCommerce."
       }
     }
   },
@@ -185,6 +159,6 @@
     "topic_item_dWLdKx",
     "topic_item_WnpR9E",
     "topic_item_UiEnQi",
-    "rich_text_7pmQmq"
+    "text_with_heading_TKrzn6"
   ]
 }
