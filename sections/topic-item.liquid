@@ -8,13 +8,14 @@
   </div>
   <span class="vertical-line"></span>
   <div class="right-section">
-    div.
-    <div class="percentage-container">
-      {% for block in section.blocks %}
-        <p class="percentage">{{ block.settings.percentage }}</p>
-        <p class="percentage-content">{{ block.settings.content }}</p>
-      {% endfor %}
-    </div>
+    <div class="percentage-blocks">
+      <div class="percentage-container">
+        {% for block in section.blocks %}
+          <p class="percentage">{{ block.settings.percentage }}</p>
+          <p class="percentage-content">{{ block.settings.content }}</p>
+        {% endfor %}
+        </div>
+      </div>
     <div>
       <h3>{{ section.settings.right-heading }}</h3>
       <p>{{ section.settings.right-content }}</p>
