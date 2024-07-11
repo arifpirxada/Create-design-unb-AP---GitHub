@@ -40,6 +40,9 @@
     .points > div {
         flex-direction: column;
     }
+    .info-heading {
+        font-size: 7rem;
+    }
 }
 
 .vertical-line {
