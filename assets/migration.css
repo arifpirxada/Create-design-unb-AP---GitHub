@@ -31,6 +31,12 @@
     }
 }
 
+@media screen and (max-width: 900px) {
+    .points {
+        justify-content: start;
+    }
+}
+
 .vertical-line {
     /* width: 1.7px;
     height: 70%;
