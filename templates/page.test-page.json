@@ -82,7 +82,7 @@
         "left-content": "Shopify respondents reported the lowest platform costs on average, likely due to competitive\nplatform fees and fewer third-party application needs. In contrast, platforms like WooCommerce\nrequire more support for managing and maintaining due to necessary version upgrades and\nsecurity patches, which is supported as other platforms are 30% more expensive than Shopify.",
         "right-heading": "",
         "right-content": "",
-        "button-text": "Read More",
+        "button-text": "",
         "button-link": ""
       }
     },
@@ -105,7 +105,7 @@
         "left-content": "Shopify respondents indicated the lowest operating costs due to its operational simplicity and\nreduced need for developer support. Open-source platforms like WooCommerce incur\nadditional infrastructure costs, such as hosting, because they require scalable computing and\nsecurity infrastructure to handle large amounts of web traffic and transactions.",
         "right-heading": "",
         "right-content": "",
-        "button-text": "Read More",
+        "button-text": "",
         "button-link": ""
       }
     },
