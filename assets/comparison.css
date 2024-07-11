@@ -178,3 +178,8 @@
     font-size: 7.5rem;
     line-height: 0.8;
 }
+
+.percentage-container > .percentage {
+    margin: 1rem 0.5rem;
+    font-size: 2rem;
+}
