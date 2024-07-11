@@ -72,10 +72,18 @@
             "percentage": "30%",
             "content": "more expensive than Shopify."
           }
+        },
+        "text_QWdxXY": {
+          "type": "text",
+          "settings": {
+            "percentage": "40%",
+            "content": "there are a log"
+          }
         }
       },
       "block_order": [
-        "text_eFDbrn"
+        "text_eFDbrn",
+        "text_QWdxXY"
       ],
       "settings": {
         "left-heading": "Platform and Ecommerce",
