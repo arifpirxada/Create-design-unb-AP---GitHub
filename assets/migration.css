@@ -29,6 +29,7 @@
     .points {
         justify-content: start;
     }
+    .point
 }
 
 @media screen and (max-width: 900px) {
