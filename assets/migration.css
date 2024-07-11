@@ -9,13 +9,13 @@
     font-size: 9rem;
 }
 
-.info-desc {
-    font-size: xx-large;
-}
-
 .points {
     display: flex;
     flex-wrap: wrap;
+}
+
+.points-desc {
+    font-size: xx-large;
 }
 
 .vertical-line {
