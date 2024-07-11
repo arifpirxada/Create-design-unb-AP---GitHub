@@ -154,7 +154,8 @@
 
 .vertical-line {
     width: 3px;
-    height: px;
+    height: 100%;
     border-radius: 20px;
     position: absolute;
+    background: black;
 }
