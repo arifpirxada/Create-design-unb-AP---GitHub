@@ -29,6 +29,12 @@
 }
 
 /* For heading font-size */
+@media screen and (max-width: 900px) {
+    .info-heading {
+        font-size: 8rem;
+    }
+}
+
 @media screen and (max-width: 800px) {
     .info-heading {
         font-size: 4rem;
