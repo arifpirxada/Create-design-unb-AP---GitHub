@@ -40,12 +40,20 @@
             "title": "Reduced TCO, Improved ROI",
             "description": ""
           }
+        },
+        "text_eNjCEg": {
+          "type": "text",
+          "settings": {
+            "title": "Usability",
+            "description": ""
+          }
         }
       },
       "block_order": [
         "text_aQHLpc",
         "text_gkqt9m",
-        "text_zpt7pL"
+        "text_zpt7pL",
+        "text_eNjCEg"
       ],
       "settings": {
         "heading": "There are four primary reasons why brands migrate to Shopify"
