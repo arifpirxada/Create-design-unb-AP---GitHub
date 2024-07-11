@@ -196,5 +196,6 @@
     border-radius: 20px;
     border: 2px solid #1d1c1c;
     padding: 1rem;
-    text-decoration: ;
+    text-decoration: none;
+    color: #000000;
 }
