@@ -136,5 +136,8 @@
 /* Styling for Topic Item => */
 
 .topic-item-container {
-    padding: ;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
