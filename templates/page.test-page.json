@@ -72,18 +72,10 @@
             "percentage": "30%",
             "content": "more expensive than Shopify."
           }
-        },
-        "text_QWdxXY": {
-          "type": "text",
-          "settings": {
-            "percentage": "40%",
-            "content": "there are a log"
-          }
         }
       },
       "block_order": [
-        "text_eFDbrn",
-        "text_QWdxXY"
+        "text_eFDbrn"
       ],
       "settings": {
         "left-heading": "Platform and Ecommerce",
@@ -93,12 +85,36 @@
         "button-text": "Read More",
         "button-link": ""
       }
+    },
+    "topic_item_dWLdKx": {
+      "type": "topic-item",
+      "blocks": {
+        "text_bWCqnL": {
+          "type": "text",
+          "settings": {
+            "percentage": "41%",
+            "content": "Shopify'soperating costs are 41% lower than that of Woocommerce."
+          }
+        }
+      },
+      "block_order": [
+        "text_bWCqnL"
+      ],
+      "settings": {
+        "left-heading": "Operational and support costs",
+        "left-content": "Shopify respondents indicated the lowest operating costs due to its operational simplicity and\nreduced need for developer support. Open-source platforms like WooCommerce incur\nadditional infrastructure costs, such as hosting, because they require scalable computing and\nsecurity infrastructure to handle large amounts of web traffic and transactions.",
+        "right-heading": "",
+        "right-content": "",
+        "button-text": "Read More",
+        "button-link": ""
+      }
     }
   },
   "order": [
     "main",
     "info_banner_qtMVkn",
     "topics_LmRe7J",
-    "topic_item_HWjccL"
+    "topic_item_HWjccL",
+    "topic_item_dWLdKx"
   ]
 }
