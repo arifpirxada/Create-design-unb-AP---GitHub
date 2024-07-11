@@ -10,7 +10,7 @@
   <div class="right-section">
     <div>
       {% for block in section.blocks %}
-        
+        {{ block.content }}
       {% endfor %}
     </div>
     <div>
@@ -67,7 +67,7 @@
         "settings": [
           {
             "type": "text",
-            "id": "percentage",
+            "id": "content",
             "label": "Percentage"
           }
         ]
