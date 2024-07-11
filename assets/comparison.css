@@ -101,7 +101,9 @@
 }
 
 .topics {
-    display: fle;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .topics p {
