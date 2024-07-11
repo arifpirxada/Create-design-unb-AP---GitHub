@@ -25,7 +25,7 @@
     display: flex;
 }
 
-@media screen and (d-flex-center) {
+@media screen and (max-width: 1290px) {
     
 }
 
