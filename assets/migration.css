@@ -29,7 +29,9 @@
     .points {
         justify-content: start;
     }
-    .point
+    .info-heading {
+        margin: 0;
+    }
 }
 
 @media screen and (max-width: 900px) {
