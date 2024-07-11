@@ -272,23 +272,10 @@
         right: 0;
     }
 }
-@media screen and (max-width: 900px) {
-    .topic-item-container {
-        flex-direction: column;
-        gap: 0rem;
-    }
 
+@media screen and (max-width: 900px) {
     .left-section,
     .right-section {
-        width: 90%;
-    }
-
-    .vertical-line {
-        position: relative;
-        margin-top: 1rem;
-        margin-bottom: 4rem;
-        width: 80vw;
-        height: 1.7px;
-        right: 0;
+        width: 100%;
     }
 }
