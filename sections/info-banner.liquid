@@ -12,12 +12,12 @@
       src="{{ logo_image | image_url }}"
       alt="shopify logo">
   {% else %}
-    {% comment %} <img
+    <img
       width="200"
       height="auto"
       class="info-logo"
       src="{{ "shopify-logo.png" | asset_url }}"
-      alt="shopify logo"> {% endcomment %}
+      alt="shopify logo">
   {% endif %}
 
   <h1 class="info-heading">Shopify vs. Adobe Commerce TCO comparison*</h1>
@@ -35,7 +35,8 @@
         "type": "image_picker",
         "id": "logo",
         "label": "Logo"
-      }, {
+      },
+      {
         "type": "text",
         "id": "heading",
         "default": "Shopify vs Woocommerce Cost",
