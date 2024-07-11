@@ -23,7 +23,7 @@
   {% assign heading_text = section.settings.heading %}
   {% assign description_text = section.settings.description %}
 
-  <h1>{{ heading_text | default: 'Shopify vs Woocommerce Cost' }}</h1>
+  <h1 class="info-heading">{{ heading_text | default: 'Shopify vs Woocommerce Cost' }}</h1>
 
   {% if description_text != blank %}
     <p class="info-desc">{{ description_text }}</p>
