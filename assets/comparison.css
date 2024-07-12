@@ -186,6 +186,10 @@
     color: black;
 }
 
+@media screen and (max-width: ) {
+    
+}
+
 .right-section {
     width: 30%;
 }
