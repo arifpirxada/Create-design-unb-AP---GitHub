@@ -182,6 +182,7 @@
     }
     .points-vertical .point {
         max-width: 100vw !important;
+        width: 100vw;
     }
     .points-vertical > .point > .point-content > .point-heading {
         padding: 0 !important;
