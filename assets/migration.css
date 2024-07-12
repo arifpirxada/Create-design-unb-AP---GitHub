@@ -123,6 +123,27 @@
     }
 }
 
+@media screen and (max-width: 500px) {
+    .topic-item-container {
+        flex-direction: column;
+        gap: 0rem;
+    }
+
+    .left-section,
+    .right-section {
+        width: 90%;
+    }
+
+    .vertical-line {
+        position: relative;
+        margin-top: 0rem;
+        margin-bottom: 2rem;
+        width: 80vw;
+        height: 1.7px;
+        right: 0;
+    }
+}
+
 /* Styling for info in points section, if show points in vertically == true  */
 
 .points-container-vertical {
