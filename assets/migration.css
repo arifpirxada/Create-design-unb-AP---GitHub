@@ -146,5 +146,5 @@
 }
 
 .points-vertical > .point > .points-line {
-    flex-direction: column;
+    position: absolute;
 }
