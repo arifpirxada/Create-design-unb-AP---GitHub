@@ -189,4 +189,7 @@
     .points-vertical > .point > .point-content > .point-desc {
         margin: 0 0.5rem !important;
     }
+    .points-vertical > .point > .points-line {
+        width: 90vw !important;
+    }
 }
