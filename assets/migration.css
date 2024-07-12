@@ -126,5 +126,9 @@
 /* Styling for info in points section, if show points in vertically == true  */
 
 .points-container-vertical {
-    di
+    display: flex;
+}
+
+.points-vertical {
+    flex-direction: column !important;
 }
