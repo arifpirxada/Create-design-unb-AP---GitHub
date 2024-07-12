@@ -63,32 +63,32 @@
     "info_in_points_bKh89m": {
       "type": "info-in-points",
       "blocks": {
-        "text_JEfYPx": {
+        "text_9eYDdq": {
           "type": "text",
           "settings": {
             "title": "Reliable Infrastructure",
-            "description": "<p>Shopify powers millions of brands across the globe and delivers 99.99% uptime, which means<br\/>you don't have to worry about your site crashing.<\/p>"
+            "description": "Shopify powers millions of brands across the globe and delivers 99.99% uptime, which means\nyou don't have to worry about your site crashing."
           }
         },
-        "text_cHhf93": {
+        "text_j9WKQd": {
           "type": "text",
           "settings": {
             "title": "End-to-end Security",
-            "description": "<p>Shopify takes security seriously, providing PCI-DDS, SOC 1, 2, and 3, as well as GDPR<br\/>compliance, so you never need to worry about keeping your data secure.<\/p>"
+            "description": "Shopify takes security seriously, providing PCI-DDS, SOC 1, 2, and 3, as well as GDPR\ncompliance, so you never need to worry about keeping your data secure."
           }
         },
-        "text_Ap6a4M": {
+        "text_k4EdHK": {
           "type": "text",
           "settings": {
             "title": "All the flexibility you need",
-            "description": "<p>Shopify's checkout is extensible, trackable, and flexible, loaded with features for customization<br\/>while maintaining stability to ensure you never miss a sale.<\/p>"
+            "description": "Shopify's checkout is extensible, trackable, and flexible, loaded with features for customization\nwhile maintaining stability to ensure you never miss a sale."
           }
         }
       },
       "block_order": [
-        "text_JEfYPx",
-        "text_cHhf93",
-        "text_Ap6a4M"
+        "text_9eYDdq",
+        "text_j9WKQd",
+        "text_k4EdHK"
       ],
       "settings": {
         "heading": "Security",
