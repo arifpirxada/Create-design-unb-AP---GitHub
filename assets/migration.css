@@ -132,7 +132,7 @@
 
 .points-container-vertical .info-heading {
     margin: 0;
-    width: 60%;
+    width: 150vw;
 }
 
 .points-vertical {
@@ -140,5 +140,5 @@
 }
 
 .points-vertical .point {
-    
+    max-width: 100% !important;
 }
