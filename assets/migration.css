@@ -115,8 +115,8 @@
 
     .vertical-line {
         position: relative;
-        margin-top: 1rem;
-        margin-bottom: 4rem;
+        margin-top: 0rem;
+        margin-bottom: 2rem;
         width: 80vw;
         height: 1.7px;
         right: 0;
