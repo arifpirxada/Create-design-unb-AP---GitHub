@@ -171,4 +171,7 @@
     .points-vertical .point {
         max-width: 90vw !important;
     }
+    .points-vertical > .point > .points-line {
+        position: relative;
+    }
 }
