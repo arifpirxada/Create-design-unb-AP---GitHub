@@ -130,5 +130,5 @@
 }
 
 .points-vertical {
-    flex-direction: column !important;
+    /* flex-direction: column; */
 }
