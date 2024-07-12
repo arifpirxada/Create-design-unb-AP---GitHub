@@ -29,6 +29,10 @@
     margin: 0;
 }
 
+@media screen and (max-width: 500px) {
+    
+}
+
 .point-desc {
     font-size: 1.7rem;
     margin: 0 1.5rem;
