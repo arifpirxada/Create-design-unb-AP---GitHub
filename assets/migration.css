@@ -141,4 +141,6 @@
 
 .points-vertical .point {
     max-width: 40vw !important;
+    position: relative;
+    margin: 2rem 0.5rem;
 }
