@@ -56,12 +56,41 @@
         "text_eNjCEg"
       ],
       "settings": {
-        "heading": "There are four primary reasons why brands migrate to Shopify"
+        "heading": "There are four primary reasons why brands migrate to Shopify",
+        "vertical-points": false
+      }
+    },
+    "info_in_points_bKh89m": {
+      "type": "info-in-points",
+      "blocks": {
+        "text_JEfYPx": {
+          "type": "text",
+          "settings": {
+            "title": "Reliable Infrastructure",
+            "description": "<p>Shopify powers millions of brands across the globe and delivers 99.99% uptime, which means<br\/>you don't have to worry about your site crashing.<\/p>"
+          }
+        },
+        "text_Ap6a4M": {
+          "type": "text",
+          "settings": {
+            "title": "",
+            "description": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_JEfYPx",
+        "text_Ap6a4M"
+      ],
+      "settings": {
+        "heading": "Security",
+        "vertical-points": true
       }
     }
   },
   "order": [
     "main",
-    "info_in_points_8YWEj7"
+    "info_in_points_8YWEj7",
+    "info_in_points_bKh89m"
   ]
 }
