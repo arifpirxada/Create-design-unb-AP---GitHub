@@ -167,5 +167,8 @@
     }
     .points-container-vertical .info-heading {
         width: 90%;
-    } 
+    }
+    .points-vertical .point {
+        max-width: 90vw !important;
+    }
 }
