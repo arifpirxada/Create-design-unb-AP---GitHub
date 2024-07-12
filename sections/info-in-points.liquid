@@ -1,14 +1,15 @@
 {{ 'migration.css' | asset_url | stylesheet_tag }}
 
-<div class="info-points-container">
+<div class="info-points-container {% if section.settings.vertical-points == true %}points-container-vertical{% endif %}">
   <h2 class="info-heading">{{ section.settings.heading }}</h2>
 
-  <div class="points">
+  <div class="points {% if section.settings.vertical-points == true %}points-vertical{% endif %}">
     {% for block in section.blocks %}
       <div class="point d-flex">
-        <span class="vertical-line"></span>
+        <span class="vertical-line points-line"></span>
         <div class="point-content">
           <p class="point-heading">{{ block.settings.title }}</p>
+          <p class="point-desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis fuga aliquid maiores temporibus fugiat nihil amet, tenetur reiciendis libero quisquam, ex, mollitia nostrum.</p>
           {% if block.settings.description != blank %}
             <p class="point-desc">{{ block.settings.description }}</p>
           {% endif %}
@@ -31,6 +32,11 @@
         "type": "text",
         "id": "heading",
         "label": "Heading"
+      }, {
+        "type": "checkbox",
+        "id": "vertical-points",
+        "label": "Show points vertically",
+        "default": false
       }
     ],
     "blocks": [
