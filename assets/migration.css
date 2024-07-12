@@ -150,5 +150,7 @@
 }
 
 .points-vertical > .point > .point-content > .point-heading {
-    position: absolute;
+    font-size: x-large;
+    font-weight: bold;
+    color: #128e12;
 }
