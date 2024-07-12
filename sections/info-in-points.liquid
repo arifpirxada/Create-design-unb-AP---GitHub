@@ -6,11 +6,7 @@
   <div class="points {% if section.settings.vertical-points == true %}points-vertical{% endif %}">
     {% for block in section.blocks %}
       <div class="point d-flex">
-<<<<<<< HEAD
         <span class="vertical-line points-line {% if forloop.first %}d-none-on-small-devices{% endif %}"></span>
-=======
-        <span class="vertical-line points-line {% if forloop.first %}d-none-on-small{% endif %}"></span>
->>>>>>> 02a0295c8219719fee18b5f428b6f27dc903b1d8
         <div class="point-content">
           <p class="point-heading">{{ block.settings.title }}</p>
           {% if block.settings.description != blank %}
