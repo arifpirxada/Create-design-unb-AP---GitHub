@@ -69,10 +69,18 @@
             "title": "Reliable Infrastructure",
             "description": "Shopify powers millions of brands across the globe and delivers 99.99% uptime, which means\nyou don't have to worry about your site crashing."
           }
+        },
+        "text_j9WKQd": {
+          "type": "text",
+          "settings": {
+            "title": "End-to-end Security",
+            "description": "Shopify takes security seriously, providing PCI-DDS, SOC 1, 2, and 3, as well as GDPR\ncompliance, so you never need to worry about keeping your data secure."
+          }
         }
       },
       "block_order": [
-        "text_9eYDdq"
+        "text_9eYDdq",
+        "text_j9WKQd"
       ],
       "settings": {
         "heading": "Security",
