@@ -149,6 +149,6 @@
     position: absolute;
 }
 
-.points-vertical > .point > .point-content {
+.points-vertical > .point > .point-content > .point-heading {
     position: absolute;
 }
