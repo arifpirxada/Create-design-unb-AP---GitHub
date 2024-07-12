@@ -137,7 +137,10 @@
 
 @media screen and (max-width: 450px) {
     .points {
-        justify-content: center;
+        justify-content: start;
+    }
+    .vertical-line {
+        width: 80vw !important;
     }
 }
 
