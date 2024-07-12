@@ -165,9 +165,7 @@
     .points-container-vertical {
         flex-direction: column;
     }
-    ..points-container-vertical .info-heading {
-        margin: 0;
-        width: 60%;
-        text-align: center;
+    .points-container-vertical .info-heading {
+        width: 90%;
     } 
 }
