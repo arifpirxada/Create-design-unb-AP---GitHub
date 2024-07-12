@@ -184,7 +184,7 @@
         max-width: 100vw !important;
     }
     .points-vertical > .point > .point-content > .point-heading {
-        margin: 0 0.5rem;
+        padding: 0;
     }
     .points-vertical > .point > .point-content > .point-desc {
         margin: 0 0.5rem;
