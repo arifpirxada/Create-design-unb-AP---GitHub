@@ -1,6 +1,6 @@
 {{ 'migration.css' | asset_url | stylesheet_tag }}
 
-<div class="info-points-container {% if section.settings.vertical-points == true %}{% endif %}">
+<div class="info-points-container {% if section.settings.vertical-points == true %}vertical-{% endif %}">
   <h2 class="info-heading">{{ section.settings.heading }}</h2>
 
   <div class="points">
