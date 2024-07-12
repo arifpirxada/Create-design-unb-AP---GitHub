@@ -127,19 +127,8 @@
     .info-points-container {
         padding: 2rem;
     }
-
-    .left-section,
-    .right-section {
-        width: 90%;
-    }
-
-    .vertical-line {
-        position: relative;
-        margin-top: 0rem;
+    .info-heading {
         margin-bottom: 2rem;
-        width: 80vw;
-        height: 1.7px;
-        right: 0;
     }
 }
 
