@@ -186,8 +186,10 @@
     color: black;
 }
 
-@media screen and (max-width: ) {
-    
+@media screen and (max-width: 450px) {
+    .left-section p {
+        font-size: 2rem;
+    }
 }
 
 .right-section {
