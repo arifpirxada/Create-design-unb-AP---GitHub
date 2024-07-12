@@ -138,3 +138,7 @@
 .points-vertical {
     flex-direction: column;
 }
+
+.points-vertical .point {
+    flex-direction: column;
+}
