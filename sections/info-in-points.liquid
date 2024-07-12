@@ -1,12 +1,12 @@
 {{ 'migration.css' | asset_url | stylesheet_tag }}
 
-<div class="info-points-container">
+<div class="info-points-container ">
   <h2 class="info-heading">{{ section.settings.heading }}</h2>
 
   <div class="points">
     {% for block in section.blocks %}
       <div class="point d-flex">
-        <span class="vertical-line line"></span>
+        <span class="vertical-line points-line"></span>
         <div class="point-content">
           <p class="point-heading">{{ block.settings.title }}</p>
           {% if block.settings.description != blank %}
