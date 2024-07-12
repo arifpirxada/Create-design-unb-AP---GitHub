@@ -132,7 +132,8 @@
 
 .points-container-vertical .info-heading {
     margin: 0;
-    width: 60%  ;
+    width: 60%;
+    text-align: center;
 }
 
 .points-vertical {
