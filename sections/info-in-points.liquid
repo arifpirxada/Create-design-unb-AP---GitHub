@@ -3,9 +3,9 @@
 <div class="info-points-container {% if section.settings.vertical-points == true %}points-container-vertical{% endif %}">
   <h2 class="info-heading">{{ section.settings.heading }}</h2>
 
-  <div class="points">
+  <div class="points {% if section.settings.vertical-points == true %}points-vertical{% endif %}">
     {% for block in section.blocks %}
-      <div class="point d-flex {% if section.settings.vertical-points == true %}points-vertical{% endif %}">
+      <div class="point d-flex">
         <span class="vertical-line points-line"></span>
         <div class="point-content">
           <p class="point-heading">{{ block.settings.title }}</p>
