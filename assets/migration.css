@@ -130,7 +130,9 @@
     align-items: center;
 }
 
-.points-container-vertical .info-h
+.points-container-vertical .info-heading {
+    margin: 0;
+}
 
 .points-vertical {
     flex-direction: column;
