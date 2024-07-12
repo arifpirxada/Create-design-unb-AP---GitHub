@@ -130,6 +130,9 @@
     .info-heading {
         margin-bottom: 4rem;
     }
+    .points {
+        justify-content: center;
+    }
 }
 
 /* Styling for info in points section, if show points in vertically == true  */
