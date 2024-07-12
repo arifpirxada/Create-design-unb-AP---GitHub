@@ -111,7 +111,6 @@
 .topics {
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-wrap: wrap;
     position: relative;
     gap: 40px;
