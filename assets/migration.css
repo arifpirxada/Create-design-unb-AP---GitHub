@@ -1,5 +1,7 @@
 /* Global  */
-
+.d-none {
+    display: none !important;
+}
 
 .info-points-container {
     padding-top: 0;
