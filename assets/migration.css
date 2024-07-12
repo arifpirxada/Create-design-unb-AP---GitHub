@@ -183,4 +183,7 @@
     .points-vertical .point {
         max-width: 100vw !important;
     }
+    .points-vertical > .point > .point-content > .point-desc {
+        margin: 0 0.5rem;
+    }
 }
