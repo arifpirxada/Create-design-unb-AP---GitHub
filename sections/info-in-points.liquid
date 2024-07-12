@@ -1,6 +1,6 @@
 {{ 'migration.css' | asset_url | stylesheet_tag }}
 
-<div class="info-points-container ">
+<div class="info-points-container {% if section.settings.vertical-points == true %}{% endif %}">
   <h2 class="info-heading">{{ section.settings.heading }}</h2>
 
   <div class="points">
@@ -31,6 +31,11 @@
         "type": "text",
         "id": "heading",
         "label": "Heading"
+      }, {
+        "type": "checkbox",
+        "id": "vertical-points",
+        "label": "Show points vertically",
+        "default": true
       }
     ],
     "blocks": [
