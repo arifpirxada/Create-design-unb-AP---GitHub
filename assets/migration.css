@@ -139,6 +139,10 @@
     flex-direction: column;
 }
 
+.points-vertical .points-line {
+    flex-direction: column;
+}
+
 .points-vertical .point {
     max-width: 40vw !important;
     position: relative;
