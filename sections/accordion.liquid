@@ -57,6 +57,7 @@
 
   .accordion img {
     margin-left: 10px;
+    transition: transform 0.2s;
   }
 
   .pannel {
@@ -117,11 +118,15 @@
 
     Array.from(acc).forEach(element => {
       element.addEventListener("click", () => {
+        let img = element.children[0];
+        
         let pannel = element.nextElementSibling;
 
         if (pannel.style.maxHeight) {
+          img.style.transform = "rotate(0deg)"
           pannel.style.maxHeight = null;
         } else {
+          img.style.transform = "rotate(180deg)"
           pannel.style.maxHeight = pannel.scrollHeight + "px";
         }
 
