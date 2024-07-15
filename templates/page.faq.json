@@ -16,9 +16,15 @@
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "faq_Y9ejmM": {
+      "type": "faq",
+      "settings": {
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "faq_Y9ejmM"
   ]
 }
