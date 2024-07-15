@@ -233,7 +233,7 @@
       element.addEventListener("click", () => {
         let pannel = element.nextElementSibling;
 
-        if (pannel.style.display === "block") {
+        if (pannel.style.maxHeight == 0) {
           pannel.style.display = "none";
         } else {
           pannel.style.display = "block";
