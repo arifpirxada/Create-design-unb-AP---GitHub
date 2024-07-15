@@ -12,8 +12,7 @@
 
   .wrapper > p,
   .wrapper > h1 {
-    margin: 1.5rem 0;
-    text-align: center;
+    margin: 3rem 0;
   }
 
   .wrapper > h1 {
@@ -103,6 +102,7 @@
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis
  
  
+ 
             saepe molestiae distinctio asperiores cupiditate consequuntur dolor
             ullam, iure eligendi harum eaque hic corporis debitis porro
             consectetur voluptate rem officiis architecto.
@@ -122,6 +122,7 @@
       <div class="pannel">
         <p>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis
+ 
  
  
             saepe molestiae distinctio asperiores cupiditate consequuntur dolor
@@ -144,6 +145,7 @@
         <p>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis 
  
+ 
             saepe molestiae distinctio asperiores cupiditate consequuntur dolor
             ullam, iure eligendi harum eaque hic corporis debitis porro
             consectetur voluptate rem officiis architecto.
@@ -163,6 +165,7 @@
       <div class="pannel">
         <p>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis
+ 
  
             saepe molestiae distinctio asperiores cupiditate consequuntur dolor
             ullam, iure eligendi harum eaque hic corporis debitis porro
@@ -184,6 +187,7 @@
         <p>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis
  
+ 
             saepe molestiae distinctio asperiores cupiditate consequuntur dolor
             ullam, iure eligendi harum eaque hic corporis debitis porro
             consectetur voluptate rem officiis architecto.
@@ -194,7 +198,7 @@
 </div>
 
 {% javascript %}
-  var acc = document.getElementsByClassName("accordion");
+  // var acc = document.getElementsByClassName("accordion");
 
 // var i;
 
@@ -215,21 +219,23 @@
 
   document.addEventListener("DOMContentLoaded", function() {
 
-      acc.array.forEach(element => {
-        element.addEventListener("click", () => {
-          element.classList.toggle("active");
-          element.parentElement.classList.toggle("active");
-    
-          var pannel = this.nextElementSibling;
-    
-          if (pannel.style.display === "block") {
-            pannel.style.display = "none";
-          } else {
-            pannel.style.display = "block";
-          }
-        })
-      });
-      
+    var acc = document.getElementsByClassName("accordion");
+
+    acc.array.forEach(element => {
+      element.addEventListener("click", () => {
+        element.classList.toggle("active");
+        element.parentElement.classList.toggle("active");
+
+        var pannel = this.nextElementSibling;
+
+        if (pannel.style.display === "block") {
+          pannel.style.display = "none";
+        } else {
+          pannel.style.display = "block";
+        }
+      })
+    });
+
   });
 {% endjavascript %}
 
