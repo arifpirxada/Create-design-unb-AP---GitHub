@@ -7,9 +7,11 @@
 
   .wrapper {
 
+
     /*
+
    max-width: 75%; 
-   margin: auto;
+   margin: auto; 
 */
     width: 80%;
     padding: 0 8%;
@@ -64,33 +66,35 @@
     margin-left: 10px;
   }
 
-/*
+
+  /*
+
    .active, 
    .accordion:hover { 
    background-color: #f1f7f5; 
-   }
+   } 
 */
-.pannel {
-  background-color: white;
-  overflow: hidden;
-  border-bottom: 1px solid #f5dbdb;
-  transition: max-height 0.2s;
-  max-height: 0;
-}
-.pannel p {
-  color: rgba(0, 0, 0, 0.7);
-  font-size: 1.8rem;
-  line-height: 1.4;
-  margin-top: 0;
-}
+  .pannel {
+    background-color: white;
+    overflow: hidden;
+    border-bottom: 1px solid #f5dbdb;
+    transition: max-height 0.2s;
+    max-height: 0;
+  }
+  .pannel p {
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 1.8rem;
+    line-height: 1.4;
+    margin-top: 0;
+  }
 
-.faq {
-  margin: 10px 0;
-  border-bottom: 1px solid #f5dbdb;
-}
-.faq.active {
-  border: none;
-}
+  .faq {
+    margin: 10px 0;
+    border-bottom: 1px solid #f5dbdb;
+  }
+  .faq.active {
+    border: none;
+  }
 
 {% endstylesheet %}
 
@@ -98,7 +102,23 @@
   <div class="wrapper">
     <h1>Frequently Asked Questions</h1>
 
-    {{}}
+    {% for block in section.blocks %}
+      <div class="faq">
+        <button class="accordion">
+          Lorem ipsum dolor sit amet.
+          <img
+            src="{{ "down-arrow.png" | asset_url }}"
+            width="20"
+            height="auto"
+            alt="Down arrow">
+        </button>
+        <div class="pannel">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur odit, eos aperiam mollitia nihil natus libero accusamus nam, excepturi culpa perspiciatis officia sunt quo reiciendis optio. Perferendis non, itaque dolorum sunt aspernatur voluptatem magnam, nostrum dolore consequatur deserunt ex nihil maxime voluptas illum repudiandae quasi beatae labore pariatur distinctio impedit animi corporis ullam assumenda. Itaque?
+          </p>
+        </div>
+      </div>
+    {% endfor %}
 
     <div class="faq">
       <button class="accordion">
@@ -129,6 +149,7 @@
         <p>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis
  
+ 
             saepe molestiae distinctio asperiores cupiditate consequuntur dolor
             ullam, iure eligendi harum eaque hic corporis debitis porro
             consectetur voluptate rem officiis architecto.
@@ -148,6 +169,7 @@
       <div class="pannel">
         <p>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis
+ 
  
  
  
@@ -178,6 +200,7 @@
  
  
  
+ 
             saepe molestiae distinctio asperiores cupiditate consequuntur dolor
             ullam, iure eligendi harum eaque hic corporis debitis porro
             consectetur voluptate rem officiis architecto.
@@ -202,6 +225,7 @@
  
  
  
+ 
             saepe molestiae distinctio asperiores cupiditate consequuntur dolor
             ullam, iure eligendi harum eaque hic corporis debitis porro
             consectetur voluptate rem officiis architecto.
@@ -221,6 +245,7 @@
       <div class="pannel">
         <p>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis
+ 
  
  
  
