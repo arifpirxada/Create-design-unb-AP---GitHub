@@ -35,7 +35,7 @@
     align-items: center;
     font-weight: bold;
     font-size: 2rem;
-    font-weight: 500;
+    font-weight: bold;
   }
 
   .accordion i {
@@ -76,7 +76,7 @@
     <div class="faq">
       <button class="accordion">
         Lorem ipsum dolor sit amet.
-        <img src="{{ "down-arrow.png" | asset_url }}" width="100" height="auto" alt="Down arrow">
+        <img src="{{ "down-arrow.png" | asset_url }}" width="20" height="auto" alt="Down arrow">
       </button>
       <div class="pannel">
         <p>
@@ -88,7 +88,7 @@
     <div class="faq">
       <button class="accordion">
         Lorem ipsum dolor sit amet consectetur.
-        <img src="{{ "down-arrow.png" | asset_url }}" width="100" height="auto" alt="Down arrow">
+        <img src="{{ "down-arrow.png" | asset_url }}" width="20" height="auto" alt="Down arrow">
       </button>
       <div class="pannel">
         <p>
@@ -104,7 +104,7 @@
     <div class="faq">
       <button class="accordion">
         What are the major challanges of current agriculture?
-        <img src="{{ "down-arrow.png" |  asset_url }}" width="100" height="auto" alt="Down arrow">
+        <img src="{{ "down-arrow.png" |  asset_url }}" width="20" height="auto" alt="Down arrow">
       </button>
       <div class="pannel">
         <p>
@@ -120,12 +120,11 @@
     <div class="faq">
       <button class="accordion">
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium, reprehenderit.
-        <img src="{{ "down-arrow.png" | asset_url }}" width="100" height="auto" alt="Down arrow">
+        <img src="{{ "down-arrow.png" | asset_url }}" width="20" height="auto" alt="Down arrow">
       </button>
       <div class="pannel">
         <p>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis 
- 
             saepe molestiae distinctio asperiores cupiditate consequuntur dolor
             ullam, iure eligendi harum eaque hic corporis debitis porro
             consectetur voluptate rem officiis architecto.
@@ -136,12 +135,11 @@
     <div class="faq">
       <button class="accordion">
         How can I be a part of Krushi?
-        <img src="{{ "down-arrow.png" | asset_url }}" width="100" height="auto" alt="Down arrow">
+        <img src="{{ "down-arrow.png" | asset_url }}" width="20" height="auto" alt="Down arrow">
       </button>
       <div class="pannel">
         <p>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis
- 
             saepe molestiae distinctio asperiores cupiditate consequuntur dolor
             ullam, iure eligendi harum eaque hic corporis debitis porro
             consectetur voluptate rem officiis architecto.
@@ -152,12 +150,11 @@
     <div class="faq">
       <button class="accordion">
         Lorem ipsum dolor sit amet consectetur adipisicing.
-        <img src="{{ "down-arrow.png" | asset_url }}" width="100" height="auto" alt="Down arrow">
+        <img src="{{ "down-arrow.png" | asset_url }}" width="20" height="auto" alt="Down arrow">
       </button>
       <div class="pannel">
         <p>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis
- 
             saepe molestiae distinctio asperiores cupiditate consequuntur dolor
             ullam, iure eligendi harum eaque hic corporis debitis porro
             consectetur voluptate rem officiis architecto.
@@ -169,22 +166,37 @@
 
 {% javascript %}
   var acc = document.getElementsByClassName("accordion");
-  var i;
+//   var i;
 
-  for (i = 0; i < acc.length; i++) {
-    acc[i].addEventListener("click", function() {
-      this.classList.toggle("active");
-      this.parentElement.classList.toggle("active");
+//   for (i = 0; i < acc.length; i++) {
+//     acc[i].addEventListener("click", function() {
+//       this.classList.toggle("active");
+//       this.parentElement.classList.toggle("active");
 
-      var pannel = this.nextElementSibling;
+//       var pannel = this.nextElementSibling;
 
-      if (pannel.style.display === "block") {
-        pannel.style.display = "none";
-      } else {
-        pannel.style.display = "block";
-      }
-    });
-  }
+//       if (pannel.style.display === "block") {
+//         pannel.style.display = "none";
+//       } else {
+//         pannel.style.display = "block";
+//       }
+//     });
+//   }
+
+  acc.array.forEach(element => {
+    element.addEventListener("click", () => {
+        element.classList.toggle("active");
+        element.parentElement.classList.toggle("active");
+
+        var pannel = this.nextElementSibling;
+
+        if (pannel.style.display === "block") {
+            pannel.style.display = "none";
+        } else {
+            pannel.style.display = "block";
+        }
+    })
+  });
 {% endjavascript %}
 
 
