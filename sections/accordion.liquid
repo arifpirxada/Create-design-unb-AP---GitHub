@@ -123,9 +123,10 @@
         let pannel = element.nextElementSibling;
 
         if (pannel.style.maxHeight) {
-        img.style.transform = "rotate(180deg)"
+          img.style.transform = "rotate(180deg)"
           pannel.style.maxHeight = null;
         } else {
+          img.style.transform = "rotate(0deg)"
           pannel.style.maxHeight = pannel.scrollHeight + "px";
         }
 
