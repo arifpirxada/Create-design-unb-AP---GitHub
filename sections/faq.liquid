@@ -224,13 +224,11 @@
 </div>
 
 {% javascript %}
-
   document.addEventListener("DOMContentLoaded", function() {
 
     let acc = document.getElementsByClassName("accordion");
 
     Array.from(acc).forEach(element => {
-      console.log(element)
       element.addEventListener("click", () => {
         element.classList.toggle("active");
         element.parentElement.classList.toggle("active");
