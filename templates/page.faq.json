@@ -33,11 +33,19 @@
             "faq-heading": "DO MOBILE SIGNAL BOOSTERS REALLY WORK?",
             "faq-answer": "Yes, mobile signal boosters actually do work. A signal booster simply amplifies the strength of the signal. This is done by repeating the same signal multiple times until it reaches the quality necessary for strong signals."
           }
+        },
+        "text_EjYNDh": {
+          "type": "text",
+          "settings": {
+            "faq-heading": "HOW DO SIGNAL BOOSTERS WORK?",
+            "faq-answer": "A signal booster uses three steps to deliver a strengthened signal quality for optimal use. The first step requires the signal boosters’ antenna to catch the source signal. It doesn’t matter if the signal is weak, as that is what a booster is supposed to make strong. This signal is then strengthened by the amplifier repeatedly to make sure the signal is optimal to carry the data further. This strengthened signal is then broadcasted to cellular devices at the location."
+          }
         }
       },
       "block_order": [
         "text_MGa6Ka",
-        "text_a3rTgz"
+        "text_a3rTgz",
+        "text_EjYNDh"
       ],
       "settings": {
         "title": "Frequently Asked Questions"
