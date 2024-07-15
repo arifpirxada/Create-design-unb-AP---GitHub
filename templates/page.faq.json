@@ -26,10 +26,18 @@
             "faq-heading": "HOW CAN I BOOST A WEAK CELL PHONE SIGNAL?",
             "faq-answer": "Signal boosters are the only effective way of amplifying weak signals. There might be workarounds, but there’s less chance of them working effectively."
           }
+        },
+        "text_a3rTgz": {
+          "type": "text",
+          "settings": {
+            "faq-heading": "DO MOBILE SIGNAL BOOSTERS REALLY WORK?",
+            "faq-answer": "Yes, mobile signal boosters actually do work. A signal booster simply amplifies the strength of the signal. This is done by repeating the same signal multiple times until it reaches the quality necessary for strong signals."
+          }
         }
       },
       "block_order": [
-        "text_MGa6Ka"
+        "text_MGa6Ka",
+        "text_a3rTgz"
       ],
       "settings": {
         "title": "Frequently Asked Questions"
