@@ -234,7 +234,7 @@
         let pannel = element.nextElementSibling;
 
         if (pannel.style.maxHeight == 0) {
-          pannel.style.display = "none";
+          pannel.style.maxHeight = pannel.scrollHeight;
         } else {
           pannel.style.display = "block";
         }
