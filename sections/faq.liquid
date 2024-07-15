@@ -1,0 +1,39 @@
+<div class="faq-container">
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi, pariatur, architecto, odit sapiente corrupti incidunt esse error fuga explicabo facilis aliquam? Impedit est quasi odit praesentium consequuntur dicta nobis facilis suscipit aspernatur odio!
+</div>
+
+
+{% schema %}
+{
+  "name": "FAQ section",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [],
+  "blocks": [
+    {
+      "type": "text",
+      "name": "FAQ Item",
+      "settings": [
+        {
+          "type": "text",
+          "id": "faq-heading",
+          "label": "Heading"
+        },
+        {
+          "type": "textarea",
+          "id": "faq-answer",
+          "label": "Answer"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "FAQ section"
+    }
+  ]
+}
+{% endschema %}
