@@ -89,7 +89,6 @@
 
     {% for block in section.blocks %}
 
-      {% if block != blank %}
         <div class="faq">
           <button class="accordion">
             {{ block.faq-heading }}
@@ -105,8 +104,7 @@
             </p>
           </div>
         </div>
-      {% endif %}
-
+        
     {% endfor %}
 
   </div>
