@@ -91,7 +91,7 @@
 
         <div class="faq">
           <button class="accordion">
-            {{ block.faq-heading }}
+            {{ block.settings.faq-heading }}
             <img
               src="{{ "down-arrow.png" | asset_url }}"
               width="20"
@@ -100,11 +100,11 @@
           </button>
           <div class="pannel">
             <p>
-              {{ block.faq-answer }}
+              {{ block.settings.faq-answer }}
             </p>
           </div>
         </div>
-        
+
     {% endfor %}
 
   </div>
