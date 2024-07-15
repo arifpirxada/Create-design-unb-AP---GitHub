@@ -234,7 +234,7 @@
         let pannel = element.nextElementSibling;
 
         if (pannel.style.maxHeight == 0) {
-          pannel.style.maxHeight = pannel.scrollHeight;
+          pannel.style.maxHeight = pannel.scrollHeight + "px";
         } else {
           pannel.style.maxHeight = null;
           
