@@ -17,14 +17,27 @@
         "padding_bottom": 28
       }
     },
-    "faq_Y9ejmM": {
-      "type": "faq",
+    "accordion_f6rFjJ": {
+      "type": "accordion",
+      "blocks": {
+        "text_MGa6Ka": {
+          "type": "text",
+          "settings": {
+            "faq-heading": "HOW CAN I BOOST A WEAK CELL PHONE SIGNAL?",
+            "faq-answer": "Signal boosters are the only effective way of amplifying weak signals. There might be workarounds, but there’s less chance of them working effectively."
+          }
+        }
+      },
+      "block_order": [
+        "text_MGa6Ka"
+      ],
       "settings": {
+        "title": "Frequently Asked Questions"
       }
     }
   },
   "order": [
     "main",
-    "faq_Y9ejmM"
+    "accordion_f6rFjJ"
   ]
 }
