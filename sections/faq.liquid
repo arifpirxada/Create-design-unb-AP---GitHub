@@ -219,12 +219,12 @@
 
   document.addEventListener("DOMContentLoaded", function() {
 
-    var acc = document.getElementsByClassName("accordion");
+    let acc = document.getElementsByClassName("accordion");
 
-    acc.array.forEach(element => {
+    Array.from(acc).forEach(element => {
       element.addEventListener("click", () => {
-        element.classList.toggle("active");
-        element.parentElement.classList.toggle("active");
+        this.classList.toggle("active");
+        this.parentElement.classList.toggle("active");
 
         var pannel = this.nextElementSibling;
 
