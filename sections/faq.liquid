@@ -100,7 +100,7 @@
 
 <div class="faq-container">
   <div class="wrapper">
-    <h1>Frequently Asked Questions</h1>
+    <h1>{{ section.settings.title }}</h1>
 
     {% for block in section.blocks %}
       <div class="faq">
@@ -149,7 +149,7 @@
 
 {% schema %}
   {
-    "name": "FAQ section",
+    "name": "Accor",
     "tag": "section",
     "class": "section",
     "disabled_on": {
