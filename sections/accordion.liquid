@@ -119,7 +119,7 @@
     Array.from(acc).forEach(element => {
       element.addEventListener("click", () => {
         let img = element.children[0];
-        img.style.transform = ""
+        img.style.transform = "rotate(1)"
         let pannel = element.nextElementSibling;
 
         if (pannel.style.maxHeight) {
