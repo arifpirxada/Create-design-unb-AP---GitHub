@@ -118,7 +118,8 @@
 
     Array.from(acc).forEach(element => {
       element.addEventListener("click", () => {
-        let img = element.children[0]
+        let img = element.children[0];
+        
         let pannel = element.nextElementSibling;
 
         if (pannel.style.maxHeight) {
