@@ -88,21 +88,23 @@
     <h1>{{ section.settings.title }}</h1>
 
     {% for block in section.blocks %}
-      <div class="faq">
-        <button class="accordion">
-          {{ block.faq-heading }}
-          <img
-            src="{{ "down-arrow.png" | asset_url }}"
-            width="20"
-            height="auto"
-            alt="Down arrow">
-        </button>
-        <div class="pannel">
-          <p>
-            {{ block.faq-answer }}
-          </p>
+
+        <div class="faq">
+          <button class="accordion">
+            {{ block.settings.faq-heading }}
+            <img
+              src="{{ "down-arrow.png" | asset_url }}"
+              width="20"
+              height="auto"
+              alt="Down arrow">
+          </button>
+          <div class="pannel">
+            <p>
+              {{ block.settings.faq-answer }}
+            </p>
+          </div>
         </div>
-      </div>
+
     {% endfor %}
 
   </div>
@@ -117,12 +119,10 @@
       element.addEventListener("click", () => {
         let pannel = element.nextElementSibling;
 
-        if (pannel.style.maxHeight == 0) {
-          pannel.style.maxHeight = pannel.scrollHeight + "px";
-
-        } else {
+        if (pannel.style.maxHeight) {
           pannel.style.maxHeight = null;
-
+        } else {
+          pannel.style.maxHeight = pannel.scrollHeight + "px";
         }
 
       })
