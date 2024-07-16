@@ -24,7 +24,7 @@
 
   @media screen and (max-width: 768px) {
     .text-on-image-container h1 {
-        font-size: 40px !important;
+      font-size: 40px !important;
     }
   }
   .d-none {
@@ -33,9 +33,18 @@
 {% endstylesheet %}
 
 <div class="text-on-image-container">
-  <img class="desktop-image" src="{{ section.settings.image | image_url }}" alt="Background image">
-  <img class="mobile-image d-none" src="{{ section.settings.mobile-image | image_url }}" alt="Background image">
+  <img
+    class="desktop-image"
+    src="{{ section.settings.image | image_url }}"
+    alt="Background image">
+  <img
+    class="mobile-image d-none"
+    src="{{ section.settings.mobile-image | image_url }}"
+    alt="Background image">
   <h1>{{ section.settings.text }}</h1>
+  {% if section.settings.description != blank %}
+    <p>{{ section.settings.description }}</p>
+  {% endif %}
 </div>
 
 {%- javascript -%}
@@ -43,8 +52,8 @@
     const image = document.querySelector(".desktop-image");
     const mobileImage = document.querySelector(".mobile-image");
     if (window.innerWidth <= 768) {
-        image.classList.add("d-none");
-        mobileImage.classList.remove("d-none");
+      image.classList.add("d-none");
+      mobileImage.classList.remove("d-none");
     }
   });
 {%- endjavascript -%}
@@ -58,14 +67,25 @@
         "type": "image_picker",
         "id": "image",
         "label": "Image"
-      }, {
+      },
+      {
         "type": "image_picker",
         "id": "mobile-image",
         "label": "Image for mobile"
-      }, {
+      },
+      {
         "type": "text",
         "id": "text",
         "label": "Text"
+      },
+      {
+        "type": "text",
+        "id": "description",
+        "label": "description"
+      }, {
+        "type": "checkbox",
+        "id": "text-on-left",
+        "label": "Show Text on left"
       }
     ],
     "presets": [
