@@ -5,6 +5,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
   }
 
   .text-on-image-container img {
@@ -12,18 +13,28 @@
     height: auto;
   }
 
-  .text-on-image-container h1 {
+  .text-on-image-container .text-on-image-content {
     position: absolute;
+    width: 70%;
+  }
+
+  .text-on-image-container h1 {
     font-size: 54px;
     font-weight: 800;
-    font-family: "Manrope"
-    , sans-serif;
+    font-family: "Manrope-Medium";
     font-style: normal;
-    color: #ffffff;
+  }
+
+  .text-left {
+    color: #000000 !important;
+  }
+
+  .text-right {
+    color: #ffffff !important;
   }
 
   @media screen and (max-width: 768px) {
-    .text-on-image-container h1 {
+    .text-on-image-container div.h1 {
       font-size: 40px !important;
     }
   }
@@ -41,10 +52,14 @@
     class="mobile-image d-none"
     src="{{ section.settings.mobile-image | image_url }}"
     alt="Background image">
-  <h1>{{ section.settings.text }}</h1>
-  {% if section.settings.description != blank %}
-    <p>{{ section.settings.description }}</p>
-  {% endif %}
+
+  <div class="{% if section.settings.text-on-left %}text-on-image-content{% endif %}">
+    <h1 class="{% if section.settings.text-on-left %}text-left{% else %}text-right{% endif %}">{{ section.settings.text }}</h1>
+    {% if section.settings.description != blank %}
+      <p class="{% if section.settings.text-on-left %}text-left{% else %}text-right{% endif %}">{{ section.settings.description }}</p>
+    {% endif %}
+  </div>
+
 </div>
 
 {%- javascript -%}
@@ -85,6 +100,7 @@
       }, {
         "type": "checkbox",
         "id": "text-on-left",
+        "default": false,
         "label": "Show Text on left"
       }
     ],
