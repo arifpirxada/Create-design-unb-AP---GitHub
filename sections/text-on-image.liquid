@@ -31,7 +31,7 @@
 {% endstylesheet %}
 
 <div class="text-on-image-container">
-  <img src="{{ section.settings.image | image_url }}" alt="Background image">
+  <img class="" src="{{ section.settings.image | image_url }}" alt="Background image">
   <img class="d-none" src="{{ section.settings.mobile-image | image_url }}" alt="Background image">
   <h1>{{ section.settings.text }}</h1>
 </div>
@@ -40,8 +40,7 @@
   document.addEventListener("DOMContentLoaded", function() {
     const image = document.querySelector(".background-image");
     if (window.innerWidth <= 768) {
-      image.src = "{{ section.settings.mobile-image | image_url }}";
-      image.alt = "Mobile background image";
+      
     }
   });
 {%- endjavascript -%}
