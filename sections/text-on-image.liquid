@@ -20,16 +20,24 @@
     font-family: "Manrope-Medium";
     font-style: normal;
     color: {% if section.settings.text-on-left %}#000000{% else %}#ffffff{% endif %};
-  }
+}
 
-  @media screen and (max-width: 768px) {
-    .text-on-image-container h1 {
-      font-size: 40px !important;
-    }
+.text-on-image-container h1.text-left {
+  color: #000000;
+}
+
+.text-on-image-container h1.text-right {
+  color: #ffffff;
+}
+
+@media screen and (max-width: 768px) {
+  .text-on-image-container h1 {
+    font-size: 40px !important;
   }
-  .d-none {
-    display: none !important;
-  }
+}
+.d-none {
+  display: none !important;
+}
 {% endstylesheet %}
 
 <div class="text-on-image-container">
