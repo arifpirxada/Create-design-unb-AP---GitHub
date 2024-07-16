@@ -18,6 +18,12 @@
     font-size: 2rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
   }
+
+  @media (max-width: 768px) {
+    .text-on-image-container img {
+      content: url("{{ section.settings.mobile-image | image_url }}");
+    }
+  }
 {% endstylesheet %}
 
 <div class="text-on-image-container">
@@ -34,6 +40,10 @@
         "type": "image_picker",
         "id": "image",
         "label": "Image"
+      }, {
+        "type": "image_picker",
+        "id": "mobile-image",
+        "label": "Image for mobile"
       }, {
         "type": "text",
         "id": "text",
