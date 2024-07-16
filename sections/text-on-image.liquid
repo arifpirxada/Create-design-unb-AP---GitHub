@@ -13,6 +13,10 @@
     height: auto;
   }
 
+  .text-on-image-container div {
+    position: absolute;
+  }
+
   .text-on-image-container h1 {
     font-size: 54px;
     font-weight: 800;
@@ -50,7 +54,7 @@
     src="{{ section.settings.mobile-image | image_url }}"
     alt="Background image">
 
-  <div>
+  <div class="">
     <h1 class="{% if section.settings.text-on-left %}text-left{% else %}text-right{% endif %}">{{ section.settings.text }}</h1>
     {% if section.settings.description != blank %}
       <p class="{% if section.settings.text-on-left %}text-left{% else %}text-right{% endif %}">{{ section.settings.description }}</p>
