@@ -39,9 +39,10 @@
 {%- javascript -%}
   document.addEventListener("DOMContentLoaded", function() {
     const image = document.querySelector(".desktop-image");
-    const mobileImage = document.querySelector(".desktop-image");
+    const mobileImage = document.querySelector(".mobile-image");
     if (window.innerWidth <= 768) {
-        image.classList.add("d-none")
+        image.classList.add("d-none");
+        m
     }
   });
 {%- endjavascript -%}
