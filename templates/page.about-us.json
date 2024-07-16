@@ -16,9 +16,17 @@
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "text_on_image_UCa8Jy": {
+      "type": "text-on-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/technological-light-abstract-glow-background_1.png",
+        "text": ""
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "text_on_image_UCa8Jy"
   ]
 }
