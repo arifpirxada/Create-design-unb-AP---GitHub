@@ -24,48 +24,10 @@
         "mobile-image": "shopify:\/\/shop_images\/technological-light-abstract-glow-background-for-mobile.png",
         "text": "About Us"
       }
-    },
-    "image_with_text_8zgDF7": {
-      "type": "image-with-text",
-      "blocks": {
-        "heading_UMyXBA": {
-          "type": "heading",
-          "settings": {
-            "heading": "Industry Expertise",
-            "heading_size": "h1"
-          }
-        },
-        "text_X3UYCH": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Mobiboost commenced in 2012 with a vision to solve the cardinal issue of failing signals and weak data connectivity. Unreliable internet acts as a roadblock for businesses, hampering their ability to operate efficiently. Our team of certified professionals and industry veterans brings a wealth of experience to the table to deliver robust and competitive solutions by addressing issues across all major carriers. We utilize a comprehensive range of cutting-edge mobile signal boosters and accessories to amplify your signal to its maximum potential, guaranteeing uninterrupted connections. As a leading mobile network booster provider in India, Mobiboost offers the best-priced installations for all 2G, 3G, 4G and 5G boosters. We combat declining signal strength in major cities with our range of boosters, perfect for homes, basements, or anywhere with weak reception.<\/p>",
-            "text_style": "body"
-          }
-        }
-      },
-      "block_order": [
-        "heading_UMyXBA",
-        "text_X3UYCH"
-      ],
-      "settings": {
-        "height": "adapt",
-        "desktop_image_width": "small",
-        "layout": "text_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "section_color_scheme": "",
-        "color_scheme": "",
-        "image_behavior": "none",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
     }
   },
   "order": [
     "main",
-    "text_on_image_UCa8Jy",
-    "image_with_text_8zgDF7"
+    "text_on_image_UCa8Jy"
   ]
 }
