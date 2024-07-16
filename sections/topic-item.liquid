@@ -1,45 +1,51 @@
 {{ 'comparison.css' | asset_url | stylesheet_tag }}
 
 {% assign meta_object = page.metafields.custom.comparison_content.value %}
-{% assign topics = meta_object.topic_details | json %}
+{% assign topics = meta_object.topic_details.value %}
 
-{{ topics.error }}
+{% comment %} {{ topics }}
+  
+  {% for topic in topics %}
+    data
+    {{ topic.title }}
+{% endfor %} {% endcomment %}
 
 {% for topic in topics %}
-  data
-  {{ topic.title }}
-{% endfor %}
+  <div class="topic-item-container">
 
-<div class="topic-item-container">
+    <div class="left-section">
+      <h3>{{ topic.title | default: section.settings.left-heading }}</h3>
+      <p>{{ topic.description | default: section.settings.left-content }}</p>
+    </div>
+    <span class="vertical-line"></span>
+    <div class="right-section">
 
-  <div class="left-section">
-    <h3>{{ section.settings.left-heading }}</h3>
-    <p>{{ section.settings.left-content }}</p>
-  </div>
-  <span class="vertical-line"></span>
-  <div class="right-section">
-
-    <div class="percentage-blocks">
-      {% for block in section.blocks %}
+      <div class="percentage-blocks">
         <div class="percentage-container">
-          <p class="percentage">{{ block.settings.percentage }}</p>
-          <p class="percentage-content">{{ block.settings.content }}</p>
+          <p class="percentage">{{ topic.percentage }}</p>
+          <p class="percentage-content">{{ topic.percentage-text }}</p>
         </div>
-      {% endfor %}
+        {% comment %} {% for block in section.blocks %}
+          <div class="percentage-container">
+            <p class="percentage">{{ block.settings.percentage }}</p>
+            <p class="percentage-content">{{ block.settings.content }}</p>
+          </div>
+        {% endfor %} {% endcomment %}
+      </div>
+
+      {% comment %} <div>
+        <h3>{{ section.settings.right-heading }}</h3>
+        <p>{{ section.settings.right-content }}</p>
+      </div>
+      {% if section.settings.button-text != blank %}
+        <a class="right-btn" href="{{ section.settings.button-link }}">
+          <span class="btn-arrow">&#8594;</span>
+          {{ section.settings.button-text }}</a>
+      {% endif %} {% endcomment %}
     </div>
 
-    <div>
-      <h3>{{ section.settings.right-heading }}</h3>
-      <p>{{ section.settings.right-content }}</p>
-    </div>
-    {% if section.settings.button-text != blank %}
-      <a class="right-btn" href="{{ section.settings.button-link }}">
-        <span class="btn-arrow">&#8594;</span>
-        {{ section.settings.button-text }}</a>
-    {% endif %}
   </div>
-
-</div>
+{% endfor %}
 
 {% schema %}
   {
