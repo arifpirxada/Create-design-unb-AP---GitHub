@@ -53,7 +53,7 @@
     src="{{ section.settings.mobile-image | image_url }}"
     alt="Background image">
 
-  <div class="text-on-image-content">
+  <div class="{% if section.settings.text-on-left %}text-on-image-content{% else %}text-right{% endif %}">
     <h1 class="{% if section.settings.text-on-left %}text-left{% else %}text-right{% endif %}">{{ section.settings.text }}</h1>
     {% if section.settings.description != blank %}
       <p class="{% if section.settings.text-on-left %}text-left{% else %}text-right{% endif %}">{{ section.settings.description }}</p>
