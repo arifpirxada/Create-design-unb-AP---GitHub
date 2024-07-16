@@ -21,18 +21,18 @@
     font-style: normal;
   }
 
-  .text-on-image-container h1.text-left,
+  .text-on-image-container div.h1.text-left,
   p.text-left {
     color: #000000 !important;
   }
 
-  .text-on-image-container h1.text-right,
+  .text-on-image-container div.h1.text-right,
   p.text-right {
     color: #ffffff !important;
   }
 
   @media screen and (max-width: 768px) {
-    .text-on-image-container h1 {
+    .text-on-image-container div.h1 {
       font-size: 40px !important;
     }
   }
@@ -57,7 +57,7 @@
       <p class="{% if section.settings.text-on-left %}text-left{% else %}text-right{% endif %}">{{ section.settings.description }}</p>
     {% endif %}
   </div>
-  
+
 </div>
 
 {%- javascript -%}
