@@ -30,7 +30,11 @@
 {% endstylesheet %}
 
 <div class="text-on-image-container">
-  <img src="{{ section.settings.image |  image_url  }}" alt="Background image">
+    {% if request.device_type == 'mobile' %}
+        <img src="{{ section.settings.mobile-image | image_url }}" alt="Mobile background image">
+    {% else %}
+        <img src="{{ section.settings.image | image_url }}" alt="Background image">
+    {% endif %}
   <h1>{{ section.settings.text }}</h1>
 </div>
 
