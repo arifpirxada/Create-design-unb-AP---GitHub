@@ -22,7 +22,9 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/technological-light-abstract-glow-background_1.png",
         "mobile-image": "shopify:\/\/shop_images\/technological-light-abstract-glow-background-for-mobile.png",
-        "text": "About Us"
+        "text": "About Us",
+        "description": "",
+        "text-on-left": false
       }
     },
     "about_us_section_bbqmAp": {
@@ -62,11 +64,22 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "text_on_image_UNM4jA": {
+      "type": "text-on-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Rectangle_345.png",
+        "mobile-image": "shopify:\/\/shop_images\/Rectangle_345_1.png",
+        "text": "Finest Signal Boosting Solution",
+        "description": "No matter your cellular signal issue, Mobiboost has a customized solution. Our extensive selection of cutting-edge signal boosters and accessories, manufactured using the finest technology, can amplify your signal strength by up to 36 times. This ensures consistent, reliable connectivity, allowing you to enjoy uninterrupted calls, data, and streaming. We prioritize quality by offering health-certified and government-approved products that are tailored to your specific needs, maximizing results.",
+        "text-on-left": false
+      }
     }
   },
   "order": [
     "main",
     "text_on_image_UCa8Jy",
-    "about_us_section_bbqmAp"
+    "about_us_section_bbqmAp",
+    "text_on_image_UNM4jA"
   ]
 }
