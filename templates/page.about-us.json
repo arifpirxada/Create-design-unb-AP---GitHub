@@ -48,6 +48,7 @@
         "text_X3UYCH"
       ],
       "settings": {
+        "image": "shopify:\/\/shop_images\/Rectangle_343.png",
         "height": "adapt",
         "desktop_image_width": "small",
         "layout": "text_first",
