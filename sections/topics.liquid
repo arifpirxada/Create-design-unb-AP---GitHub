@@ -3,43 +3,45 @@
 <div class="topics-container">
   <h2 class="content-heading">{{ section.settings.title }}</h2>
 
+  {% assign meta_object = page.metafields.custom.comparison_content.value %}
+
   <div class="topics">
-    {% for block in section.blocks %}
-      <p>{{ forloop.index }}. {{ block.settings.content }}</p>
+    {% assign topic_items = meta_object.topic_items | split: ',' %}
+    {% for Item in topic_items %}
+      <p>{{ forloop.index }}. {{ Item | remove: '"' | remove: '[' | remove: ']' | strip }}</p>
     {% endfor %}
   </div>
-
 </div>
 
 {% schema %}
-  {
-    "name": "Topics",
-    "tag": "section",
-    "class": "section",
-    "settings": [
-      {
-        "type": "text",
-        "id": "title",
-        "label": "Title"
-      }
-    ],
-    "blocks": [
-      {
-        "type": "text",
-        "name": "Content Block",
-        "settings": [
-          {
-            "type": "text",
-            "id": "content",
-            "label": "Content"
-          }
-        ]
-      }
-    ],
-    "presets": [
-      {
-        "name": "Topics"
-      }
-    ]
-  }
+{
+  "name": "Topics",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "text",
+      "name": "Content Block",
+      "settings": [
+        {
+          "type": "text",
+          "id": "content",
+          "label": "Content"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Topics"
+    }
+  ]
+}
 {% endschema %}

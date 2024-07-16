@@ -219,6 +219,9 @@
     .points-vertical > .point > .points-line {
         position: relative !important;
     }
+    .points-container-vertical .points-heading {
+        width: 100% !important;
+    }
 }
 
 @media screen and (max-width: 500px) {

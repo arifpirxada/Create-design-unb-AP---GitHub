@@ -1,5 +1,15 @@
 {{ 'comparison.css' | asset_url | stylesheet_tag }}
 
+{% assign meta_object = page.metafields.custom.comparison_content.value %}
+{% assign topics = meta_object.topic_details | json %}
+
+{{ topics.error }}
+
+{% for topic in topics %}
+  data
+  {{ topic.title }}
+{% endfor %}
+
 <div class="topic-item-container">
 
   <div class="left-section">
@@ -17,7 +27,7 @@
         </div>
       {% endfor %}
     </div>
-    
+
     <div>
       <h3>{{ section.settings.right-heading }}</h3>
       <p>{{ section.settings.right-content }}</p>
