@@ -19,7 +19,7 @@
     font-weight: 800;
     font-family: "Manrope-Medium";
     font-style: normal;
-    color: {% if section.settings. %};
+    color: {% if section.settings.text-on-left %};
   }
 
   @media screen and (max-width: 768px) {
@@ -85,6 +85,7 @@
       }, {
         "type": "checkbox",
         "id": "text-on-left",
+        "default": false,
         "label": "Show Text on left"
       }
     ],
