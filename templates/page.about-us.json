@@ -72,7 +72,7 @@
         "mobile-image": "shopify:\/\/shop_images\/Rectangle_345_1.png",
         "text": "Finest Signal Boosting Solution",
         "description": "No matter your cellular signal issue, Mobiboost has a customized solution. Our extensive selection of cutting-edge signal boosters and accessories, manufactured using the finest technology, can amplify your signal strength by up to 36 times. This ensures consistent, reliable connectivity, allowing you to enjoy uninterrupted calls, data, and streaming. We prioritize quality by offering health-certified and government-approved products that are tailored to your specific needs, maximizing results.",
-        "text-on-left": false
+        "text-on-left": true
       }
     }
   },
