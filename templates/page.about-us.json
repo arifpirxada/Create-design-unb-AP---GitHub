@@ -21,7 +21,8 @@
       "type": "text-on-image",
       "settings": {
         "image": "shopify:\/\/shop_images\/technological-light-abstract-glow-background_1.png",
-        "text": ""
+        "mobile-image": "shopify:\/\/shop_images\/technological-light-abstract-glow-background-for-mobile.png",
+        "text": "About Us"
       }
     }
   },
