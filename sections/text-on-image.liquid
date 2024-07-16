@@ -31,16 +31,16 @@
 {% endstylesheet %}
 
 <div class="text-on-image-container">
-  <img class="" src="{{ section.settings.image | image_url }}" alt="Background image">
+  <img class="desktop-image" src="{{ section.settings.image | image_url }}" alt="Background image">
   <img class="d-none" src="{{ section.settings.mobile-image | image_url }}" alt="Background image">
   <h1>{{ section.settings.text }}</h1>
 </div>
 
 {%- javascript -%}
   document.addEventListener("DOMContentLoaded", function() {
-    const image = document.querySelector(".background-image");
+    const image = document.querySelector(".desktop-image");
     if (window.innerWidth <= 768) {
-      
+        
     }
   });
 {%- endjavascript -%}
