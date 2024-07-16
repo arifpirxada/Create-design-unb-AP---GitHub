@@ -17,26 +17,27 @@
     position: absolute;
     font-size: 72px;
     font-weight: 800;
-    font-family: "Manrope", sans-serif;
+    font-family: "Manrope"
+    , sans-serif;
     font-style: normal;
     color: #ffffff;
-  }
-
-  @media (max-width: 768px) {
-    .text-on-image-container img {
-      content: url("{{ section.settings.mobile-image | image_url }}");
-    }
   }
 {% endstylesheet %}
 
 <div class="text-on-image-container">
-    {% if request.device_type == 'mobile' %}
-        <img src="{{ section.settings.mobile-image | image_url }}" alt="Mobile background image">
-    {% else %}
-        <img src="{{ section.settings.image | image_url }}" alt="Background image">
-    {% endif %}
+  <img class="background-image" src="{{ section.settings.image | image_url }}" alt="Background image">
   <h1>{{ section.settings.text }}</h1>
 </div>
+
+{%- javascript -%}
+  document.addEventListener("DOMContentLoaded", function() {
+    const image = document.querySelector(".background-image");
+    if (window.innerWidth <= 768) {
+      image.src = "{{ section.settings.mobile-image | image_url }}";
+      image.alt = "Mobile background image";
+    }
+  });
+{%- endjavascript -%}
 
 {% schema %}
   {
