@@ -19,25 +19,24 @@
     font-weight: 800;
     font-family: "Manrope-Medium";
     font-style: normal;
-    color: {% if section.settings.text-on-left %}#000000{% else %}#ffffff{% endif %};
-}
-
-.text-on-image-container h1.text-left {
-  color: #000000;
-}
-
-.text-on-image-container h1.text-right {
-  color: #ffffff;
-}
-
-@media screen and (max-width: 768px) {
-  .text-on-image-container h1 {
-    font-size: 40px !important;
   }
-}
-.d-none {
-  display: none !important;
-}
+
+  .text-on-image-container h1.text-left {
+    color: #000000;
+  }
+
+  .text-on-image-container h1.text-right {
+    color: #ffffff;
+  }
+
+  @media screen and (max-width: 768px) {
+    .text-on-image-container h1 {
+      font-size: 40px !important;
+    }
+  }
+  .d-none {
+    display: none !important;
+  }
 {% endstylesheet %}
 
 <div class="text-on-image-container">
@@ -49,7 +48,7 @@
     class="mobile-image d-none"
     src="{{ section.settings.mobile-image | image_url }}"
     alt="Background image">
-  <h1>{{ section.settings.text }}</h1>
+  <h1 class="{% if section.settings.text-on-left %}#000000{% else %}#ffffff{% endif %}">{{ section.settings.text }}</h1>
   {% if section.settings.description != blank %}
     <p>{{ section.settings.description }}</p>
   {% endif %}
