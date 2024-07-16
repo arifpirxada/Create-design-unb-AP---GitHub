@@ -21,7 +21,7 @@
 {% endstylesheet %}
 
 <div class="text-on-image-container">
-  <img src="{{ section.settings.image }}" alt="Background image">
+  <img src="{{ section.settings.image |  image_url  }}" alt="Background image">
   <h1>{{ section.settings.text }}</h1>
 </div>
 
