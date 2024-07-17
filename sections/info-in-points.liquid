@@ -25,17 +25,17 @@
         {% endfor %}
 
       {% comment %} {% for block in section.blocks %}
-              <div class="point d-flex">
-                <span class="points-line {% if forloop.first %}d-none-on-small-devices{% endif %}"></span>
-                <div class="point-content">
-                  <p class="point-heading">{{ block.settings.title }}</p>
-                  {% if block.settings.description != blank %}
-                    <p class="point-desc">{{ block.settings.description }}</p>
-                  {% endif %}
-                </div>
-  
-              </div>
-          {% endfor %} {% endcomment %}
+                      <div class="point d-flex">
+                        <span class="points-line {% if forloop.first %}d-none-on-small-devices{% endif %}"></span>
+                        <div class="point-content">
+                          <p class="point-heading">{{ block.settings.title }}</p>
+                          {% if block.settings.description != blank %}
+                            <p class="point-desc">{{ block.settings.description }}</p>
+                          {% endif %}
+                        </div>
+    
+                      </div>
+                {% endfor %} {% endcomment %}
 
       </div>
 
@@ -43,7 +43,26 @@
   {% endfor %}
 
 {% else %}
+  <div class="info-points-container {% if section.settings.vertical-points == true %}points-container-vertical{% endif %}">
+    <h2 class="points-heading">{{ topic.title | default: section.settings.heading }}</h2>
 
+    <div class="points {% if section.settings.vertical-points == true %}points-vertical{% endif %}">
+
+      {% for point in topic.points %}
+        <div class="point d-flex">
+          <span class="points-line {% if forloop.first %}d-none-on-small-devices{% endif %}"></span>
+          <div class="point-content">
+            <p class="point-heading">{{ point.title }}</p>
+            {% if point.description != blank %}
+              <p class="point-desc">{{ point.description }}</p>
+            {% endif %}
+          </div>
+
+        </div>
+      {% endfor %}
+    </div>
+
+  </div>
 {% endif %}
 
 {% schema %}
