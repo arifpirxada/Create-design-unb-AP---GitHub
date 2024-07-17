@@ -79,7 +79,7 @@
   }
 {% endstylesheet %}
 
-<div class="text-on-image-container {% if section.settings.text-on-left %}align-baseline{% else %}justify-center{% endif %}">
+<div class="text-on-image-container {% if section.settings.text-on-left %}text-on-left-container{% else %}justify-center{% endif %}">
   <img
     class="desktop-image"
     src="{{ section.settings.image | image_url }}"
