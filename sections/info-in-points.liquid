@@ -1,25 +1,52 @@
 {{ 'migration.css' | asset_url | stylesheet_tag }}
 
-<div class="info-points-container {% if section.settings.vertical-points == true %}points-container-vertical{% endif %}">
-  <h2 class="points-heading">{{ section.settings.heading }}</h2>
 
-  <div class="points {% if section.settings.vertical-points == true %}points-vertical{% endif %}">
-    {% for block in section.blocks %}
-      <div class="point d-flex">
-        <span class="points-line {% if forloop.first %}d-none-on-small-devices{% endif %}"></span>
-        <div class="point-content">
-          <p class="point-heading">{{ block.settings.title }}</p>
-          {% if block.settings.description != blank %}
-            <p class="point-desc">{{ block.settings.description }}</p>
-          {% endif %}
-        </div>
+{% assign migration_meta_object = page.metafields.custom.migration_content.value %}
+{% assign topics = migration_meta_object.topics.value %}
 
+{% if section.settings.vertical-points == true %}
+  {% for topic in topics %}
+    <div class="info-points-container {% if section.settings.vertical-points == true %}points-container-vertical{% endif %}">
+      <h2 class="points-heading">{{ topic.title | default: section.settings.heading }}</h2>
+
+      <div class="points {% if section.settings.vertical-points == true %}points-vertical{% endif %}">
+
+        {% for point in topic.points %}
+          <div class="point d-flex">
+            <span class="points-line {% if forloop.first %}d-none-on-small-devices{% endif %}"></span>
+            <div class="point-content">
+              <p class="point-heading">{{ point.title }}</p>
+              {% if point.description != blank %}
+                <p class="point-desc">{{ point.description }}</p>
+              {% endif %}
+            </div>
+
+          </div>
+        {% endfor %}
       </div>
 
-    {% endfor %}
-  </div>
+    </div>
+  {% endfor %}
 
-</div>
+{% else %}
+  <div class="info-points-container {% if section.settings.vertical-points == true %}points-container-vertical{% endif %}">
+    <h2 class="points-heading">{{ migration_meta_object.topic_heading | default: section.settings.heading }}</h2>
+
+    <div class="points {% if section.settings.vertical-points == true %}points-vertical{% endif %}">
+
+      {% for point in migration_meta_object.topic_item.value %}
+        <div class="point d-flex">
+          <span class="points-line {% if forloop.first %}d-none-on-small-devices{% endif %}"></span>
+          <div class="point-content">
+            <p class="point-heading">{{ point }}</p>
+          </div>
+
+        </div>
+      {% endfor %}
+    </div>
+
+  </div>
+{% endif %}
 
 {% schema %}
   {
