@@ -8,21 +8,6 @@
     {% assign migration_meta_object = page.metafields.custom.migration_content.value %}
     {% assign topics = migration_meta_object.topics.value %}
 
-
-    {% for topic in topics %}
-      <div class="point d-flex">
-        <span class="points-line {% if forloop.first %}d-none-on-small-devices{% endif %}"></span>
-        <div class="point-content">
-          <p class="point-heading">{{ topic.settings.title }}</p>
-          {% if topic.settings.description != blank %}
-            <p class="point-desc">{{ topic.settings.description }}</p>
-          {% endif %}
-        </div>
-
-      </div>
-
-    {% endfor %}
-
     {% comment %} {% for block in section.blocks %}
       <div class="point d-flex">
         <span class="points-line {% if forloop.first %}d-none-on-small-devices{% endif %}"></span>
