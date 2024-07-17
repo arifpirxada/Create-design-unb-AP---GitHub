@@ -65,7 +65,7 @@
   }
 {% endstylesheet %}
 
-<div class="text-on-image-container">
+<div class="text-on-image-container {% if section.settings.text-on-left %}text-on-image-content{% endif %}">
   <img
     class="desktop-image"
     src="{{ section.settings.image | image_url }}"
