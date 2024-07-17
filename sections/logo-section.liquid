@@ -1,27 +1,35 @@
 {%- stylesheet -%}
-    .logo-container {
-        max-width: 100vw;
-        width: 100vw;
-        padding: 2rem 10rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        gap: 28px;
-    }
+  .logo-container {
+    max-width: 100vw;
+    width: 100vw;
+    padding: 2rem 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 28px;
+  }
 
-    .logo-container .logo {
-        margin: 0 2rem;
-    }
+  .logo-container .logo {
+    margin: 0 2rem;
+  }
 {%- endstylesheet -%}
 
 <div class="section-container">
-    <h1>{{ section.settings.heading }}</h1>
+  <h1>{{ section.settings.heading }}</h1>
+
+  <div class="logo-container">
     {% for block in section.blocks %}
-    <div class="logo">
-        <img src="{{ block.settings.logo | image_url }}" width="140" height="auto" alt="logo">
-    </div>
+      <div class="logo">
+        <img
+          src="{{ block.settings.logo | image_url }}"
+          width="140"
+          height="auto"
+          alt="logo">
+      </div>
     {% endfor %}
+  </div>
+  
 </div>
 
 {% schema %}
@@ -30,12 +38,12 @@
     "tag": "section",
     "class": "section",
     "settings": [
-        {
-            "type": "text",
-            "id": "heading",
-            "default": "Heading",
-            "label": "Heading"
-        }
+      {
+        "type": "text",
+        "id": "heading",
+        "default": "Heading",
+        "label": "Heading"
+      }
     ],
     "blocks": [
       {
