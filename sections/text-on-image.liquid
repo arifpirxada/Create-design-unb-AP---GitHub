@@ -91,11 +91,9 @@
     display: none !important;
   }
 
-  .no-scrollbar {
-    
-  }
+  .no-scrollbar {}
 
-  .no-scrollbar::-webkit-scrollbar {
+.no-scrollbar::-webkit-scrollbar {
   display: none;
 }
 {% endstylesheet %}
@@ -125,7 +123,7 @@
   // Changed to query selector all --> there can be more than one section
       const desktopImages = document.querySelectorAll(".desktop-image");
       const mobileImages = document.querySelectorAll(".mobile-image");
-      if (window.innerWidth <= 768) {
+      if (window.innerWidth<= 768) {
 
       desktopImages.forEach(element => {
         element.classList.add("d-none");
@@ -134,6 +132,8 @@
         mobileImages.forEach(element => {
           element.classList.remove("d-none");
         })
+
+      
 
     }
 
