@@ -67,8 +67,8 @@
 
 {%- javascript -%}
   document.addEventListener("DOMContentLoaded", function() {
-    const image = document.querySelector(".desktop-image");
-    const mobileImage = document.querySelector(".mobile-image");
+    const image = document.querySelectorAll(".desktop-image");
+    const mobileImage = document.querySelectorAll(".mobile-image");
     if (window.innerWidth <= 768) {
       image.classList.add("d-none");
       mobileImage.classList.remove("d-none");
