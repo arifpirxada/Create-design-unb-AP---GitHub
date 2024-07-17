@@ -16,9 +16,34 @@
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "logo_section_zXaHWW": {
+      "type": "logo-section",
+      "blocks": {
+        "image_picker_Tt7cbe": {
+          "type": "image_picker",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/preview.jpg"
+          }
+        },
+        "image_picker_iyHBeV": {
+          "type": "image_picker",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/handshake_15102039.png"
+          }
+        }
+      },
+      "block_order": [
+        "image_picker_Tt7cbe",
+        "image_picker_iyHBeV"
+      ],
+      "settings": {
+        "heading": "Clients that we’ve managed production for:"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "logo_section_zXaHWW"
   ]
 }
