@@ -44,7 +44,7 @@
 
 {% else %}
   <div class="info-points-container {% if section.settings.vertical-points == true %}points-container-vertical{% endif %}">
-    <h2 class="points-heading">{{ topic.title | default: section.settings.heading }}</h2>
+    <h2 class="points-heading">{{ migration_meta_object.topic_heading | default: section.settings.heading }}</h2>
 
     <div class="points {% if section.settings.vertical-points == true %}points-vertical{% endif %}">
 
