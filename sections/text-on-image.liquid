@@ -101,8 +101,7 @@
 
 {%- javascript -%}
   document.addEventListener("DOMContentLoaded", function() {
-    const container = document.querySelector(".text-on-image-container");
-    container.classList.add("")
+
   // Changed to query selector all --> there can be more than one section
       const desktopImages = document.querySelectorAll(".desktop-image");
       const mobileImages = document.querySelectorAll(".mobile-image");
@@ -110,14 +109,19 @@
 
       desktopImages.forEach(element => {
         element.classList.add("d-none");
-      })
+      }) 
 
-      mobileImages.forEach(element => {
-        element.classList.remove("d-none");
-      })
+        mobileImages.forEach(element => {
+          element.classList.remove("d-none");
+        })
+
+      
+
+      const container = document.querySelector(".text-on-image-container");
+      container.classList.add("justify-start")
 
     }
-    
+
   }
 );
 {%- endjavascript -%}
