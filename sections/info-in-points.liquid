@@ -4,6 +4,10 @@
   <h2 class="points-heading">{{ section.settings.heading }}</h2>
 
   <div class="points {% if section.settings.vertical-points == true %}points-vertical{% endif %}">
+
+    {% assign meta_object = page.metafields.custom.comparison_content.value %}
+    {% assign topics = meta_object.topic_details.value %}
+
     {% for block in section.blocks %}
       <div class="point d-flex">
         <span class="points-line {% if forloop.first %}d-none-on-small-devices{% endif %}"></span>
