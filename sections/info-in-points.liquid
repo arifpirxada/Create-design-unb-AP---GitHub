@@ -13,9 +13,9 @@
       <div class="point d-flex">
         <span class="points-line {% if forloop.first %}d-none-on-small-devices{% endif %}"></span>
         <div class="point-content">
-          <p class="point-heading">{{ block.settings.title }}</p>
-          {% if block.settings.description != blank %}
-            <p class="point-desc">{{ block.settings.description }}</p>
+          <p class="point-heading">{{ topic.settings.title }}</p>
+          {% if topic.settings.description != blank %}
+            <p class="point-desc">{{ topic.settings.description }}</p>
           {% endif %}
         </div>
 
