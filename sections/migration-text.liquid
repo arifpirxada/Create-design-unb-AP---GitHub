@@ -32,12 +32,13 @@
 
 <div class="section-container isolate{% unless section.settings.full_width %} page-width{% endunless %}">
   <h3>{{ section.settings.heading }}</h3>
-  {% assign conclusion_content = page.metafields.custom.migration_content.value.conclusion_content.value %}
+  {% assign content = page.metafields.custom.migration_content.value.conclusion_content.value %}
 
   {% if section.settings.is-end %}
+    
   {% endif %}
 
-  <p>{{ conclusion_content | default: section.settings.content }}</p>
+  <p>{{ content | default: section.settings.content }}</p>
 </div>
 
 {% schema %}
