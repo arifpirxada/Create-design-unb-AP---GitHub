@@ -48,7 +48,7 @@
 
     <div class="points {% if section.settings.vertical-points == true %}points-vertical{% endif %}">
 
-      {% for point in topic.points %}
+      {% for point in migration_meta_object %}
         <div class="point d-flex">
           <span class="points-line {% if forloop.first %}d-none-on-small-devices{% endif %}"></span>
           <div class="point-content">
