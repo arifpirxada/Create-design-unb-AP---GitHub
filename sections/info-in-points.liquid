@@ -7,9 +7,22 @@
 
 {% for topic in topics %}
 <div class="info-points-container {% if section.settings.vertical-points == true %}points-container-vertical{% endif %}">
-  <h2 class="points-heading">{{ topic. section.settings.heading }}</h2>
+  <h2 class="points-heading">{{ topic.title | default: section.settings.heading }}</h2>
 
   <div class="points {% if section.settings.vertical-points == true %}points-vertical{% endif %}">
+
+     {% for point in topic.points %}
+      <div class="point d-flex">
+        <span class="points-line {% if forloop.first %}d-none-on-small-devices{% endif %}"></span>
+        <div class="point-content">
+          <p class="point-heading">{{ point.title }}</p>
+          {% if point.description != blank %}
+            <p class="point-desc">{{ point.description }}</p>
+          {% endif %}
+        </div>
+
+      </div>
+    {% endfor %}
 
     {% comment %} {% for block in section.blocks %}
       <div class="point d-flex">
@@ -22,8 +35,8 @@
         </div>
 
       </div>
-
     {% endfor %} {% endcomment %}
+
   </div>
 
 </div>
