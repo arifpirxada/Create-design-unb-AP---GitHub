@@ -27,14 +27,17 @@
     .section-container h3 {
       font-size: 3rem;
     }
-}
+  }
 </style>
 
 <div class="section-container isolate{% unless section.settings.full_width %} page-width{% endunless %}">
   <h3>{{ section.settings.heading }}</h3>
-    {% assign conclusion_content = page.metafields.custom.migration_content.value.conclusion_content.value %}
-  
-  <p>{{ conclusion_content |  default: section.settings.content }}</p>
+  {% assign conclusion_content = page.metafields.custom.migration_content.value.conclusion_content.value %}
+
+  {% if section.settings.is-end %}
+  {% endif %}
+
+  <p>{{ conclusion_content | default: section.settings.content }}</p>
 </div>
 
 {% schema %}
