@@ -48,7 +48,9 @@
     .text-on-image-container div.h1 {
       font-size: 40px !important;
     }
-    
+    .text-on-image-content h1 {
+      font-size: 24px !important;
+    }
   }
   .d-none {
     display: none !important;
@@ -76,18 +78,21 @@
 
 {%- javascript -%}
   document.addEventListener("DOMContentLoaded", function() {
-    // Changed to query selector all --> there can be more than one section
-    const desktopImages = document.querySelectorAll(".desktop-image");
-    const mobileImages = document.querySelectorAll(".mobile-image");
-    if (window.innerWidth <= 768) {
+
+  // Changed to query selector all --> there can be more than one section
+      const desktopImages = document.querySelectorAll(".desktop-image");
+      const mobileImages = document.querySelectorAll(".mobile-image");
+      if (window.innerWidth<= 768) {
       desktopImages.forEach(element => {
         element.classList.add("d-none");
-      });
+      }) 
+      
       mobileImages.forEach(element => {
         element.classList.remove("d-none");
       })
     }
-  });
+  }
+);
 {%- endjavascript -%}
 
 {% schema %}
