@@ -3,7 +3,6 @@
     position: relative;
     color: white;
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
   }
@@ -14,8 +13,28 @@
   }
 
   .text-on-image-container .text-on-image-content {
+    width: 50%;
+    padding: 0 4rem;
+    background-color: #ffffff45;
+    border-radius: 20px;
+  }
+
+  .text-on-image-container .text-on-image-content .text-left {
+    margin: 0.5rem;
+  }
+
+  .text-on-image-container div {
     position: absolute;
-    width: 70%;
+  }
+
+  .text-on-left-container {
+    align-items: baseline !important;
+    justify-content: center;
+    overflow: scroll;
+  }
+
+  .justify-center {
+    justify-content: center !important;
   }
 
   .text-on-image-container h1 {
@@ -23,6 +42,14 @@
     font-weight: 800;
     font-family: "Manrope-Medium";
     font-style: normal;
+  }
+
+  .text-on-image-content h1 {
+    font-size: 36px !important;
+  }
+
+  .text-on-image-content p {
+    font-size: 18px !important;
   }
 
   .text-left {
@@ -33,9 +60,31 @@
     color: #ffffff !important;
   }
 
+  @media screen and (max-width: 1150px) {
+    .text-on-image-container .text-on-image-content {
+      width: 80%;
+    }
+  }
+
   @media screen and (max-width: 768px) {
     .text-on-image-container div.h1 {
       font-size: 40px !important;
+    }
+    .text-on-image-content h1 {
+      font-size: 24px !important;
+    }
+    .text-on-image-content p {
+      font-size: 16px !important;
+    }
+    .text-on-image-container .text-on-image-content {
+      width: 100%;
+      padding: 0 1rem;
+    }
+    .text-on-image-container .text-on-image-content .text-left {
+      margin: 1rem 0.5rem;
+    }
+    .text-on-left-container {
+      justify-content: start !important;
     }
   }
   .d-none {
@@ -43,7 +92,7 @@
   }
 {% endstylesheet %}
 
-<div class="text-on-image-container">
+<div class="text-on-image-container {% if section.settings.text-on-left %}text-on-left-container{% else %}justify-center{% endif %}">
   <img
     class="desktop-image"
     src="{{ section.settings.image | image_url }}"
@@ -64,13 +113,24 @@
 
 {%- javascript -%}
   document.addEventListener("DOMContentLoaded", function() {
-    const image = document.querySelector(".desktop-image");
-    const mobileImage = document.querySelector(".mobile-image");
-    if (window.innerWidth <= 768) {
-      image.classList.add("d-none");
-      mobileImage.classList.remove("d-none");
+
+  // Changed to query selector all --> there can be more than one section
+      const desktopImages = document.querySelectorAll(".desktop-image");
+      const mobileImages = document.querySelectorAll(".mobile-image");
+      if (window.innerWidth <= 768) {
+
+      desktopImages.forEach(element => {
+        element.classList.add("d-none");
+      }) 
+
+        mobileImages.forEach(element => {
+          element.classList.remove("d-none");
+        })
+
     }
-  });
+
+  }
+);
 {%- endjavascript -%}
 
 {% schema %}
