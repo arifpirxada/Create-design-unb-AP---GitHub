@@ -5,7 +5,7 @@
 
   <div class="points {% if section.settings.vertical-points == true %}points-vertical{% endif %}">
 
-    {% assign meta_object = page.metafields.custom.comparison_content.value %}
+    {% assign meta_object = page.metafields.custom.migration_content.value %}
     {% assign topics = meta_object.topic_details.value %}
 
     {% for block in section.blocks %}
