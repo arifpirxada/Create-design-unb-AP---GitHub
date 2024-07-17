@@ -90,6 +90,14 @@
   .d-none {
     display: none !important;
   }
+
+  .no-scrollbar {
+    
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
 {% endstylesheet %}
 
 <div class="text-on-image-container {% if section.settings.text-on-left %}text-on-left-container{% else %}justify-center{% endif %}">
