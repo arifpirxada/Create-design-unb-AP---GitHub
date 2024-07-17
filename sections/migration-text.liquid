@@ -32,14 +32,14 @@
 
 <div class="section-container isolate{% unless section.settings.full_width %} page-width{% endunless %}">
   <h3>{{ section.settings.heading }}</h3>
-    {% assign conclusion_content = page.metafields.custom.comparison_content.value.conclusion_content.value %}
+    {% assign conclusion_content = page.metafields.custom.migration_content.value.conclusion_content.value %}
   
   <p>{{ conclusion_content |  default: section.settings.content }}</p>
 </div>
 
 {% schema %}
   {
-    "name": "Comparison Text",
+    "name": "Migration Text",
     "tag": "section",
     "class": "section",
     "disabled_on": {
