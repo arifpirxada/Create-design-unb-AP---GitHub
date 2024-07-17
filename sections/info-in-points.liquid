@@ -9,7 +9,7 @@
     {% assign topics = migration_meta_object.topics.value %}
 
 
-    {% for topic in section.blocks %}
+    {% for topic in topics %}
       <div class="point d-flex">
         <span class="points-line {% if forloop.first %}d-none-on-small-devices{% endif %}"></span>
         <div class="point-content">
