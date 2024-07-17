@@ -72,9 +72,9 @@
     const mobileImages = document.querySelectorAll(".mobile-image");
     if (window.innerWidth <= 768) {
       images.forEach(element => {
+        image.classList.add("d-none");
         
       });
-      image.classList.add("d-none");
       mobileImage.classList.remove("d-none");
     }
   });
