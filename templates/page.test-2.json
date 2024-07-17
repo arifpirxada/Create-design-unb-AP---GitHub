@@ -31,11 +31,67 @@
           "settings": {
             "logo": "shopify:\/\/shop_images\/handshake_15102039.png"
           }
+        },
+        "image_picker_aQQEmy": {
+          "type": "image_picker",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/shipping_815069.png"
+          }
+        },
+        "image_picker_Th9D6P": {
+          "type": "image_picker",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/image_1_1_2c041fd5-7fe4-4abb-a3b4-396d44f1654b.png"
+          }
+        },
+        "image_picker_agAGe9": {
+          "type": "image_picker",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/logistics_4363531.png"
+          }
+        },
+        "image_picker_F6jFzp": {
+          "type": "image_picker",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/preview.jpg"
+          }
+        },
+        "image_picker_Q4dc84": {
+          "type": "image_picker",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/icons8-lock-96.png"
+          }
+        },
+        "image_picker_DUGt4G": {
+          "type": "image_picker",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/shipping_815069.png"
+          }
+        },
+        "image_picker_9tACFD": {
+          "type": "image_picker",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/handshake_15102039.png"
+          }
+        },
+        "image_picker_iY4feB": {
+          "type": "image_picker",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/logistics_4363531.png"
+          }
         }
       },
       "block_order": [
         "image_picker_Tt7cbe",
-        "image_picker_iyHBeV"
+        "image_picker_iyHBeV",
+        "image_picker_aQQEmy",
+        "image_picker_Th9D6P",
+        "image_picker_agAGe9",
+        "image_picker_F6jFzp",
+        "image_picker_Q4dc84",
+        "image_picker_DUGt4G",
+        "image_picker_9tACFD",
+        "image_picker_iY4feB"
       ],
       "settings": {
         "heading": "Clients that we’ve managed production for:"
