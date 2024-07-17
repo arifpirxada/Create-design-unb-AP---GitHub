@@ -71,7 +71,7 @@
     const desktopImages = document.querySelectorAll(".desktop-image");
     const mobileImages = document.querySelectorAll(".mobile-image");
     if (window.innerWidth <= 768) {
-      images.forEach(element => {
+      desktopImages.forEach(element => {
         element.classList.add("d-none");
       });
       mobileImages.forEach(element => {
