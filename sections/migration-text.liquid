@@ -35,7 +35,7 @@
   {% assign content = page.metafields.custom.migration_content.value.end_description.value %}
 
   {% if section.settings.is-end %}
-    {% assign content = page.metafields.custom.migration_content.value.end_description.value %}
+    {% assign content = page.metafields.custom.migration_content.value.page_description.value %}
   {% endif %}
 
   <p>{{ content | default: section.settings.content }}</p>
