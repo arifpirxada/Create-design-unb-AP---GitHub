@@ -1,12 +1,11 @@
 {{ 'migration.css' | asset_url | stylesheet_tag }}
 
+
+
 <div class="info-points-container {% if section.settings.vertical-points == true %}points-container-vertical{% endif %}">
   <h2 class="points-heading">{{ section.settings.heading }}</h2>
 
   <div class="points {% if section.settings.vertical-points == true %}points-vertical{% endif %}">
-
-    {% assign migration_meta_object = page.metafields.custom.migration_content.value %}
-    {% assign topics = migration_meta_object.topics.value %}
 
     {% comment %} {% for block in section.blocks %}
       <div class="point d-flex">
