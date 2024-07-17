@@ -18,13 +18,12 @@
 <div class="section-container">
     <h1>{{ section.settings.heading }}</h1>
     <div class="logo-container">
-
+        {% for block in section.blocks %}
+        <div class="logo">
+            <img src="{{ block.settings.logo | image_url }}" width="140" height="auto" alt="logo">
+        </div>
+        {% endfor %}
     </div>
-    {% for block in section.blocks %}
-    <div class="logo">
-        <img src="{{ block.settings.logo | image_url }}" width="140" height="auto" alt="logo">
-    </div>
-    {% endfor %}
 </div>
 
 {% schema %}
