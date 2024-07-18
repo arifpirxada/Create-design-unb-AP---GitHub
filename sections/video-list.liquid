@@ -85,8 +85,8 @@
 
 <script>
   document.addEventListener("DOMContentLoaded", function() {
-    const videos = document.querySelectorAll('.video-container');
-    const videos = document.querySelectorAll('.video');
+    const videoContainer = document.querySelectorAll('.video-container');
+    const videos = videoContainer.querySelectorAll('.video');
 
     videos.forEach(video => {
       video.removeAttribute('controls'); // Ensure controls are hidden by default
