@@ -127,13 +127,21 @@
             "video": "shopify:\/\/files\/videos\/24496-344562743_tiny.mp4",
             "autoplay": false
           }
+        },
+        "video_HwRVGh": {
+          "type": "video",
+          "settings": {
+            "video": "shopify:\/\/files\/videos\/32132-390688056_tiny.mp4",
+            "autoplay": false
+          }
         }
       },
       "block_order": [
         "video_EjJkih",
         "video_MrecFB",
         "video_YEtMRV",
-        "video_Hq7V73"
+        "video_Hq7V73",
+        "video_HwRVGh"
       ],
       "settings": {
       }
