@@ -68,7 +68,7 @@
           poster="{{ block.settings.thumbnail |  image_url }}"
           {% endif %}></video>
 
-          <img onclick="playVideo()" class="video-control" src="{{ "play.png" | asset_url }}" width="50" height="auto" alt="Video play button">
+          <img onclick="playVideo(this)" class="video-control" src="{{ "play.png" | asset_url }}" width="50" height="auto" alt="Video play button">
           {% comment %} <img onclick="pauseVideo()" class="video-control" src="{{ "pause.png" | asset_url }}" width="50" height="auto" alt="Video play button"> {% endcomment %}
 
       </div>
