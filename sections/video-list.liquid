@@ -107,13 +107,13 @@
       video.addEventListener('mouseleave', () => {
         video.removeAttribute('controls');
       });
-      
+
       video.addEventListener('play', () => {
-        console.log('Video is playing');
+        playVideo()
       });
     
       video.addEventListener('pause', () => {
-        console.log('Video is paused');
+        pauseVideo()
       });
     });
   });
