@@ -52,8 +52,7 @@
   <div class="video-container">
     {% for block in section.blocks %}
       <div class="video">
-
-        {% comment %} <video
+<video
           width="800"
           height="auto"
           controls
@@ -67,9 +66,9 @@
           {% if section.settings.thumbnail != blank %}
             poster="{{ block.settings.thumbnail }}"
           {% endif %}>
-        </video> {% endcomment %}
+        </video>
 
-        {{
+        {% comment %} {{
             block.settings.video
             | video_tag:
               image_size: '1100x',
@@ -77,7 +76,7 @@
               controls: true,
               muted: false,
               preview_image: "https://images.unsplash.com/photo-1690942596730-2d7673868a3f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDExfHx8ZW58MHx8fHx8"
-          }}
+          }} {% endcomment %}
       </div>
     {% endfor %}
   </div>
