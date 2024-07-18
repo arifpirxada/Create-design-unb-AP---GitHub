@@ -109,6 +109,16 @@
           playBtn.style.display = 'none';
         }
       });
+
+      video.addEventListener('pause', () => {
+        const videoParent = video.closest('.video-parent');
+        const playBtn = videoParent.querySelector('.video-play');
+
+        if (playBtn) {
+          playBtn.style.display = 'block';
+          pauseBtn.style.display = 'none';
+        }
+      });
     });
   });
   
