@@ -52,7 +52,7 @@
           autoplay="true"
           {% endif %}
           {% if block.settings.muted %}
-          muted
+          muted="true"
           {% endif %}
           {% if block.settings.thumbnail %}
           poster="{{ block.settings.thumbnail |  image_url }}"
