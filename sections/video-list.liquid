@@ -65,7 +65,7 @@
           muted
           {% endif %}
           {% if section.settings.thumbnail %}
-            poster="{{ block.settings.thumbnail }}"
+            poster="{{ block.settings.thumbnail |  image_url }}"
           {% endif %}>
         </video>
 
