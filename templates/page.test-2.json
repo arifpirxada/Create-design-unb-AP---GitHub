@@ -146,6 +146,24 @@
     },
     "media_list_Vfyw9B": {
       "type": "media-list",
+      "blocks": {
+        "image_picker_8M8Vwn": {
+          "type": "image_picker",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_343.png"
+          }
+        },
+        "image_picker_6DX6WT": {
+          "type": "image_picker",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/technological-light-abstract-glow-background-for-mobile.png"
+          }
+        }
+      },
+      "block_order": [
+        "image_picker_8M8Vwn",
+        "image_picker_6DX6WT"
+      ],
       "settings": {
         "videos-per-row": 2
       }
