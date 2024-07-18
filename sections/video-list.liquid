@@ -23,6 +23,10 @@
 
   .video-container .video-parent {
     flex: 0 0 calc(100% / {{ section.settings.videos-per-row }} - 28px*({{ section.settings.videos-per-row }} - 1)/2);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   @media screen and (max-width: 850px) {
@@ -58,7 +62,7 @@
           poster="{{ block.settings.thumbnail |  image_url }}"
           {% endif %}></video>
 
-          <img src="{{ play.png | asset_url }}" width="50" height="auto" alt="Video play button">
+          <img class="" src="{{ "play.png" | asset_url }}" width="50" height="auto" alt="Video play button">
 
       </div>
     {% endfor %}
