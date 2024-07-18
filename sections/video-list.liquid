@@ -112,12 +112,8 @@
     let pauseBtn = videoParent.querySelector(".video-pause");
   
     video.play();
-    playBtn.style.opacity = 0
-    setTimeout(() => {
-      playBtn.style.display = "none"
-      pauseBtn.style.display = "block"
-      pauseBtn.style.opacity = 1;
-    }, 200);
+    playBtn.style.display = "none"
+    pauseBtn.style.display = "block"
   }
 
   const pauseVideo = (pauseBtn) => {
