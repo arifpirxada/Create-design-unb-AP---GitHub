@@ -105,28 +105,32 @@
           "settings": {
             "video": "shopify:\/\/files\/videos\/24496-344562743_tiny.mp4",
             "thumbnail": "shopify:\/\/shop_images\/camera-2251051_1280.jpg",
-            "autoplay": true
+            "autoplay": true,
+            "muted": false
           }
         },
         "video_be8Pi8": {
           "type": "video",
           "settings": {
             "video": "shopify:\/\/files\/videos\/32132-390688056_tiny.mp4",
-            "autoplay": false
+            "autoplay": false,
+            "muted": false
           }
         },
         "video_mpK8g9": {
           "type": "video",
           "settings": {
             "video": "shopify:\/\/files\/videos\/32132-390688056_tiny.mp4",
-            "autoplay": false
+            "autoplay": false,
+            "muted": false
           }
         },
         "video_H8TUmc": {
           "type": "video",
           "settings": {
             "video": "shopify:\/\/files\/videos\/24496-344562743_tiny.mp4",
-            "autoplay": false
+            "autoplay": false,
+            "muted": false
           }
         }
       },
@@ -137,12 +141,45 @@
         "video_H8TUmc"
       ],
       "settings": {
+        "videos-per-row": 2
+      }
+    },
+    "video_list_xWVTyQ": {
+      "type": "video-list",
+      "blocks": {
+        "image_picker_zL7T9t": {
+          "type": "image_picker",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_345_1.png"
+          }
+        },
+        "image_picker_RnpcGN": {
+          "type": "image_picker",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_343.png"
+          }
+        },
+        "image_picker_YxpXaw": {
+          "type": "image_picker",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/technological-light-abstract-glow-background-for-mobile.png"
+          }
+        }
+      },
+      "block_order": [
+        "image_picker_zL7T9t",
+        "image_picker_RnpcGN",
+        "image_picker_YxpXaw"
+      ],
+      "settings": {
+        "videos-per-row": 2
       }
     }
   },
   "order": [
     "main",
     "logo_section_zXaHWW",
-    "video_list_LFXPfV"
+    "video_list_LFXPfV",
+    "video_list_xWVTyQ"
   ]
 }
