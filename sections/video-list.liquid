@@ -115,18 +115,11 @@
 
         if (playBtn && pauseBtn) {
           playBtn.style.display = 'none';
-          pauseBtn.style.display = 'block';
 
-          // Automatically hide pause button after 800ms
           setTimeout(() => {
             pauseBtn.style.opacity = 0;
           }, 800);
         }
-      });
-    
-      video.addEventListener('pause', () => {
-        let pauseBtn = video.closest(".video-pause")
-        playVideo(pauseBtn)
       });
     });
   });
