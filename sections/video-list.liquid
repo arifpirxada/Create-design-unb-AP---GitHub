@@ -126,9 +126,9 @@
     let playBtn = videoParent.querySelector(".video-play");
   
     video.pause();
-    pause.style.opacity = 0
+    pauseBtn.style.opacity = 0
     setTimeout(() => {
-      pause.style.display = "none"
+      pauseBtn.style.display = "none"
       playBtn.style.display = "block"
       playBtn.style.opacity = 1;
     }, 200);
