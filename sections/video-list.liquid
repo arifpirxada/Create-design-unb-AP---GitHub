@@ -106,8 +106,8 @@
       video.addEventListener('mouseleave', () => {
         video.removeAttribute('controls');
         if (pauseBtn) {
-        pauseBtn.style.opacity = 1; // Show the pause button
-      }
+          pauseBtn.style.opacity = 0;
+        }
       });
     });
   });
