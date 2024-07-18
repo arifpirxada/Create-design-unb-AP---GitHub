@@ -82,28 +82,7 @@
             height="auto"
             alt="Video play button">
         {% else %}
-          <video
-            width="800"
-            class="video"
-            height="auto"
-            src="{{ block.settings.video.sources[0].url }}"
-            {% if block.settings.autoplay %}
-            autoplay="true"
-            {% endif %}
-            {% if block.settings.muted %}
-            muted="true"
-            {% endif %}
-            {% if block.settings.thumbnail %}
-            poster="{{ block.settings.thumbnail |  image_url }}"
-            {% endif %}></video>
-
-          <img
-            onclick="playVideo(this)"
-            class="video-control video-play"
-            src="{{ "play.png" | asset_url }}"
-            width="50"
-            height="auto"
-            alt="Video play button">
+        <img src="{{  }}" alt="">
         {% endif %}
       </div>
     {% endfor %}
