@@ -81,7 +81,7 @@
           width="50"
           height="auto"
           alt="Video play button">
-        <img onclick="pauseVideo()" class="video-control video-pause" src="{{ "pause.png" | asset_url }}" width="50" height="auto" alt="Video play button">
+        <img onclick="pauseVideo(this)" class="video-control video-pause" src="{{ "pause.png" | asset_url }}" width="50" height="auto" alt="Video play button">
 
       </div>
     {% endfor %}
@@ -125,7 +125,7 @@
     let video = videoParent.querySelector('.video');
     let playBtn = videoParent.querySelector(".video-play");
   
-    video.play();
+    video.pause();
     pause.style.opacity = 0
     setTimeout(() => {
       pause.style.display = "none"
