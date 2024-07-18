@@ -98,12 +98,12 @@
   
       video.addEventListener('mouseenter', () => {
         video.setAttribute('controls', 'controls');
-        pauseBtn.opacity = 1;
+        pauseBtn.style.opacity = 1;
       });
       
       video.addEventListener('mouseleave', () => {
         video.removeAttribute('controls');
-        pauseBtn.opacity = 0;
+        pauseBtn.style.opacity = 0;
       });
     });
   });
