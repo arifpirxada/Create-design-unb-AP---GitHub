@@ -16,6 +16,7 @@
 
   .logo-container .logo {
     margin: 0 2rem;
+    flex: 0 0 calc(100% / {{ section.settings.videos-per-row }} - 28px*({{ section.settings.videos-per-row }} - 1) / 2);
   }
 
   @media screen and (max-width: 800px) {
