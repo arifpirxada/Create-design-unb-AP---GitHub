@@ -119,6 +119,20 @@
       pauseBtn.style.opacity = 1;
     }, 200);
   }
+
+  const pauseVideo = (playBtn) => {
+    let videoParent = playBtn.closest('.video-parent');
+    let video = videoParent.querySelector('.video');
+    let pauseBtn = videoParent.querySelector(".video-pause");
+  
+    video.play();
+    playBtn.style.opacity = 0
+    setTimeout(() => {
+      playBtn.style.display = "none"
+      pauseBtn.style.display = "block"
+      pauseBtn.style.opacity = 1;
+    }, 200);
+  }
 </script>
 
 {% schema %}
