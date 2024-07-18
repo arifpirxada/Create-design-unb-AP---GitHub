@@ -57,7 +57,7 @@
           width="800"
           height="auto"
           controls
-          src="{{ block.settings.video }}"
+          src="{{ block.settings.video | vi }}"
           {% if block.settings.autoplay %}
           autoplay
           {% endif %}
