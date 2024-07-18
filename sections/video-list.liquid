@@ -80,13 +80,6 @@
           width="50"
           height="auto"
           alt="Video play button">
-        <img
-          onclick="pauseVideo(this)"
-          class="video-control video-pause"
-          src="{{ "pause.png" | asset_url }}"
-          width="50"
-          height="auto"
-          alt="Video play button">
 
       </div>
     {% endfor %}
@@ -112,7 +105,7 @@
         const videoParent = video.closest('.video-parent');
         const playBtn = videoParent.querySelector('.video-play');
   
-        if (playBtn && pauseBtn) {
+        if (playBtn) {
           playBtn.style.display = 'none';
         }
       });
