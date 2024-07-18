@@ -65,7 +65,6 @@
           width="800"
           class="video"
           height="auto"
-          controls
           src="{{ block.settings.video.sources[0].url }}"
           {% if block.settings.autoplay %}
           autoplay
@@ -85,11 +84,11 @@
 
 <script>
   document.addEventListener("DOMContentLoaded", function() {
-    const videoContainer = document.querySelectorAll('.video-container');
+    const videoContainer = document.querySelector('.video-container');
     const videos = videoContainer.querySelectorAll('.video');
 
     videos.forEach(video => {
-      video.removeAttribute('controls'); // Ensure controls are hidden by default
+      // video.removeAttribute('controls');
 
       video.addEventListener('mouseenter', () => {
         video.setAttribute('controls', 'controls');
