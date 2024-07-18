@@ -80,7 +80,13 @@
           width="50"
           height="auto"
           alt="Video play button">
-        <img onclick="pauseVideo(this)" class="video-control video-pause" src="{{ "pause.png" | asset_url }}" width="50" height="auto" alt="Video play button">
+        <img
+          onclick="pauseVideo(this)"
+          class="video-control video-pause"
+          src="{{ "pause.png" | asset_url }}"
+          width="50"
+          height="auto"
+          alt="Video play button">
 
       </div>
     {% endfor %}
@@ -118,8 +124,22 @@
     video.play();
     playBtn.style.display = "none"
     pauseBtn.style.display = "block"
+    
+    video.addEventListener('mouseenter', () => {
+        video.setAttribute('controls', 'controls');
+        if (pauseBtn) {
+          pauseBtn.style.opacity = 1;
+        }
+      });
+      
+      video.addEventListener('mouseleave', () => {
+        video.removeAttribute('controls');
+        if (pauseBtn) {
+          pauseBtn.style.opacity = 0;
+        }
+      });
   }
-
+  
   const pauseVideo = (pauseBtn) => {
     let videoParent = pauseBtn.closest('.video-parent');
     let video = videoParent.querySelector('.video');
