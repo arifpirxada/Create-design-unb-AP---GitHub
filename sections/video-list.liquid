@@ -111,14 +111,9 @@
       video.addEventListener('play', () => {
         const videoParent = video.closest('.video-parent');
         const playBtn = videoParent.querySelector('.video-play');
-        const pauseBtn = videoParent.querySelector('.video-pause');
   
         if (playBtn && pauseBtn) {
           playBtn.style.display = 'none';
-  
-          setTimeout(() => {
-            pauseBtn.style.opacity = 0;
-          }, 800);
         }
       });
     });
