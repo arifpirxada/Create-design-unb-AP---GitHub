@@ -29,6 +29,10 @@
     align-items: center;
   }
 
+  .videovideo-parent .video-control {
+
+  }
+
   @media screen and (max-width: 850px) {
     .video-section-container {
       padding: 2rem;
@@ -63,7 +67,7 @@
           {% endif %}></video>
 
           <img class="video-control" src="{{ "play.png" | asset_url }}" width="50" height="auto" alt="Video play button">
-          <img class="video-control" src="{{ "play.png" | asset_url }}" width="50" height="auto" alt="Video play button">
+          {% comment %} <img class="video-control" src="{{ "pause.png" | asset_url }}" width="50" height="auto" alt="Video play button"> {% endcomment %}
 
       </div>
     {% endfor %}
