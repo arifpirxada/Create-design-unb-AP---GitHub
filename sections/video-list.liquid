@@ -22,7 +22,7 @@
   }
 
   .video-container .video-parent {
-    flex: 0 0 calc(100% / {{ section.settings.videos-per-row }} - 28px*({{ section.settings.videos-per-row }} - 1)/2);
+    flex: 0 0 calc(100% / {{ section.settings.videos-per-row }} - 28px*({{ section.settings.videos-per-row }} - 1) / 2);
     position: relative;
     display: flex;
     justify-content: center;
@@ -68,8 +68,14 @@
           poster="{{ block.settings.thumbnail |  image_url }}"
           {% endif %}></video>
 
-          <img onclick="playVideo(this)" class="video-control" src="{{ "play.png" | asset_url }}" width="50" height="auto" alt="Video play button">
-          {% comment %} <img onclick="pauseVideo()" class="video-control" src="{{ "pause.png" | asset_url }}" width="50" height="auto" alt="Video play button"> {% endcomment %}
+        <img
+          onclick="playVideo(this)"
+          class="video-control"
+          src="{{ "play.png" | asset_url }}"
+          width="50"
+          height="auto"
+          alt="Video play button">
+        {% comment %} <img onclick="pauseVideo()" class="video-control" src="{{ "pause.png" | asset_url }}" width="50" height="auto" alt="Video play button"> {% endcomment %}
 
       </div>
     {% endfor %}
@@ -93,11 +99,11 @@
       });
     });
   });
-
-  const playVideo = () => {
-      let videoContainer = document.querySelector(".video-container");
-      const videos = videoContainer.querySelectorAll('.video');
-
+  
+  const playVideo = (button) => {
+    let videoParent = button.closest('.video-parent');
+    let video = videoParent.querySelector('.video');
+    video.play();
   }
 </script>
 
