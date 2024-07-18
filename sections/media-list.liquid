@@ -61,7 +61,7 @@
         {% if block.type == "video" %}
           <video
             width="800"
-            class="video"
+            class="video video-element"
             height="auto"
             src="{{ block.settings.video.sources[0].url }}"
             {% if block.settings.autoplay %}
@@ -93,7 +93,7 @@
 <script>
   document.addEventListener("DOMContentLoaded", function() {
     const videoContainer = document.querySelector('.video-container');
-    const videos = videoContainer.querySelectorAll('.video');
+    const videos = videoContainer.querySelectorAll('.video-element');
   
     videos.forEach(video => {
       video.addEventListener('mouseenter', () => {
