@@ -82,7 +82,7 @@
             height="auto"
             alt="Video play button">
         {% else %}
-        <img src="{{ block.settings.image |  image_url  }}" width="800" height="auto" alt="">
+        <img class="video" src="{{ block.settings.image |  image_url  }}" width="800" height="auto" alt="">
         {% endif %}
       </div>
     {% endfor %}
@@ -152,7 +152,7 @@
 
 {% schema %}
   {
-    "name": "Video list",
+    "name": "Media list",
     "tag": "section",
     "class": "section",
     "settings": [
@@ -202,7 +202,7 @@
     ],
     "presets": [
       {
-        "name": "Video list"
+        "name": "Media list"
       }
     ]
   }
