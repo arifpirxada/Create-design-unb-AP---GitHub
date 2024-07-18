@@ -127,7 +127,7 @@
   
   const playVideo = (playBtn) => {
     let videoParent = playBtn.closest('.video-parent');
-    let video = videoParent.querySelector('.video');
+    let video = videoParent.querySelector('.video-element');
   
     video.play();
     playBtn.style.display = "none"
@@ -135,7 +135,7 @@
   }
   
   function pauseAllOtherVideos(currentVideo) {
-    const videos = document.querySelectorAll('.video');
+    const videos = document.querySelectorAll('.video-element');
     videos.forEach(video => {
       if (video !== currentVideo && !video.paused) {
         video.pause();
