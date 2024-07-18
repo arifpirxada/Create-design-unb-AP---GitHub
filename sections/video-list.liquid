@@ -41,6 +41,11 @@
       width: 80vw;
     }
   }
+
+  .video video {
+    width: 500px;
+    height: auto;
+  }
 {%- endstylesheet -%}
 
 <div class="video-section-container">
@@ -50,7 +55,6 @@
           {{
             block.settings.video
             | video_tag:
-              image_size: '500x',
               autoplay: block.settings.autoplay,
               controls: true,
               muted: false
