@@ -120,15 +120,15 @@
     }, 200);
   }
 
-  const pauseVideo = (playBtn) => {
-    let videoParent = playBtn.closest('.video-parent');
+  const pauseVideo = (pauseBtn) => {
+    let videoParent = pauseBtn.closest('.video-parent');
     let video = videoParent.querySelector('.video');
     let pauseBtn = videoParent.querySelector(".video-pause");
   
     video.play();
-    playBtn.style.opacity = 0
+    pause.style.opacity = 0
     setTimeout(() => {
-      playBtn.style.display = "none"
+      pause.style.display = "none"
       pauseBtn.style.display = "block"
       pauseBtn.style.opacity = 1;
     }, 200);
