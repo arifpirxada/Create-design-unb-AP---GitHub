@@ -96,10 +96,52 @@
       "settings": {
         "heading": "Clients that we’ve managed production for:"
       }
+    },
+    "video_list_eCknRJ": {
+      "type": "video-list",
+      "blocks": {
+        "video_EjJkih": {
+          "type": "video",
+          "settings": {
+            "video": "shopify:\/\/files\/videos\/24496-344562743_tiny.mp4",
+            "autoplay": false
+          }
+        },
+        "video_MrecFB": {
+          "type": "video",
+          "settings": {
+            "video": "shopify:\/\/files\/videos\/39116-420985147_tiny.mp4",
+            "autoplay": false
+          }
+        },
+        "video_YEtMRV": {
+          "type": "video",
+          "settings": {
+            "video": "shopify:\/\/files\/videos\/32132-390688056_tiny.mp4",
+            "autoplay": false
+          }
+        },
+        "video_Hq7V73": {
+          "type": "video",
+          "settings": {
+            "video": "shopify:\/\/files\/videos\/24496-344562743_tiny.mp4",
+            "autoplay": false
+          }
+        }
+      },
+      "block_order": [
+        "video_EjJkih",
+        "video_MrecFB",
+        "video_YEtMRV",
+        "video_Hq7V73"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
     "main",
-    "logo_section_zXaHWW"
+    "logo_section_zXaHWW",
+    "video_list_eCknRJ"
   ]
 }
