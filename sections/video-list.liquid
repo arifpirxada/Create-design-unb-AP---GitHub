@@ -95,7 +95,8 @@
   
     videos.forEach(video => {
       let pauseBtn = video.closest('.video-pause');
-  
+
+      console.log(pauseBtn)
       video.addEventListener('mouseenter', () => {
         video.setAttribute('controls', 'controls');
         if (pauseBtn) {
