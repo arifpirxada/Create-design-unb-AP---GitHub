@@ -64,7 +64,8 @@
           {% if block.settings.muted %}
           muted
           {% endif %}
-          poster="">
+          
+          poster="{{ block.settings.thumbnail }}">
         </video>
       </div>
     {% endfor %}
