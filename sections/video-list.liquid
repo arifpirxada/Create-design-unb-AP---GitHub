@@ -116,7 +116,6 @@
 
         if (playBtn) {
           playBtn.style.display = 'block';
-          pauseBtn.style.display = 'none';
         }
       });
     });
@@ -128,6 +127,21 @@
   
     video.play();
     playBtn.style.display = "none"
+  }
+
+  function pauseAllOtherVideos(currentVideo) {
+    const videos = document.querySelectorAll('.video');
+    videos.forEach(video => {
+      if (video !== currentVideo && !video.paused) {
+        video.pause();
+        const videoParent = video.closest('.video-parent');
+        const playBtn = videoParent.querySelector('.video-play');
+  
+        if (playBtn) {
+          playBtn.style.display = 'block';
+        }
+      }
+    });
   }
 </script>
 
