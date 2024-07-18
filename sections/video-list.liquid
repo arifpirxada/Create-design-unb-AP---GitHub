@@ -101,6 +101,7 @@
   
       video.addEventListener('mouseleave', () => {
         video.removeAttribute('controls');
+        let pauseBtn = video.closest('.video-parent');
       });
     });
   });
