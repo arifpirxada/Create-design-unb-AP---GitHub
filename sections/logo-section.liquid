@@ -14,6 +14,10 @@
     gap: 28px;
   }
 
+  .logo-container .logo img {
+    width: 100%;
+  }
+
   .logo-container .logo {
     margin: 0 2rem;
     flex: 0 0 calc(100% / {{ section.settings.logos-per-row }} - 28px*({{ section.settings.logos-per-row }} - 1) / 2);
@@ -37,11 +41,11 @@
     }
   } */
 
-  @media screen and (max-width: 310px) {
+  /* @media screen and (max-width: 310px) {
     .logo-container .logo img {
       width: 80vw;
     }
-  }
+  } */
 {%- endstylesheet -%}
 
 <div class="section-container">
