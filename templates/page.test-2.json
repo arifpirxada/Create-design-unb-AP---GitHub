@@ -97,19 +97,27 @@
         "heading": "Clients that we’ve managed production for:"
       }
     },
-    "video_list_LFXPfV": {
-      "type": "video-list",
+    "media_list_XQ7EAx": {
+      "type": "media-list",
       "blocks": {
-        "video_6ECzyF": {
+        "video_crtwgQ": {
           "type": "video",
           "settings": {
             "video": "shopify:\/\/files\/videos\/24496-344562743_tiny.mp4",
             "thumbnail": "shopify:\/\/shop_images\/camera-2251051_1280.jpg",
             "autoplay": true,
+            "muted": true
+          }
+        },
+        "video_gnLcfF": {
+          "type": "video",
+          "settings": {
+            "video": "shopify:\/\/files\/videos\/39116-420985147_tiny.mp4",
+            "autoplay": false,
             "muted": false
           }
         },
-        "video_be8Pi8": {
+        "video_gR6ien": {
           "type": "video",
           "settings": {
             "video": "shopify:\/\/files\/videos\/32132-390688056_tiny.mp4",
@@ -117,15 +125,7 @@
             "muted": false
           }
         },
-        "video_mpK8g9": {
-          "type": "video",
-          "settings": {
-            "video": "shopify:\/\/files\/videos\/32132-390688056_tiny.mp4",
-            "autoplay": false,
-            "muted": false
-          }
-        },
-        "video_H8TUmc": {
+        "video_WxjMye": {
           "type": "video",
           "settings": {
             "video": "shopify:\/\/files\/videos\/24496-344562743_tiny.mp4",
@@ -135,31 +135,25 @@
         }
       },
       "block_order": [
-        "video_6ECzyF",
-        "video_be8Pi8",
-        "video_mpK8g9",
-        "video_H8TUmc"
+        "video_crtwgQ",
+        "video_gnLcfF",
+        "video_gR6ien",
+        "video_WxjMye"
       ],
       "settings": {
         "videos-per-row": 2
       }
     },
-    "video_list_xWVTyQ": {
-      "type": "video-list",
+    "media_list_Vfyw9B": {
+      "type": "media-list",
       "blocks": {
-        "image_picker_zL7T9t": {
-          "type": "image_picker",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Rectangle_345_1.png"
-          }
-        },
-        "image_picker_RnpcGN": {
+        "image_picker_8M8Vwn": {
           "type": "image_picker",
           "settings": {
             "image": "shopify:\/\/shop_images\/Rectangle_343.png"
           }
         },
-        "image_picker_YxpXaw": {
+        "image_picker_6DX6WT": {
           "type": "image_picker",
           "settings": {
             "image": "shopify:\/\/shop_images\/technological-light-abstract-glow-background-for-mobile.png"
@@ -167,9 +161,8 @@
         }
       },
       "block_order": [
-        "image_picker_zL7T9t",
-        "image_picker_RnpcGN",
-        "image_picker_YxpXaw"
+        "image_picker_8M8Vwn",
+        "image_picker_6DX6WT"
       ],
       "settings": {
         "videos-per-row": 2
@@ -179,7 +172,7 @@
   "order": [
     "main",
     "logo_section_zXaHWW",
-    "video_list_LFXPfV",
-    "video_list_xWVTyQ"
+    "media_list_XQ7EAx",
+    "media_list_Vfyw9B"
   ]
 }
