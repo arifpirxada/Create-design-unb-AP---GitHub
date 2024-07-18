@@ -83,6 +83,24 @@
 
 </div>
 
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const videos = document.querySelectorAll('.custom-video');
+
+    videos.forEach(video => {
+      video.removeAttribute('controls'); // Ensure controls are hidden by default
+
+      video.addEventListener('mouseenter', () => {
+        video.setAttribute('controls', 'controls');
+      });
+
+      video.addEventListener('mouseleave', () => {
+        video.removeAttribute('controls');
+      });
+    });
+  });
+</script>
+
 {% schema %}
   {
     "name": "Video list",
