@@ -81,7 +81,7 @@
           width="50"
           height="auto"
           alt="Video play button">
-        {% comment %} <img onclick="pauseVideo()" class="video-control video-pause" src="{{ "pause.png" | asset_url }}" width="50" height="auto" alt="Video play button"> {% endcomment %}
+        <img onclick="pauseVideo()" class="video-control video-pause" src="{{ "pause.png" | asset_url }}" width="50" height="auto" alt="Video play button">
 
       </div>
     {% endfor %}
@@ -115,8 +115,8 @@
     playBtn.style.opacity = 0
     setTimeout(() => {
       playBtn.style.display = "none"
+      pauseBtn.style.display = "block"
       pauseBtn.style.opacity = 1;
-      
     }, 200);
   }
 </script>
