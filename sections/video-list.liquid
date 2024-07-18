@@ -94,14 +94,15 @@
     const videos = videoContainer.querySelectorAll('.video');
   
     videos.forEach(video => {
+      let pauseBtn = video.closest('.video-pause');
   
       video.addEventListener('mouseenter', () => {
         video.setAttribute('controls', 'controls');
+        
       });
   
       video.addEventListener('mouseleave', () => {
         video.removeAttribute('controls');
-        let pauseBtn = video.closest('.video-pause');
       });
     });
   });
