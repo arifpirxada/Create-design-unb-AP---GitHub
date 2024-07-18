@@ -124,20 +124,14 @@
     video.play();
     playBtn.style.display = "none"
     pauseBtn.style.display = "block"
-    
+  
     video.addEventListener('mouseenter', () => {
-        video.setAttribute('controls', 'controls');
-        if (pauseBtn) {
           pauseBtn.style.opacity = 1;
-        }
-      });
+    });
       
-      video.addEventListener('mouseleave', () => {
-        video.removeAttribute('controls');
-        if (pauseBtn) {
-          pauseBtn.style.opacity = 0;
-        }
-      });
+    video.addEventListener('mouseleave', () => {
+        pauseBtn.style.opacity = 0;
+    });
   }
   
   const pauseVideo = (pauseBtn) => {
