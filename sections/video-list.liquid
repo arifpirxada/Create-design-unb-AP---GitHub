@@ -109,8 +109,20 @@
       });
 
       video.addEventListener('play', () => {
-        console.log("yes")
-        playVideo()
+        // Change play button
+        playBtn.style.display = "none"
+    pauseBtn.style.display = "block"
+  
+    setTimeout(() => {
+      pauseBtn.style.opacity = 0;
+    }, 800);
+  
+    video.addEventListener('click', () => {
+        pauseBtn.style.opacity = 1;
+        setTimeout(() => {
+          pauseBtn.style.opacity = 0;
+        }, 800);
+    });
       });
     
       video.addEventListener('pause', () => {
