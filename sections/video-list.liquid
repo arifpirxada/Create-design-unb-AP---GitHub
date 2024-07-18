@@ -51,6 +51,14 @@
           src="{{ block.settings.video | video_tag }}"
           width="1000"
           height="auto"></video>
+          {{
+            section.settings.video
+            | video_tag:
+              autoplay: true,
+              loop: section.settings.enable_video_looping,
+              controls: true,
+              muted: false
+          }}
       </div>
     {% endfor %}
   </div>
