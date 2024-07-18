@@ -61,7 +61,7 @@
         {% if block.type == "video" %}
           <video
             width="800"
-            class="video"
+            class="media"
             height="auto"
             src="{{ block.settings.video.sources[0].url }}"
             {% if block.settings.autoplay %}
@@ -82,7 +82,7 @@
             height="auto"
             alt="Video play button">
         {% else %}
-        <img src="{{ block.settings.image |  image_url  }}" width="800" height="auto" alt="">
+        <img class="media" src="{{ block.settings.image |  image_url  }}" width="800" height="auto" alt="">
         {% endif %}
       </div>
     {% endfor %}
