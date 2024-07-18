@@ -143,11 +143,18 @@
       "settings": {
         "videos-per-row": 2
       }
+    },
+    "media_list_Vfyw9B": {
+      "type": "media-list",
+      "settings": {
+        "videos-per-row": 2
+      }
     }
   },
   "order": [
     "main",
     "logo_section_zXaHWW",
-    "media_list_XQ7EAx"
+    "media_list_XQ7EAx",
+    "media_list_Vfyw9B"
   ]
 }
