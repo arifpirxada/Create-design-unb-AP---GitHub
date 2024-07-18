@@ -33,6 +33,7 @@
     position: absolute;
     cursor: pointer;
     border-radius: 100%;
+    transition: opacity 0.2s;
   }
 
   @media screen and (max-width: 850px) {
@@ -70,7 +71,7 @@
 
         <img
           onclick="playVideo(this)"
-          class="video-control"
+          class="video-control video-play"
           src="{{ "play.png" | asset_url }}"
           width="50"
           height="auto"
