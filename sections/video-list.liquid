@@ -98,12 +98,16 @@
   
       video.addEventListener('mouseenter', () => {
         video.setAttribute('controls', 'controls');
-        pauseBtn.style.opacity = 1;
+        if (pauseBtn) {
+          pauseBtn.style.opacity = 1;
+        }
       });
       
       video.addEventListener('mouseleave', () => {
         video.removeAttribute('controls');
-        pauseBtn.style.opacity = 0;
+        if (pauseBtn) {
+        pauseBtn.style.opacity = 1; // Show the pause button
+      }
       });
     });
   });
