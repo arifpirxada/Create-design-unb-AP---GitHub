@@ -118,15 +118,13 @@
     video.play();
     playBtn.style.display = "none"
     pauseBtn.style.display = "block"
+
+    setTimeout(() => {
+      
+    }, );
   
     video.addEventListener('click', () => {
         pauseBtn.style.opacity = 1;
-    });
-      
-    video.addEventListener('mouseleave', () => {
-      setTimeout(() => {
-        pauseBtn.style.opacity = 0;
-      }, 200);
     });
   }
   
