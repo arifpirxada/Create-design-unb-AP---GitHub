@@ -94,7 +94,9 @@
   
     videos.forEach(video => {
       video.addEventListener('mouseenter', () => {
-        video.setAttribute('controls', 'controls');
+        if (video.style.display == "none") {
+          video.setAttribute('controls', 'controls');
+        }
       });
       
       video.addEventListener('mouseleave', () => {
