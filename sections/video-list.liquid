@@ -109,7 +109,8 @@
   const playVideo = (button) => {
     let videoParent = button.closest('.video-parent');
     let video = videoParent.querySelector('.video');
-    let pauseBtn = video
+    let pauseBtn = videoParent.querySelector(".video-pause");
+    
     video.play();
   }
 </script>
