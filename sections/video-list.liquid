@@ -127,13 +127,14 @@
   
     video.addEventListener('mouseenter', () => {
       setTimeout(() => {
-        
-      }, 200);
         pauseBtn.style.opacity = 1;
+      }, 200);
     });
       
     video.addEventListener('mouseleave', () => {
-      pauseBtn.style.opacity = 0;
+      setTimeout(() => {
+        pauseBtn.style.opacity = 0;
+      }, 200);
     });
   }
   
