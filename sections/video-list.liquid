@@ -52,7 +52,7 @@
   <div class="video-container">
     {% for block in section.blocks %}
       <div class="video">
-        
+
         <video
           width="800"
           height="auto"
@@ -64,8 +64,9 @@
           {% if block.settings.muted %}
           muted
           {% endif %}
-          
-          poster="{{ block.settings.thumbnail }}">
+          {% if section.settings.thumbnail != blank %}
+            poster="{{ block.settings.thumbnail }}">
+          {% endif %}
         </video>
       </div>
     {% endfor %}
