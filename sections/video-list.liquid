@@ -54,8 +54,7 @@
           {{
             section.settings.video
             | video_tag:
-              autoplay: true,
-              loop: section.settings.enable_video_looping,
+              autoplay: section.settings.enable_video_looping,
               controls: true,
               muted: false
           }}
