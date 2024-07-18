@@ -60,28 +60,50 @@
       <div class="video-parent">
         {% if block.type == "video" %}
           <video
-          width="800"
-          class="video"
-          height="auto"
-          src="{{ block.settings.video.sources[0].url }}"
-          {% if block.settings.autoplay %}
-          autoplay="true"
-          {% endif %}
-          {% if block.settings.muted %}
-          muted="true"
-          {% endif %}
-          {% if block.settings.thumbnail %}
-          poster="{{ block.settings.thumbnail |  image_url }}"
-          {% endif %}></video>
+            width="800"
+            class="video"
+            height="auto"
+            src="{{ block.settings.video.sources[0].url }}"
+            {% if block.settings.autoplay %}
+            autoplay="true"
+            {% endif %}
+            {% if block.settings.muted %}
+            muted="true"
+            {% endif %}
+            {% if block.settings.thumbnail %}
+            poster="{{ block.settings.thumbnail |  image_url }}"
+            {% endif %}></video>
 
-        <img
-          onclick="playVideo(this)"
-          class="video-control video-play"
-          src="{{ "play.png" | asset_url }}"
-          width="50"
-          height="auto"
-          alt="Video play button">
+          <img
+            onclick="playVideo(this)"
+            class="video-control video-play"
+            src="{{ "play.png" | asset_url }}"
+            width="50"
+            height="auto"
+            alt="Video play button">
         {% else %}
+          <video
+            width="800"
+            class="video"
+            height="auto"
+            src="{{ block.settings.video.sources[0].url }}"
+            {% if block.settings.autoplay %}
+            autoplay="true"
+            {% endif %}
+            {% if block.settings.muted %}
+            muted="true"
+            {% endif %}
+            {% if block.settings.thumbnail %}
+            poster="{{ block.settings.thumbnail |  image_url }}"
+            {% endif %}></video>
+
+          <img
+            onclick="playVideo(this)"
+            class="video-control video-play"
+            src="{{ "play.png" | asset_url }}"
+            width="50"
+            height="auto"
+            alt="Video play button">
         {% endif %}
       </div>
     {% endfor %}
@@ -112,11 +134,11 @@
           playBtn.style.display = 'none';
         }
       });
-
+  
       video.addEventListener('pause', () => {
         const videoParent = video.closest('.video-parent');
         const playBtn = videoParent.querySelector('.video-play');
-
+  
         if (playBtn) {
           playBtn.style.display = 'block';
         }
@@ -132,7 +154,7 @@
     playBtn.style.display = "none"
     pauseAllOtherVideos(video)
   }
-
+  
   function pauseAllOtherVideos(currentVideo) {
     const videos = document.querySelectorAll('.video');
     videos.forEach(video => {
@@ -187,8 +209,7 @@
             "default": false
           }
         ]
-      },
-      {
+      }, {
         "type": "image_picker",
         "name": "image",
         "settings": [
