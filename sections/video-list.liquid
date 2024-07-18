@@ -102,6 +102,7 @@
       });
   
       video.addEventListener('play', () => {
+        pauseAllOtherVideos(video)
         const videoParent = video.closest('.video-parent');
         const playBtn = videoParent.querySelector('.video-play');
   
