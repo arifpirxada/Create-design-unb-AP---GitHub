@@ -111,28 +111,11 @@
       video.addEventListener('play', () => {
         let playBtn = video.closest(".video-play")
         playVideo(playBtn)
-        // Change play button
-        // playBtn.style.display = "none"
-        // pauseBtn.style.display = "block"
-      
-        // setTimeout(() => {
-        //   pauseBtn.style.opacity = 0;
-        // }, 800);
-      
-        // video.addEventListener('click', () => {
-        //     pauseBtn.style.opacity = 1;
-        //     setTimeout(() => {
-        //       pauseBtn.style.opacity = 0;
-        //     }, 800);
-        // });
       });
     
       video.addEventListener('pause', () => {
         let pauseBtn = video.closest(".video-pause")
         playVideo(pauseBtn)
-        // Change pause button
-        // pauseBtn.style.display = "none"
-        // playBtn.style.display = "block"
       });
     });
   });
