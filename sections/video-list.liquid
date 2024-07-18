@@ -109,8 +109,19 @@
       });
 
       video.addEventListener('play', () => {
-        let playBtn = video.closest(".video-play")
-        playVideo(playBtn)
+        const videoParent = video.closest('.video-parent');
+        const playBtn = videoParent.querySelector('.video-play');
+        const pauseBtn = videoParent.querySelector('.video-pause');
+
+        if (playBtn && pauseBtn) {
+          playBtn.style.display = 'none';
+          pauseBtn.style.display = 'block';
+
+          // Automatically hide pause button after 800ms
+          setTimeout(() => {
+            pauseBtn.style.opacity = 0;
+          }, 800);
+        }
       });
     
       video.addEventListener('pause', () => {
