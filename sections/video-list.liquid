@@ -58,29 +58,32 @@
   <div class="video-container">
     {% for block in section.blocks %}
       <div class="video-parent">
-        <video
-          width="800"
-          class="video"
-          height="auto"
-          src="{{ block.settings.video.sources[0].url }}"
-          {% if block.settings.autoplay %}
-          autoplay="true"
-          {% endif %}
-          {% if block.settings.muted %}
-          muted="true"
-          {% endif %}
-          {% if block.settings.thumbnail %}
-          poster="{{ block.settings.thumbnail |  image_url }}"
-          {% endif %}></video>
+        {% if block.type == "video" %}
+          <video
+            width="800"
+            class="video"
+            height="auto"
+            src="{{ block.settings.video.sources[0].url }}"
+            {% if block.settings.autoplay %}
+            autoplay="true"
+            {% endif %}
+            {% if block.settings.muted %}
+            muted="true"
+            {% endif %}
+            {% if block.settings.thumbnail %}
+            poster="{{ block.settings.thumbnail |  image_url }}"
+            {% endif %}></video>
 
-        <img
-          onclick="playVideo(this)"
-          class="video-control video-play"
-          src="{{ "play.png" | asset_url }}"
-          width="50"
-          height="auto"
-          alt="Video play button">
-
+          <img
+            onclick="playVideo(this)"
+            class="video-control video-play"
+            src="{{ "play.png" | asset_url }}"
+            width="50"
+            height="auto"
+            alt="Video play button">
+        {% else %}
+        <img src="{{ block.settings.image |  image_url  }}" width="800" height="auto" alt="">
+        {% endif %}
       </div>
     {% endfor %}
   </div>
@@ -110,11 +113,11 @@
           playBtn.style.display = 'none';
         }
       });
-
+  
       video.addEventListener('pause', () => {
         const videoParent = video.closest('.video-parent');
         const playBtn = videoParent.querySelector('.video-play');
-
+  
         if (playBtn) {
           playBtn.style.display = 'block';
         }
@@ -130,7 +133,7 @@
     playBtn.style.display = "none"
     pauseAllOtherVideos(video)
   }
-
+  
   function pauseAllOtherVideos(currentVideo) {
     const videos = document.querySelectorAll('.video');
     videos.forEach(video => {
@@ -181,8 +184,18 @@
           }, {
             "type": "checkbox",
             "id": "muted",
-            "label": "Keep  video muted",
+            "label": "Keep video muted",
             "default": false
+          }
+        ]
+      }, {
+        "type": "image_picker",
+        "name": "image",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
           }
         ]
       }
