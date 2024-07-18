@@ -123,14 +123,14 @@
   const pauseVideo = (pauseBtn) => {
     let videoParent = pauseBtn.closest('.video-parent');
     let video = videoParent.querySelector('.video');
-    let pauseBtn = videoParent.querySelector(".video-pause");
+    let playBtn = videoParent.querySelector(".video-play");
   
     video.play();
     pause.style.opacity = 0
     setTimeout(() => {
       pause.style.display = "none"
-      pauseBtn.style.display = "block"
-      pauseBtn.style.opacity = 1;
+      playBtn.style.display = "block"
+      playBtn.style.opacity = 1;
     }, 200);
   }
 </script>
