@@ -1,0 +1,58 @@
+<style>
+    .image-list-container {
+        display: flex;
+    }
+
+</style>
+
+<div class="image-list-container">
+    {% for block in section.settings.blocks %}
+        <img src="{{ block.settings.image |  image_url }}" width="{{ block.settings.width }}" height="auto" alt="{{ block.settings.image-alt }}">
+    {% endfor %}
+</div>
+
+{% schema %}
+  {
+    "name": "Image list",
+    "tag": "section",
+    "class": "section",
+    "settings": [
+        {
+            "type": "range",
+            "id": "width",
+            "min": 0,
+            "max": 5,
+            "step": 1,
+            "label": "Images to show per row",
+            "default": 3
+        }
+    ],
+    "blocks": [
+        {
+            "type": "image_picker",
+            "name": "Image",
+            "settings": [
+                {
+                    "type": "image_picker",
+                    "id": "image",
+                    "label": "Image"
+                },
+                {
+                    "type": "range",
+                    "id": "width",
+                    "min": 0,
+                    "max": 1000,
+                    "step": 1,
+                    "label": "Width",
+                    "default": 30
+                }
+            ]
+        }
+    ],
+    "presets": [
+      {
+        "name": "Image list"
+      }
+    ]
+  }
+{% endschema %}
