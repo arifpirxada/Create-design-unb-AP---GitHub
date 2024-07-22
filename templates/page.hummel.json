@@ -76,7 +76,7 @@
             "full_width": false,
             "more-width": false,
             "container-width": -1,
-            "not-on-mobile": true
+            "not-on-mobile": false
           }
         },
         "image_picker_HXMPke": {
