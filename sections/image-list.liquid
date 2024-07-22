@@ -11,6 +11,17 @@
         width: 100%;
     }
 
+    @media (max-width: 600px) {
+        .image-list-container {
+            grid-template-columns: 1fr; /* Single column layout for mobile */
+        }
+
+        .img-container {
+            width: 100vw;
+            box-sizing: border-box;
+        }
+    }
+
 </style>
 
 <div class="image-list-container">
