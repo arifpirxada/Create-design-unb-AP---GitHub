@@ -5,14 +5,15 @@
         display: flex;
         position: relative;
     }
-    .points-get-bolder-container > div {
+    
+    .points-get-bolder-container > .bolder-point {
         flex: 0 0 100%/2;
     }
 </style>
 
 <div class="points-get-bolder-container">
   <span class="bolder-line"></span>
-  <div class="bolder-points">
+  <div class="bolder-point bolder-points">
     {% if section.settings.point1 != blank %}
         <h3 class="bolder-point1">{{ section.settings.point1 }}</h3>
     {% endif %}
@@ -26,7 +27,7 @@
         <h3 class="bolder-point4">{{ section.settings.point4 }}</h3>
     {% endif %}
   </div>
-  <p class="bolder-points-desc">
+  <p class="bolder-point bolder-points-desc">
     {% if section.settings.description != blank %}
       {{ section.settings.description }}
     {% endif %}
