@@ -53,7 +53,8 @@
             "image-alt": "",
             "full_width": false,
             "more-width": false,
-            "container-width": -1
+            "container-width": -1,
+            "not-on-mobile": false
           }
         },
         "image_picker_C8Tf4h": {
@@ -63,7 +64,8 @@
             "image-alt": "",
             "full_width": false,
             "more-width": false,
-            "container-width": -1
+            "container-width": -1,
+            "not-on-mobile": false
           }
         },
         "image_picker_bqjLNK": {
@@ -73,7 +75,8 @@
             "image-alt": "",
             "full_width": false,
             "more-width": false,
-            "container-width": -1
+            "container-width": -1,
+            "not-on-mobile": false
           }
         },
         "image_picker_HXMPke": {
@@ -83,7 +86,8 @@
             "image-alt": "",
             "full_width": true,
             "more-width": false,
-            "container-width": -1
+            "container-width": -1,
+            "not-on-mobile": false
           }
         }
       },
@@ -107,7 +111,8 @@
             "image-alt": "",
             "full_width": false,
             "more-width": false,
-            "container-width": 39
+            "container-width": 39,
+            "not-on-mobile": false
           }
         },
         "image_picker_7CnjLK": {
@@ -117,7 +122,8 @@
             "image-alt": "",
             "full_width": false,
             "more-width": true,
-            "container-width": -1
+            "container-width": -1,
+            "not-on-mobile": false
           }
         }
       },
