@@ -11,21 +11,29 @@
         width: 100%;
     }
 
+    @media (max-width: 600px) {
+        .image-list-container .img-container {
+            /* Important is necessary */
+            grid-column: span {{ section.settings.img-per-row }} !important;
+            width: 100vw !important;
+        }
+    }
+
 </style>
 
 <div class="image-list-container">
     
     {% for block in section.blocks %}
         {% assign styles = "" %}
-    {% if block.settings.container-width != -1 %}
-        {% assign styles = styles | append: "width: " | append: block.settings.container-width | append: "vw;" %}
-    {% endif %}
-    {% if block.settings.full_width %}
-        {% assign styles = styles | append: "grid-column: span " | append: section.settings.img-per-row | append: ";" %}
-    {% endif %}
-    {% if block.settings.more-width %}
-        {% assign styles = styles | append: "grid-column: span calc(" | append: section.settings.img-per-row | append: " - 1);" %}
-    {% endif %}
+        {% if block.settings.container-width != -1 %}
+            {% assign styles = styles | append: "width: " | append: block.settings.container-width | append: "vw;" %}
+        {% endif %}
+        {% if block.settings.full_width %}
+            {% assign styles = styles | append: "grid-column: span " | append: section.settings.img-per-row | append: ";" %}
+        {% endif %}
+        {% if block.settings.more-width %}
+            {% assign styles = styles | append: "grid-column: span calc(" | append: section.settings.img-per-row | append: " - 1);" %}
+        {% endif %}
 
     <div class="img-container" style="{{ styles }}">
             <img src="{{ block.settings.image |  image_url }}" width="" height="auto" alt="{{ block.settings.image-alt }}">
