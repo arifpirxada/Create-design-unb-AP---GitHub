@@ -8,13 +8,14 @@
 
     .image-list-container img {
         border-radius: 0px;
+        flex: 0 0 calc(100%/{{ section.settings.img-per-row }} - 5 * ({{ section.settings.img-per-row }} - 1) / 2);
     }
 
 </style>
 
 <div class="image-list-container">
     {% for block in section.blocks %}
-        <img src="{{ block.settings.image |  image_url }}" width="{{ block.settings.width }}%" height="auto" alt="{{ block.settings.image-alt }}">
+        <img src="{{ block.settings.image |  image_url }}" width="" height="auto" alt="{{ block.settings.image-alt }}">
     {% endfor %}
 </div>
 
@@ -26,7 +27,7 @@
     "settings": [
         {
             "type": "range",
-            "id": "width",
+            "id": "img-per-row",
             "min": 0,
             "max": 5,
             "step": 1,
@@ -43,15 +44,6 @@
                     "type": "image_picker",
                     "id": "image",
                     "label": "Image"
-                },
-                {
-                    "type": "range",
-                    "id": "width",
-                    "min": 0,
-                    "max": 100,
-                    "step": 10,
-                    "label": "Width",
-                    "default": 30
                 },
                 {
                     "type": "text",
