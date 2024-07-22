@@ -1,13 +1,20 @@
 <style>
     .image-list-container {
         display: flex;
+        gap: 5px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .image-list-container img {
+        border-radius: 0px;
     }
 
 </style>
 
 <div class="image-list-container">
     {% for block in section.blocks %}
-        <img src="{{ block.settings.image |  image_url }}" width="{{ block.settings.width }}" height="auto" alt="{{ block.settings.image-alt }}">
+        <img src="{{ block.settings.image |  image_url }}" width="{{ block.settings.width }}%" height="auto" alt="{{ block.settings.image-alt }}">
     {% endfor %}
 </div>
 
@@ -41,10 +48,10 @@
                     "type": "range",
                     "id": "width",
                     "min": 0,
-                    "max": 1000,
+                    "max": 100,
                     "step": 10,
                     "label": "Width",
-                    "default": 300
+                    "default": 30
                 },
                 {
                     "type": "text",
