@@ -39,6 +39,9 @@
         {% if block.settings.more-width %}
             {% assign styles = styles | append: "grid-column: span calc(" | append: section.settings.img-per-row | append: " - 1);" %}
         {% endif %}
+        {% if block.settings.not-on-mobile %}
+            {% assign styles = styles | append: "display: none;" %}
+        {% endif %}
 
     <div class="img-container" style="{{ styles }}">
             <img src="{{ block.settings.image |  image_url }}" width="" height="auto" alt="{{ block.settings.image-alt }}">
@@ -92,6 +95,12 @@
                     "id": "container-width",
                     "label": "Container width",
                     "default": -1
+                },
+                {
+                    "type": "checkbox",
+                    "id": "not-on-mobile",
+                    "label": "Don't show on mobile",
+                    "default": false
                 }
             ]
         }
