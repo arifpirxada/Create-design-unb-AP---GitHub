@@ -1,20 +1,23 @@
 <style>
     .image-list-container {
-        display: flex;
+        display: grid;
         gap: 5px;
         justify-content: center;
         align-items: center;
+        grid-template-columns: repeat({{ section.settings.img-per-row }}, 1fr);
     }
 
-    .image-list-container img {
-        flex: 0 0 calc(100% / {{ section.settings.img-per-row }} - 5px * ({{ section.settings.img-per-row }} - 1) / 2);
+    .image-list-container .img-container img {
+        width: 100%;
     }
 
 </style>
 
 <div class="image-list-container">
     {% for block in section.blocks %}
-        <img src="{{ block.settings.image |  image_url }}" width="" height="auto" alt="{{ block.settings.image-alt }}">
+        <div class="img-container" {% if block.settings.full_width %}style="grid-column: span {{ section.settings.img-per-row }};"{% endif %}>
+            <img src="{{ block.settings.image |  image_url }}" width="" height="auto" alt="{{ block.settings.image-alt }}">
+        </div>
     {% endfor %}
 </div>
 
@@ -48,6 +51,11 @@
                     "type": "text",
                     "id": "image-alt",
                     "label": "Image alt"
+                },
+                {
+                    "type": "checkbox",
+                    "id": "full_width",
+                    "label": "Full width"
                 }
             ]
         }
