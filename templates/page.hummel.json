@@ -42,11 +42,49 @@
         "point3": "Ocean",
         "point4": "Waste"
       }
+    },
+    "image_list_CAFHyQ": {
+      "type": "image-list",
+      "blocks": {
+        "image_picker_k4NN8w": {
+          "type": "image_picker",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_343.png",
+            "width": 300,
+            "image-alt": ""
+          }
+        },
+        "image_picker_C8Tf4h": {
+          "type": "image_picker",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_343.png",
+            "width": 300,
+            "image-alt": ""
+          }
+        },
+        "image_picker_bqjLNK": {
+          "type": "image_picker",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Rectangle_343.png",
+            "width": 300,
+            "image-alt": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_picker_k4NN8w",
+        "image_picker_C8Tf4h",
+        "image_picker_bqjLNK"
+      ],
+      "settings": {
+        "width": 3
+      }
     }
   },
   "order": [
     "main",
     "image_banner_JziPB9",
-    "points_get_bolder_K9VpR7"
+    "points_get_bolder_K9VpR7",
+    "image_list_CAFHyQ"
   ]
 }
