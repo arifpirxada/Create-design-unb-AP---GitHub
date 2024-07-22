@@ -52,7 +52,8 @@
             "image": "shopify:\/\/shop_images\/image_3.png",
             "image-alt": "",
             "full_width": false,
-            "more-width": false
+            "more-width": false,
+            "container-width": -1
           }
         },
         "image_picker_C8Tf4h": {
@@ -61,7 +62,8 @@
             "image": "shopify:\/\/shop_images\/image_3.png",
             "image-alt": "",
             "full_width": false,
-            "more-width": false
+            "more-width": false,
+            "container-width": -1
           }
         },
         "image_picker_bqjLNK": {
@@ -70,7 +72,8 @@
             "image": "shopify:\/\/shop_images\/Rectangle_343.png",
             "image-alt": "",
             "full_width": false,
-            "more-width": false
+            "more-width": false,
+            "container-width": -1
           }
         },
         "image_picker_HXMPke": {
@@ -79,7 +82,8 @@
             "image": "shopify:\/\/shop_images\/camera-2251051_1280.jpg",
             "image-alt": "",
             "full_width": true,
-            "more-width": false
+            "more-width": false,
+            "container-width": -1
           }
         }
       },
@@ -102,7 +106,8 @@
             "image": "shopify:\/\/shop_images\/image_3.png",
             "image-alt": "",
             "full_width": false,
-            "more-width": false
+            "more-width": false,
+            "container-width": 39
           }
         },
         "image_picker_7CnjLK": {
@@ -111,7 +116,8 @@
             "image": "shopify:\/\/shop_images\/image_3_1.png",
             "image-alt": "",
             "full_width": false,
-            "more-width": true
+            "more-width": true,
+            "container-width": -1
           }
         }
       },
