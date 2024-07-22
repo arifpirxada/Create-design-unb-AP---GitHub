@@ -14,8 +14,20 @@
 </style>
 
 <div class="image-list-container">
+    
     {% for block in section.blocks %}
-        <div class="img-container" {% if block.settings.full_width %}style="grid-column: span {{ section.settings.img-per-row }};"{% endif %}{% if block.settings.more-width %}style="grid-column: span calc({{ section.settings.img-per-row }} - 1);"{% endif %}>
+        {% assign styles = "" %}
+    {% if block.settings.container-width != -1 %}
+        {% assign styles = styles | append: "width: " | append: block.settings.container-width | append: "vw;" %}
+    {% endif %}
+    {% if block.settings.full_width %}
+        {% assign styles = styles | append: "grid-column: span " | append: section.settings.img-per-row | append: ";" %}
+    {% endif %}
+    {% if block.settings.more-width %}
+        {% assign styles = styles | append: "grid-column: span calc(" | append: section.settings.img-per-row | append: " - 1);" %}
+    {% endif %}
+
+    <div class="img-container" style="{{ styles }}">
             <img src="{{ block.settings.image |  image_url }}" width="" height="auto" alt="{{ block.settings.image-alt }}">
         </div>
     {% endfor %}
@@ -61,6 +73,15 @@
                     "type": "checkbox",
                     "id": "more-width",
                     "label": "60% percent width"
+                },
+                {
+                    "type": "range",
+                    "id": "container-width",
+                    "min": 0,
+                    "max": 100,
+                    "step": 1,
+                    "label": "Container width",
+                    "default": -1
                 }
             ]
         }
