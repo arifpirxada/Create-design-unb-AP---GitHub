@@ -1,0 +1,61 @@
+<div class="points-get-bolder-container">
+  <span class="bolder-line"></span>
+  <div class="bolder-points">
+    {% if section.settings.point1 != blank %}
+        <h3 class="bolder-point1">{{ section.settings.point1 }}</h3>
+    {% endif %}
+    {% if section.settings.point2 != blank %}
+        <h3 class="bolder-point2">{{ section.settings.point2 }}</h3>
+    {% endif %}
+    {% if section.settings.point3 != blank %}
+        <h3 class="bolder-point3">{{ section.settings.point3 }}</h3>
+    {% endif %}
+    {% if section.settings.point4 != blank %}
+        <h3 class="bolder-point4">{{ section.settings.point4 }}</h3>
+    {% endif %}
+  </div>
+  <p class="bolder-points-desc">
+    {% if section.settings.description != blank %}
+      {{ section.settings.description }}
+    {% endif %}
+  </p>
+</div>
+
+{% schema %}
+  {
+    "name": "Topics",
+    "tag": "section",
+    "class": "section",
+    "settings": [
+      {
+        "type": "text",
+        "id": "description",
+        "label": "Description"
+      },
+      {
+        "type": "text",
+        "id": "point1",
+        "label": "Point 1"
+      },
+      {
+        "type": "text",
+        "id": "point2",
+        "label": "Point 2"
+      },
+      {
+        "type": "text",
+        "id": "point3",
+        "label": "Point 3"
+      }, {
+        "type": "text",
+        "id": "point4",
+        "label": "Point 3"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Topics"
+      }
+    ]
+  }
+{% endschema %}
