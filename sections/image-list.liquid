@@ -39,9 +39,6 @@
         {% if block.settings.more-width %}
             {% assign styles = styles | append: "grid-column: span calc(" | append: section.settings.img-per-row | append: " - 1);" %}
         {% endif %}
-        {% if block.settings.not-on-mobile %}
-            {% assign styles = styles | append: "display: none" | append: " - 1);" %}
-        {% endif %}
 
     <div class="img-container" style="{{ styles }}">
             <img src="{{ block.settings.image |  image_url }}" width="" height="auto" alt="{{ block.settings.image-alt }}">
