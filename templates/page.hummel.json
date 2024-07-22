@@ -32,10 +32,21 @@
         "stack_images_on_mobile": true,
         "show_text_below": true
       }
+    },
+    "points_get_bolder_K9VpR7": {
+      "type": "points-get-bolder",
+      "settings": {
+        "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat vitae temporibus autem sequi molestiae illo voluptate impedit? Deserunt earum quo at maxime porro. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam rem corrupti, et est consequatur possimus ipsa. Magnam magni consequuntur deleniti!",
+        "point1": "MADE FROM",
+        "point2": "Recycled",
+        "point3": "Ocean",
+        "point4": "Waste"
+      }
     }
   },
   "order": [
     "main",
-    "image_banner_JziPB9"
+    "image_banner_JziPB9",
+    "points_get_bolder_K9VpR7"
   ]
 }
