@@ -49,17 +49,19 @@
         "image_picker_k4NN8w": {
           "type": "image_picker",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Rectangle_343.png",
+            "image": "shopify:\/\/shop_images\/image_3.png",
             "image-alt": "",
-            "full_width": false
+            "full_width": false,
+            "more-width": false
           }
         },
         "image_picker_C8Tf4h": {
           "type": "image_picker",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Rectangle_343.png",
+            "image": "shopify:\/\/shop_images\/image_3.png",
             "image-alt": "",
-            "full_width": false
+            "full_width": false,
+            "more-width": false
           }
         },
         "image_picker_bqjLNK": {
@@ -67,7 +69,8 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/Rectangle_343.png",
             "image-alt": "",
-            "full_width": false
+            "full_width": false,
+            "more-width": false
           }
         },
         "image_picker_HXMPke": {
@@ -75,7 +78,8 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/camera-2251051_1280.jpg",
             "image-alt": "",
-            "full_width": true
+            "full_width": true,
+            "more-width": false
           }
         }
       },
@@ -88,12 +92,43 @@
       "settings": {
         "img-per-row": 3
       }
+    },
+    "image_list_QpXwrB": {
+      "type": "image-list",
+      "blocks": {
+        "image_picker_WU7EEV": {
+          "type": "image_picker",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_3.png",
+            "image-alt": "",
+            "full_width": false,
+            "more-width": false
+          }
+        },
+        "image_picker_7CnjLK": {
+          "type": "image_picker",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image_3_1.png",
+            "image-alt": "",
+            "full_width": false,
+            "more-width": true
+          }
+        }
+      },
+      "block_order": [
+        "image_picker_WU7EEV",
+        "image_picker_7CnjLK"
+      ],
+      "settings": {
+        "img-per-row": 3
+      }
     }
   },
   "order": [
     "main",
     "image_banner_JziPB9",
     "points_get_bolder_K9VpR7",
-    "image_list_CAFHyQ"
+    "image_list_CAFHyQ",
+    "image_list_QpXwrB"
   ]
 }
