@@ -8,7 +8,7 @@
 
     .image-list-container img {
         border-radius: 0px;
-        flex: 0 0 100%/{{}};
+        flex: 0 0 100%/{{ section.settings.img-per-row }} - ;
     }
 
 </style>
@@ -27,7 +27,7 @@
     "settings": [
         {
             "type": "range",
-            "id": "width",
+            "id": "img-per-row",
             "min": 0,
             "max": 5,
             "step": 1,
