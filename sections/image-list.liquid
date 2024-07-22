@@ -15,7 +15,9 @@
 
 <div class="image-list-container">
     {% for block in section.blocks %}
-        <img src="{{ block.settings.image |  image_url }}" width="" height="auto" alt="{{ block.settings.image-alt }}">
+        <div class="img-container">
+            <img src="{{ block.settings.image |  image_url }}" width="" height="auto" alt="{{ block.settings.image-alt }}">
+        </div>
     {% endfor %}
 </div>
 
