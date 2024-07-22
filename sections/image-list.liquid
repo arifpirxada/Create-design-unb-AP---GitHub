@@ -1,0 +1,103 @@
+<style>
+    .points-get-bolder-container {
+        box-sizing: border-box;
+        padding: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .points-get-bolder-container > .bolder-point {
+        flex: 1;
+        padding-top: 3rem;
+        max-width: 30%;
+    }
+
+    .points-get-bolder-container > .bolder-points > .bolder-line {
+        display: block;
+        width: 3rem;
+        height: 2px;
+        background-color: #000;
+        top: 5rem;
+    }
+
+    @media screen and (max-width: 768px) {
+        .points-get-bolder-container {
+            flex-direction: column;
+            padding: 1rem;
+        }
+        .points-get-bolder-container > .bolder-point {
+            max-width: 70%;
+            width: 70%;
+        }
+    }
+
+    @media screen and (max-width: 450px) {
+        .points-get-bolder-container > .bolder-point {
+            max-width: 100%;
+            width: 100%;
+        }
+    }
+</style>
+
+<div class="points-get-bolder-container">
+    <div class="bolder-point bolder-points">
+      <span class="bolder-line"></span>
+    {% if section.settings.point1 != blank %}
+        <h3 class="bolder-point1">{{ section.settings.point1 }}</h3>
+    {% endif %}
+    {% if section.settings.point2 != blank %}
+        <h3 class="bolder-point2">{{ section.settings.point2 }}</h3>
+    {% endif %}
+    {% if section.settings.point3 != blank %}
+        <h3 class="bolder-point3">{{ section.settings.point3 }}</h3>
+    {% endif %}
+    {% if section.settings.point4 != blank %}
+        <h3 class="bolder-point4">{{ section.settings.point4 }}</h3>
+    {% endif %}
+  </div>
+  <p class="bolder-point bolder-points-desc">
+    {% if section.settings.description != blank %}
+      {{ section.settings.description }}
+    {% endif %}
+  </p>
+</div>
+
+{% schema %}
+  {
+    "name": "Points get bolder",
+    "tag": "section",
+    "class": "section",
+    "settings": [
+      {
+        "type": "text",
+        "id": "description",
+        "label": "Description"
+      },
+      {
+        "type": "text",
+        "id": "point1",
+        "label": "Point 1"
+      },
+      {
+        "type": "text",
+        "id": "point2",
+        "label": "Point 2"
+      },
+      {
+        "type": "text",
+        "id": "point3",
+        "label": "Point 3"
+      }, {
+        "type": "text",
+        "id": "point4",
+        "label": "Point 3"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Points get bolder"
+      }
+    ]
+  }
+{% endschema %}
