@@ -39,7 +39,7 @@
         {% if block.settings.more-width %}
             {% assign styles = styles | append: "grid-column: span calc(" | append: section.settings.img-per-row | append: " - 1);" %}
         {% endif %}
-        {% if block.settings.show-on-mobile  %}
+        {% if block.settings.not-on-mobile %}
             {% assign styles = styles | append: "grid-column: span calc(" | append: section.settings.img-per-row | append: " - 1);" %}
         {% endif %}
 
