@@ -34,7 +34,7 @@
   }
   
   #section-{{ section.id }} .video-container .video-parent {
-    flex: 0 0 calc(100% / {{ section.settings.videos-per-row }} - 28px*({{ section.settings.videos-per-row }} - 1) / 2) !important;
+    flex: 0 0 calc(100% / {{ section.settings.videos-per-row }} - 28px*({{ section.settings.videos-per-row }} - 1) / 2);
   }
   
   .video-container .video-parent p {
@@ -46,29 +46,26 @@
     position: absolute;
     cursor: pointer;
     border-radius: 100%;
-    transition: opacity 0.2s;
+    transition: transform 0.2s;
+  }
+
+  .video-container .video-parent .video-control:hover {
+    transform: scale(1.2);
   }
 
   .video-container .video-parent .video-pause {
     display: none;
   }
 
-  .more-width {
-      flex: 0 0 calc(100% / 2 - 28px / 2) !important;
-  }
-
   @media screen and (max-width: 850px) {
-    .video-section-container {
-      padding: 2rem !important;
+    #section-{{ section.id }} {
+      padding: 2rem;
     }
   }
 
   @media screen and (max-width: 768px) {
     #section-{{ section.id }} .video-container .video-parent {
-      flex: 0 0 100% !important;
-    }
-    .more-width {
-      flex: 0 0 100% !important;
+      flex: 0 0 100%;
     }
   }
 
@@ -77,7 +74,7 @@
 <div id="section-{{ section.id }}" class="video-section-container">
   <div class="video-container">
     {% for block in section.blocks %}
-      <div class="video-parent {% if block.settings.more-width %}more-width{% endif %}">
+      <div class="video-parent" {% if block.settings.more-width %}style="flex: 0 0 calc(100% / 2 - 28px / 2) !important;"{% endif %}}>
         {% if block.type == "video" %}
 
           {{
